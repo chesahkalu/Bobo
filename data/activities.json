@@ -1,0 +1,731 @@
+[
+  {
+    "month": 0,
+    "activities": [
+      {
+        "id": 1,
+        "title": "Gentle Touch",
+        "description": "Place your baby on a soft surface and gently stroke their arms, legs, and back using slow and soothing motions. This activity helps to enhance your baby's sense of touch and promotes relaxation.",
+        "imageUrls": []
+      },
+      {
+        "id": 2,
+        "title": "Tummy Time",
+        "description": "Place your baby on their tummy for short periods of time (about 2-5 minutes) while they are awake and alert. This helps to strengthen their neck, back, and shoulder muscles, and prepares them for rolling and crawling in the future.",
+        "imageUrls": []
+      },
+      {
+        "id": 3,
+        "title": "Eye Contact and Smiling",
+        "description": "Sit or lie face-to-face with your baby and make eye contact. Smile and talk to them using a soothing and melodic tone. This helps to develop their social and emotional connection with you and encourages them to respond to your facial expressions.",
+        "imageUrls": []
+      },
+      {
+        "id": 4,
+        "title": "Singing and Gentle Music",
+        "description": "Sing lullabies or soft songs to your baby, or play gentle music in the background. Music can have a calming effect on babies and promote their auditory development.",
+        "imageUrls": []
+      },
+      {
+        "id": 5,
+        "title": "Baby Massage",
+        "description": "Gently massage your baby's arms, legs, and back using baby-safe oil. This activity promotes relaxation, enhances circulation, and provides a soothing sensory experience.",
+        "imageUrls": []
+      },
+      {
+        "id": 6,
+        "title": "Baby Gym",
+        "description": "Place your baby on a soft mat or blanket and surround them with colorful toys and objects. This encourages them to look around, reach out, and eventually grasp objects, promoting their visual and motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 7,
+        "title": "Story Time",
+        "description": "Read simple board books or picture books to your baby. Choose books with high contrast images or simple patterns to capture their attention. Although they may not understand the words, they will benefit from hearing your voice and seeing the pictures.",
+        "imageUrls": []
+      },
+      {
+        "id": 8,
+        "title": "Face-to-Face Interaction",
+        "description": "Sit or lie down with your baby and engage in face-to-face interactions. Stick out your tongue, make funny faces, or gently blow on their belly. This helps to develop their visual tracking skills and promotes bonding.",
+        "imageUrls": []
+      },
+      {
+        "id": 9,
+        "title": "Sensory Play",
+        "description": "Provide your baby with a variety of safe and age-appropriate sensory toys such as soft textured toys, rattles, or crinkly toys. Let them explore the different textures, sounds, and colors, which stimulates their senses and encourages grasping and reaching.",
+        "imageUrls": []
+      },
+      {
+        "id": 10,
+        "title": "Baby Wearing",
+        "description": "Use a baby carrier or sling to keep your baby close to you while you go about your daily activities. The gentle movements and closeness to your body provide comfort and security while promoting bonding.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 1,
+    "activities": [
+      {
+        "id": 11,
+        "title": "Tummy Time",
+        "description": "Place your baby on their tummy for short periods (a few minutes at a time) to strengthen their neck and shoulder muscles. Always supervise them during tummy time.",
+        "imageUrls": []
+      },
+      {
+        "id": 12,
+        "title": "Gentle Massage",
+        "description": "Use gentle strokes and light pressure to massage your baby's arms, legs, and back. This can help with relaxation and improve circulation.",
+        "imageUrls": []
+      },
+      {
+        "id": 13,
+        "title": "Singing and Talking",
+        "description": "Sing lullabies, nursery rhymes, or talk to your baby in soothing tones. This aids in language development and creates a bonding experience.",
+        "imageUrls": []
+      },
+      {
+        "id": 14,
+        "title": "High-Contrast Visuals",
+        "description": "Show your baby black and white patterns or high-contrast images. Their visual system is still developing, and these visuals can help stimulate their visual perception.",
+        "imageUrls": []
+      },
+      {
+        "id": 15,
+        "title": "Sensory Play",
+        "description": "Introduce different textures by gently rubbing a soft cloth, feather, or sponge on your baby's skin. This helps them explore their sense of touch.",
+        "imageUrls": []
+      },
+      {
+        "id": 16,
+        "title": "Gentle Swinging",
+        "description": "Cradle your baby in your arms and gently sway them back and forth. This motion can be calming and comforting for them.",
+        "imageUrls": []
+      },
+      {
+        "id": 17,
+        "title": "Baby Gym",
+        "description": "Use a baby gym or create one with toys and objects suspended above your baby. This encourages them to reach and bat at the toys, promoting motor skills and hand-eye coordination.",
+        "imageUrls": []
+      },
+      {
+        "id": 18,
+        "title": "Face-to-Face Interaction",
+        "description": "Make eye contact with your baby, smile, and talk to them. Babies are naturally drawn to human faces, and this interaction helps in their social and emotional development.",
+        "imageUrls": []
+      },
+      {
+        "id": 19,
+        "title": "Baby Bouncer",
+        "description": "Place your baby in a safe baby bouncer or a swing with appropriate support. The gentle bouncing motion can be entertaining and provide a change of scenery.",
+        "imageUrls": []
+      },
+      {
+        "id": 20,
+        "title": "Cuddle and Coo",
+        "description": "Spend quality time cuddling, holding, and talking softly to your baby. This helps them feel secure and loved.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 3,
+    "activities": [
+      {
+        "id": 31,
+        "title": "Tummy Time",
+        "description": "Place your baby on their tummy for short periods several times a day. This helps strengthen their neck, back, and shoulder muscles and promotes motor development.",
+        "imageUrls": []
+      },
+      {
+        "id": 32,
+        "title": "High-Contrast Cards",
+        "description": "Use black and white cards or toys with high-contrast patterns to stimulate your baby's vision. Hold them up close and slowly move them side to side.",
+        "imageUrls": []
+      },
+      {
+        "id": 33,
+        "title": "Sensory Play",
+        "description": "Provide your baby with textured toys, such as rattles or soft fabrics with different textures. Let them explore the different sensations through touch.",
+        "imageUrls": []
+      },
+      {
+        "id": 34,
+        "title": "Baby Gym",
+        "description": "Set up a baby gym with hanging toys and mirrors. This encourages reaching, batting, and grasping movements, enhancing hand-eye coordination.",
+        "imageUrls": []
+      },
+      {
+        "id": 35,
+        "title": "Singing and Nursery Rhymes",
+        "description": "Sing lullabies, nursery rhymes, and simple songs to your baby. This aids language development, rhythm perception, and bonding.",
+        "imageUrls": []
+      },
+      {
+        "id": 36,
+        "title": "Mirror Play",
+        "description": "Hold your baby in front of a mirror and make funny faces or imitate their facial expressions. This helps develop self-awareness and social skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 37,
+        "title": "Baby Massage",
+        "description": "Gently massage your baby's limbs using baby-safe oil. This promotes relaxation, stimulates circulation, and strengthens the caregiver-baby bond.",
+        "imageUrls": []
+      },
+      {
+        "id": 38,
+        "title": "Listening to Music",
+        "description": "Play soft, calming music or instrumental melodies to soothe and entertain your baby. This can help with auditory stimulation and emotional development.",
+        "imageUrls": []
+      },
+      {
+        "id": 39,
+        "title": "Puppet Shows",
+        "description": "Use soft puppets or stuffed animals to create simple puppet shows. Move them slowly and make gentle sounds to captivate your baby's attention and encourage visual tracking.",
+        "imageUrls": []
+      },
+      {
+        "id": 40,
+        "title": "Baby Books",
+        "description": "Introduce board books with large, colorful pictures and textures. Read to your baby, pointing out objects and using different voices to engage their senses and language skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 41,
+        "title": "Baby Yoga",
+        "description": "Explore gentle stretches and movements with your baby, such as leg cycling or gentle twists. This can enhance flexibility, body awareness, and bonding.",
+        "imageUrls": []
+      },
+      {
+        "id": 42,
+        "title": "Water Play",
+        "description": "Fill a small baby tub with warm water (a few inches deep) and let your baby splash and kick their legs. Always supervise closely and ensure water temperature is safe.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 4,
+    "activities": [
+      {
+        "id": 43,
+        "title": "Tummy Time",
+        "description": "Place your baby on their tummy on a soft mat or blanket for short periods, gradually increasing the duration. This helps strengthen their neck, shoulder, and arm muscles, promoting head control and preparing them for rolling and crawling.",
+        "imageUrls": []
+      },
+      {
+        "id": 44,
+        "title": "Sensory Play",
+        "description": "Fill a shallow container with various textures, such as fabric swatches, soft toys, and textured balls. Encourage your baby to explore the objects with their hands and mouth, stimulating their senses and developing their fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 45,
+        "title": "Mirror Play",
+        "description": "Sit in front of a baby-safe mirror with your little one. Make funny faces, smile, and talk to them while pointing at their reflection. This activity promotes self-awareness and encourages social interaction.",
+        "imageUrls": []
+      },
+      {
+        "id": 46,
+        "title": "Rattle Time",
+        "description": "Offer your baby a colorful rattle or a toy that makes noise. Shake it gently and let them grasp it. This helps improve hand-eye coordination and introduces cause-and-effect relationships.",
+        "imageUrls": []
+      },
+      {
+        "id": 47,
+        "title": "Baby Massage",
+        "description": "Use baby-safe oil or lotion to gently massage your baby's arms, legs, and back. This promotes bonding, relaxation, and body awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 48,
+        "title": "Singing and Rhymes",
+        "description": "Sing lullabies or nursery rhymes to your baby. Use gestures and facial expressions to engage them in the songs. This activity enhances language development, rhythm perception, and emotional bonding.",
+        "imageUrls": []
+      },
+      {
+        "id": 49,
+        "title": "Texture Exploration",
+        "description": "Provide your baby with a variety of safe objects with different textures, such as a soft cloth, a smooth plastic toy, or a rubber ball. Allow them to touch and explore the objects, aiding their sensory development.",
+        "imageUrls": []
+      },
+      {
+        "id": 50,
+        "title": "Story Time",
+        "description": "Choose colorful and interactive board books for babies. Read aloud to your little one, pointing at the pictures and using different voices for different characters. This helps develop language skills and fosters a love for books.",
+        "imageUrls": []
+      },
+      {
+        "id": 51,
+        "title": "Dancing Together",
+        "description": "Hold your baby securely and sway gently to music. Dance around the room, singing along or humming tunes. This activity promotes body awareness, rhythm perception, and emotional bonding.",
+        "imageUrls": []
+      },
+      {
+        "id": 52,
+        "title": "Baby Gym",
+        "description": "Set up a baby gym with hanging toys and a soft mat. Encourage your baby to reach, grasp, and bat at the toys, enhancing their gross and fine motor skills.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 5,
+    "activities": [
+      {
+        "id": 53,
+        "title": "Tummy Time",
+        "description": "Place your baby on their tummy for short periods while they are awake and supervised. This activity helps strengthen their neck and shoulder muscles, promotes motor skills development, and prepares them for crawling.",
+        "imageUrls": []
+      },
+      {
+        "id": 54,
+        "title": "Sensory Play",
+        "description": "Provide your baby with sensory experiences such as soft toys, textured objects, or different fabrics to explore. Let them touch, feel, and experience different sensations, which helps develop their sensory perception and fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 55,
+        "title": "Mirror Play",
+        "description": "Hold a mirror in front of your baby and let them observe themselves. They will enjoy looking at their reflection, which helps develop their self-awareness and visual tracking skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 56,
+        "title": "Singing and Nursery Rhymes",
+        "description": "Sing songs and recite nursery rhymes to your baby. The rhythm, melody, and repetition help stimulate their language development, cognitive skills, and emotional bonding.",
+        "imageUrls": []
+      },
+      {
+        "id": 57,
+        "title": "Reading",
+        "description": "Read age-appropriate books with simple pictures and large, colorful illustrations to your baby. Point out objects and make sounds to engage their attention and develop their cognitive and language skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 58,
+        "title": "Baby Gym",
+        "description": "Set up a baby gym or playmat with hanging toys and objects that your baby can reach out to and interact with. This helps improve their hand-eye coordination, grasping skills, and overall physical development.",
+        "imageUrls": []
+      },
+      {
+        "id": 59,
+        "title": "Peekaboo",
+        "description": "Play peekaboo with your baby by hiding your face behind your hands or a blanket and then revealing it with a big smile. This game promotes social interaction, object permanence, and emotional bonding.",
+        "imageUrls": []
+      },
+      {
+        "id": 60,
+        "title": "Baby Massage",
+        "description": "Gently massage your baby's arms, legs, back, and tummy using baby-safe oil. This soothing activity helps relax your baby, enhances their sensory awareness, and improves their circulation.",
+        "imageUrls": []
+      },
+      {
+        "id": 61,
+        "title": "Musical Toys",
+        "description": "Provide your baby with toys that produce sounds, such as rattles, musical instruments, or toys with buttons to press. This encourages their sensory exploration, hand-eye coordination, and auditory development.",
+        "imageUrls": []
+      },
+      {
+        "id": 62,
+        "title": "Baby Sign Language",
+        "description": "Introduce simple gestures or signs for common words like \"milk,\" \"eat,\" or \"more.\" This helps your baby communicate before they can speak and enhances their language development and comprehension.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 6,
+    "activities": [
+      {
+        "id": 63,
+        "title": "Tummy Time",
+        "description": "Place your baby on their tummy for short periods while they are awake and supervised. This helps strengthen their neck and upper body muscles, promoting head control and preparing them for crawling.",
+        "imageUrls": []
+      },
+      {
+        "id": 64,
+        "title": "Sensory Play",
+        "description": "Create a sensory bin by filling a shallow container with a variety of safe objects with different textures, such as soft fabric, plastic balls, or textured toys. Allow your baby to explore and touch the items, stimulating their senses and enhancing their cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 65,
+        "title": "Mirror Play",
+        "description": "Position a baby-safe mirror at your baby's eye level and encourage them to look at themselves. This activity promotes self-recognition, social interaction, and visual tracking skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 66,
+        "title": "Baby Gym",
+        "description": "Set up a baby gym with hanging toys and objects that your baby can reach for and bat at. This helps improve their hand-eye coordination, motor skills, and grasping abilities.",
+        "imageUrls": []
+      },
+      {
+        "id": 67,
+        "title": "Peek-a-Boo",
+        "description": "Play the classic game of peek-a-boo with your baby, using a blanket or your hands to cover and uncover your face. This activity enhances their understanding of object permanence and builds anticipation.",
+        "imageUrls": []
+      },
+      {
+        "id": 68,
+        "title": "Reading Books",
+        "description": "Choose age-appropriate board books with colorful pictures and simple text. Read aloud to your baby, pointing at the pictures and engaging them in the story. This promotes language development and introduces them to the joy of reading.",
+        "imageUrls": []
+      },
+      {
+        "id": 69,
+        "title": "Music and Movement",
+        "description": "Play soft music and gently dance or sway with your baby in your arms. You can also provide age-appropriate musical toys for your baby to explore, promoting their auditory senses and coordination.",
+        "imageUrls": []
+      },
+      {
+        "id": 70,
+        "title": "Baby Sign Language",
+        "description": "Introduce simple sign language gestures like 'more,' 'milk,' or 'eat' during daily routines. This can help facilitate early communication and reduce frustration when they are unable to verbalize their needs.",
+        "imageUrls": []
+      },
+      {
+        "id": 71,
+        "title": "Texture Exploration",
+        "description": "Offer various safe and soft objects with different textures for your baby to explore through touch, such as fabrics, textured toys, or household items like a soft brush or sponge. This helps stimulate their tactile senses and encourages sensory development.",
+        "imageUrls": []
+      },
+      {
+        "id": 72,
+        "title": "Water Play",
+        "description": "Fill a shallow basin or bathtub with a few inches of water and allow your baby to splash and play with safe water toys. Supervise them closely and ensure the water is at a suitable temperature. Water play promotes sensory exploration, hand-eye coordination, and provides a soothing experience.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 7,
+    "activities": [
+      {
+        "id": 73,
+        "title": "Crawling Obstacle Course",
+        "description": "Create a safe crawling area by arranging soft pillows, cushions, and tunnels. Encourage your baby to navigate through the course, which helps develop their gross motor skills, coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 74,
+        "title": "Sensory Bags",
+        "description": "Fill sealable plastic bags with various sensory materials such as colored gel, water beads, or cooked pasta. Seal the bags tightly and let your baby squish and explore the different textures. This activity stimulates their tactile senses and promotes sensory integration.",
+        "imageUrls": []
+      },
+      {
+        "id": 75,
+        "title": "Ball Rolling",
+        "description": "Sit facing your baby and gently roll a soft ball back and forth between the two of you. This activity enhances their hand-eye coordination, tracking skills, and promotes social interaction.",
+        "imageUrls": []
+      },
+      {
+        "id": 76,
+        "title": "Banging and Stacking",
+        "description": "Offer safe toys that can be banged together or stacked. Encourage your baby to explore different ways of playing with them, such as hitting them, stacking them, or knocking them down. This promotes fine motor skills, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 77,
+        "title": "Nursery Rhymes and Fingerplays",
+        "description": "Sing nursery rhymes or perform fingerplays like 'This Little Piggy' or 'Itsy Bitsy Spider' with accompanying hand movements. This activity supports language development, rhythm awareness, and fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 78,
+        "title": "Introduction to Solid Foods",
+        "description": "Consult with your pediatrician and introduce appropriate solid foods to your baby's diet, such as mashed fruits and vegetables. Encourage self-feeding with safe utensils or baby-friendly finger foods. This promotes sensory exploration, hand-eye coordination, and fosters independence.",
+        "imageUrls": []
+      },
+      {
+        "id": 79,
+        "title": "Mirror Play with Props",
+        "description": "Sit in front of a mirror with your baby and provide safe props such as hats, scarves, or soft toys. Encourage your baby to interact with their reflection and play with the props. This activity enhances self-recognition, social engagement, and fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 80,
+        "title": "Rolling and Catching",
+        "description": "Show your baby how to roll or toss a soft ball toward them. Encourage them to reach out and try to catch it. This activity promotes hand-eye coordination, visual tracking, and gross motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 81,
+        "title": "Baby Massage",
+        "description": "Gently massage your baby's arms, legs, back, and tummy using baby-safe oil or lotion. This promotes bonding, relaxation, and sensory stimulation.",
+        "imageUrls": []
+      },
+      {
+        "id": 82,
+        "title": "Water Play with Cups",
+        "description": "Fill a basin or bathtub with a few inches of water and provide your baby with different-sized cups or containers to play with. Let them pour water from one container to another, encouraging hand-eye coordination, sensory exploration, and cause-and-effect understanding.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 8,
+    "activities": [
+      {
+        "id": 83,
+        "title": "Crawling Obstacle Course",
+        "description": "Create a safe crawling course using pillows, soft play mats, and tunnels. Encourage your baby to crawl through and explore the course, which helps develop their motor skills, coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 84,
+        "title": "Ball Roll",
+        "description": "Sit facing your baby and roll a soft ball back and forth between you. This activity improves their hand-eye coordination, tracking skills, and encourages reaching and grasping.",
+        "imageUrls": []
+      },
+      {
+        "id": 85,
+        "title": "Stack and Knock Down",
+        "description": "Provide soft blocks or cups and show your baby how to stack them. Encourage them to knock down the towers, promoting fine motor skills, hand-eye coordination, and cause-and-effect understanding.",
+        "imageUrls": []
+      },
+      {
+        "id": 86,
+        "title": "Baby Dance Party",
+        "description": "Play lively music and dance with your baby, holding them in your arms or letting them stand with support. This activity enhances their gross motor skills, rhythm perception, and creates a joyful bonding experience.",
+        "imageUrls": []
+      },
+      {
+        "id": 87,
+        "title": "Pat-a-Cake",
+        "description": "Sing the \"Pat-a-Cake\" nursery rhyme while clapping your baby's hands together. This supports their fine motor skills, coordination, and introduces them to simple gestures and rhymes.",
+        "imageUrls": []
+      },
+      {
+        "id": 88,
+        "title": "Object Hide and Seek",
+        "description": "Hide a toy under a blanket or behind your back, then reveal it and encourage your baby to find it. This game promotes object permanence, problem-solving skills, and strengthens their cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 89,
+        "title": "Exploration Basket",
+        "description": "Fill a basket with safe objects of different textures, shapes, and sizes. Allow your baby to explore the items, encouraging sensory development, hand-eye coordination, and fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 90,
+        "title": "Water Play with Cups",
+        "description": "Provide a basin or bathtub filled with a few inches of water and offer your baby child-safe cups and containers to fill, pour, and stack. This activity promotes sensory exploration, hand-eye coordination, and understanding of volume concepts.",
+        "imageUrls": []
+      },
+      {
+        "id": 91,
+        "title": "Baby Sign Language",
+        "description": "Continue introducing new signs for common words such as \"drink,\" \"food,\" or \"play.\" Encourage your baby to imitate the signs and reinforce their early communication skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 92,
+        "title": "Shape Sorter",
+        "description": "Introduce a shape sorter toy with simple shapes. Guide your baby in placing the shapes into the corresponding holes, enhancing their problem-solving skills, fine motor skills, and shape recognition.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 9,
+    "activities": [
+      {
+        "id": 93,
+        "title": "Crawling Obstacle Course",
+        "description": "Create a safe crawling course using cushions, pillows, and soft tunnels. Encourage your baby to crawl through the course, promoting their motor skills, coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 94,
+        "title": "Pincer Grasp Practice",
+        "description": "Offer small, baby-safe objects like cereal pieces or soft blocks and encourage your baby to pick them up using their thumb and index finger. This activity helps develop their fine motor skills and pincer grasp.",
+        "imageUrls": []
+      },
+      {
+        "id": 95,
+        "title": "Stacking and Nesting",
+        "description": "Provide stacking cups or blocks that your baby can stack or nest inside one another. This enhances their hand-eye coordination, spatial awareness, and problem-solving abilities.",
+        "imageUrls": []
+      },
+      {
+        "id": 96,
+        "title": "Ball Rolling",
+        "description": "Place a soft ball in front of your baby and encourage them to roll it back and forth between the two of you. This activity promotes their hand-eye coordination, motor skills, and social interaction.",
+        "imageUrls": []
+      },
+      {
+        "id": 97,
+        "title": "Mirror Play and Pointing",
+        "description": "Sit in front of a mirror with your baby and point to various body parts while naming them. Encourage your baby to imitate you and point to their own body parts. This supports their self-awareness, language development, and fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 98,
+        "title": "Sensory Bags",
+        "description": "Fill a ziplock bag with colorful, textured materials like rice, gel, or soft fabric. Seal the bag tightly and let your baby explore the contents by squeezing, pressing, and feeling the textures. This stimulates their senses and encourages tactile exploration.",
+        "imageUrls": []
+      },
+      {
+        "id": 99,
+        "title": "Shape Sorting",
+        "description": "Provide a shape sorter toy with different shapes that fit into corresponding holes. Help your baby identify the shapes and guide them in placing them correctly. This activity enhances their cognitive skills, hand-eye coordination, and problem-solving abilities.",
+        "imageUrls": []
+      },
+      {
+        "id": 100,
+        "title": "Water Play with Cups",
+        "description": "Fill a basin with a small amount of water and offer your baby different-sized cups or containers to pour and fill. Supervise them closely and ensure a safe water temperature. This activity promotes hand-eye coordination, sensory exploration, and understanding of volume concepts.",
+        "imageUrls": []
+      },
+      {
+        "id": 101,
+        "title": "Action Songs and Dancing",
+        "description": "Play upbeat songs and engage in simple dance moves with your baby. Clap their hands, encourage them to stomp their feet, or wave their arms. This activity promotes gross motor skills, coordination, and rhythm.",
+        "imageUrls": []
+      },
+      {
+        "id": 102,
+        "title": "Pat-a-Cake and Fingerplays",
+        "description": "Sing nursery rhymes like \"Pat-a-Cake\" and engage your baby in fingerplays like \"This Little Piggy.\" This activity helps develop their finger dexterity, language skills, and introduces them to rhymes and rhythms.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "activities": [
+      {
+        "id": 103,
+        "title": "Crawling Obstacle Course",
+        "description": "Create a safe and soft obstacle course using cushions, pillows, and tunnels. Encourage your baby to crawl through the course, promoting their motor skills, spatial awareness, and problem-solving abilities.",
+        "imageUrls": []
+      },
+      {
+        "id": 104,
+        "title": "Stacking Blocks",
+        "description": "Provide soft, lightweight blocks for your baby to stack and knock down. This activity improves hand-eye coordination, fine motor skills, and introduces basic concepts like cause and effect.",
+        "imageUrls": []
+      },
+      {
+        "id": 105,
+        "title": "Shape Sorter",
+        "description": "Offer a shape sorter toy with large, easy-to-grasp shapes. Encourage your baby to place the shapes through the corresponding holes, enhancing their hand-eye coordination, cognitive skills, and understanding of shapes.",
+        "imageUrls": []
+      },
+      {
+        "id": 106,
+        "title": "Musical Instruments",
+        "description": "Introduce your baby to age-appropriate musical instruments like maracas, drums, or a xylophone. Let them explore the sounds and encourage them to create their own music, stimulating their auditory senses and fostering creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 107,
+        "title": "Ball Play",
+        "description": "Provide soft and lightweight balls for your baby to roll, throw, and catch. This activity improves gross motor skills, hand-eye coordination, and introduces basic concepts like object manipulation and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 108,
+        "title": "Water Play with Cups",
+        "description": "Fill a basin or bathtub with a small amount of water and offer different-sized cups or containers. Show your baby how to pour and transfer water, promoting fine motor skills, sensory exploration, and understanding of volume concepts.",
+        "imageUrls": []
+      },
+      {
+        "id": 109,
+        "title": "Puzzles",
+        "description": "Offer simple puzzles with large knobs or pegs that your baby can manipulate and place in the correct slots. This activity enhances problem-solving skills, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 110,
+        "title": "Pretend Play",
+        "description": "Encourage imaginative play by providing your baby with safe props like toy phones, dolls, or kitchen utensils. Engage in pretend conversations or play-act daily routines, fostering language development, social skills, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 111,
+        "title": "Dancing",
+        "description": "Play lively music and dance together with your baby. Encourage them to move their body, clap their hands, or stomp their feet. This activity promotes gross motor skills, coordination, and rhythmic awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 112,
+        "title": "Outdoor Exploration",
+        "description": "Take your baby for walks in a stroller or let them explore a safe outdoor environment. Point out nature's sights and sounds, such as birds, flowers, or leaves, stimulating their senses, curiosity, and fostering a connection with the natural world.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 11,
+    "activities": [
+      {
+        "id": 113,
+        "title": "Crawling Obstacle Course",
+        "description": "Create a safe crawling course using pillows, cushions, and tunnels. Encourage your baby to crawl through and explore the obstacles, which promotes gross motor skills, spatial awareness, and problem-solving.",
+        "imageUrls": []
+      },
+      {
+        "id": 114,
+        "title": "Stacking Blocks",
+        "description": "Provide soft, colorful blocks that your baby can stack and knock down. This activity helps improve hand-eye coordination, fine motor skills, and introduces the concept of cause and effect.",
+        "imageUrls": []
+      },
+      {
+        "id": 115,
+        "title": "Ball Rolling",
+        "description": "Sit on the floor facing your baby and roll a soft ball back and forth. This encourages their hand-eye coordination, tracking skills, and strengthens their arm muscles.",
+        "imageUrls": []
+      },
+      {
+        "id": 116,
+        "title": "Shape Sorter",
+        "description": "Offer a shape sorting toy with various shapes and corresponding holes. Help your baby place the shapes into the correct holes, fostering problem-solving skills, hand dexterity, and shape recognition.",
+        "imageUrls": []
+      },
+      {
+        "id": 117,
+        "title": "Walking with Support",
+        "description": "If your baby is starting to pull up and stand with support, encourage them to take steps while holding onto furniture or your hands. This promotes balance, leg strength, and prepares them for independent walking.",
+        "imageUrls": []
+      },
+      {
+        "id": 118,
+        "title": "Outdoor Exploration",
+        "description": "Take your baby outside for a nature walk or a trip to the park. Let them touch leaves, feel different textures, and observe their surroundings. This helps stimulate their senses, promotes curiosity, and encourages language development through describing what they see.",
+        "imageUrls": []
+      },
+      {
+        "id": 119,
+        "title": "Finger Foods",
+        "description": "Introduce finger foods appropriate for their age, such as small pieces of soft fruits, cooked vegetables, or small crackers. This activity supports their self-feeding skills, fine motor development, and encourages independence.",
+        "imageUrls": []
+      },
+      {
+        "id": 120,
+        "title": "Nursery Rhymes and Songs",
+        "description": "Sing and recite nursery rhymes or action songs with your baby. Use gestures and movements to engage them and encourage imitation. This supports language development, memory skills, and promotes social interaction.",
+        "imageUrls": []
+      },
+      {
+        "id": 121,
+        "title": "Puzzles",
+        "description": "Provide simple puzzles with large, chunky pieces that your baby can manipulate and fit into corresponding spaces. This activity enhances problem-solving skills, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 122,
+        "title": "Water Play with Containers",
+        "description": "Fill a basin or bathtub with water and offer various sized containers for your baby to pour and transfer water. Supervise closely to ensure water safety. Water play promotes fine motor skills, hand-eye coordination, and sensory exploration.",
+        "imageUrls": []
+      }
+    ]
+  }
+]
+
+
