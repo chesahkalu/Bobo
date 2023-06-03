@@ -725,7 +725,74 @@
         "imageUrls": []
       }
     ]
+  },
+  {
+    "month": 12,
+    "activities": [
+      {
+        "id": 123,
+        "title": "Block Stacking",
+        "description": "Provide large, soft building blocks and encourage your baby to stack them. This activity promotes fine motor skills, hand-eye coordination, and problem-solving abilities as they learn to balance and stack the blocks.",
+        "imageUrls": []
+      },
+      {
+        "id": 124,
+        "title": "Shape Sorting",
+        "description": "Introduce a shape sorter toy with different shapes that fit through corresponding holes. Encourage your baby to match the shapes to the correct holes, enhancing their cognitive skills, hand-eye coordination, and understanding of spatial relationships.",
+        "imageUrls": []
+      },
+      {
+        "id": 125,
+        "title": "Crawling Obstacle Course",
+        "description": "Set up a safe crawling course using pillows, cushions, and tunnels. This activity promotes gross motor skills, balance, coordination, and spatial awareness as your baby navigates through the obstacles.",
+        "imageUrls": []
+      },
+      {
+        "id": 126,
+        "title": "Ball Rolling",
+        "description": "Provide soft, lightweight balls and show your baby how to roll them back and forth. This helps improve their hand-eye coordination, gross motor skills, and social interaction as they engage in play with you.",
+        "imageUrls": []
+      },
+      {
+        "id": 127,
+        "title": "Pretend Play",
+        "description": "Offer age-appropriate pretend play toys like dolls, toy kitchen sets, or toy phones. Encourage your baby to engage in imaginative play, imitating everyday activities and developing their creativity and language skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 128,
+        "title": "Puzzles",
+        "description": "Introduce simple puzzles with large, chunky pieces that your baby can manipulate and fit together. This activity supports fine motor skills, problem-solving abilities, and cognitive development as they learn to match shapes and complete the puzzles.",
+        "imageUrls": []
+      },
+      {
+        "id": 129,
+        "title": "Water Play",
+        "description": "Fill a basin or bathtub with water and provide cups, spoons, and containers for pouring and scooping. This sensory activity promotes fine motor skills, hand-eye coordination, and understanding of cause and effect.",
+        "imageUrls": []
+      },
+      {
+        "id": 130,
+        "title": "Dancing and Singing",
+        "description": "Play lively music and dance together with your baby. Sing songs, incorporate hand movements, and encourage your baby to imitate your actions. This activity enhances gross motor skills, rhythm, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 131,
+        "title": "Outdoor Exploration",
+        "description": "Take your baby for supervised outdoor adventures to explore nature. Let them touch leaves, feel grass, and observe the environment. Outdoor exploration stimulates their senses, encourages physical activity, and introduces them to the natural world.",
+        "imageUrls": []
+      },
+      {
+        "id": 132,
+        "title": "Building Forts",
+        "description": "Create a fort or tent using blankets, pillows, and chairs. Encourage your baby to crawl inside and explore the space. This activity fosters imagination, spatial awareness, and sensory exploration.",
+        "imageUrls": []
+      }
+    ]
   }
+]
+
 ]
 
 
