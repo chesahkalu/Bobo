@@ -790,9 +790,84 @@
         "imageUrls": []
       }
     ]
+  },
+  {
+    "month": 13,
+    "activities": [
+      {
+        "id": 133,
+        "title": "Walking Practice",
+        "description": "Encourage your baby to walk independently by holding their hands or offering a push toy. Gradually reduce support as they gain confidence and balance, helping them strengthen their leg muscles and develop gross motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 134,
+        "title": "Stacking Blocks",
+        "description": "Provide soft or lightweight blocks that your baby can stack and knock down. This activity promotes fine motor skills, hand-eye coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 135,
+        "title": "Shape Sorters",
+        "description": "Offer a shape sorter toy with various shapes and corresponding holes. Encourage your baby to place the shapes into the correct holes, promoting problem-solving skills, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 136,
+        "title": "Finger Painting",
+        "description": "Set up a safe space for finger painting using non-toxic, washable paint or edible alternatives like mashed fruits or yogurts. Let your baby explore the textures and colors, supporting their sensory development, creativity, and fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 137,
+        "title": "Pretend Play",
+        "description": "Provide your baby with child-safe dolls, stuffed animals, or play kitchen utensils. Encourage imaginative play by demonstrating actions and making sounds, allowing your baby to imitate and engage in pretend scenarios.",
+        "imageUrls": []
+      },
+      {
+        "id": 138,
+        "title": "Dancing and Singing",
+        "description": "Play lively music and dance together with your baby. Sing songs with simple actions and encourage them to copy the movements, promoting coordination, rhythm, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 139,
+        "title": "Puzzles",
+        "description": "Introduce simple puzzles with large, chunky pieces. Encourage your baby to manipulate and fit the pieces into their respective places, fostering problem-solving skills, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 140,
+        "title": "Water Sensory Play",
+        "description": "Fill a basin or container with water and provide cups, spoons, and bath toys for your baby to explore and play. Engaging in water play enhances their sensory experience, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 141,
+        "title": "Outdoor Exploration",
+        "description": "Take your baby outdoors to explore nature. Allow them to touch leaves, grass, and other safe natural objects, stimulating their senses and fostering a connection with the environment.",
+        "imageUrls": []
+      },
+      {
+        "id": 142,
+        "title": "Building Towers",
+        "description": "Offer large, soft building blocks that your baby can stack to create towers. Encourage them to knock them down and rebuild, promoting fine motor skills, hand-eye coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 143,
+        "title": "Language Development",
+        "description": "Engage in frequent conversations with your baby, describing objects, actions, and emotions. Introduce new words, read books together, and respond to their attempts at communication, supporting their language development and understanding.",
+        "imageUrls": []
+      },
+      {
+        "id": 144,
+        "title": "Simple Obstacle Course",
+        "description": "Set up a safe and age-appropriate obstacle course using cushions, tunnels, or low play equipment. Encourage your baby to crawl, climb, and explore the course, promoting physical development, coordination, and spatial awareness.",
+        "imageUrls": []
+      }
+    ]
   }
-]
-
 ]
 
 
