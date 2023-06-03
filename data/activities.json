@@ -1577,7 +1577,84 @@
         "imageUrls": []
       }
     ]
-  }  
+  },
+  {
+    "month": 24,
+    "activities": [
+      {
+        "id": 255,
+        "title": "Pretend Play",
+        "description": "Encourage your toddler to engage in pretend play by providing them with props like costumes, play kitchen sets, or doctor kits. This type of play enhances imagination, social skills, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 256,
+        "title": "Sorting and Matching",
+        "description": "Introduce activities that involve sorting and matching, such as sorting toys by color, shape, or size, or matching puzzle pieces. This helps develop cognitive skills, problem-solving abilities, and categorization.",
+        "imageUrls": []
+      },
+      {
+        "id": 257,
+        "title": "Building with Blocks",
+        "description": "Provide building blocks or construction toys and encourage your toddler to build towers, houses, or other structures. This activity promotes fine motor skills, spatial awareness, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 258,
+        "title": "Art and Craft",
+        "description": "Offer age-appropriate art supplies like crayons, washable markers, and child-safe scissors. Let your toddler engage in drawing, coloring, cutting, and pasting activities. This fosters creativity, fine motor skills, and self-expression.",
+        "imageUrls": []
+      },
+      {
+        "id": 259,
+        "title": "Gross Motor Play",
+        "description": "Set up a mini obstacle course in your home or backyard, including activities like crawling under a table, jumping over cushions, or climbing over soft structures. This helps develop gross motor skills, balance, coordination, and body awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 260,
+        "title": "Sensory Play",
+        "description": "Create sensory bins with materials like rice, sand, or water, and add small toys, scoops, and containers. This activity provides tactile stimulation, encourages exploration, and enhances fine motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 261,
+        "title": "Shape and Color Hunts",
+        "description": "Hide objects of different shapes or colors around the house and ask your toddler to find them. This activity improves visual discrimination, attention to detail, and reinforces shape and color recognition.",
+        "imageUrls": []
+      },
+      {
+        "id": 262,
+        "title": "Nature Walks",
+        "description": "Take your toddler for short walks in nature, such as a park or garden. Point out different plants, flowers, and animals, encouraging them to observe and interact with their surroundings. This fosters a love for nature, curiosity, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 263,
+        "title": "Cooking or Baking Together",
+        "description": "Involve your toddler in simple cooking or baking activities, such as mixing ingredients or decorating cookies. This promotes sensory exploration, fine motor skills, following instructions, and a sense of accomplishment.",
+        "imageUrls": []
+      },
+      {
+        "id": 264,
+        "title": "Music and Movement",
+        "description": "Play different genres of music and encourage your toddler to dance, jump, or clap along. Sing songs together, teaching them simple nursery rhymes or action songs. This activity promotes coordination, rhythm, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 265,
+        "title": "Shape Puzzles",
+        "description": "Offer puzzles with more complex shapes and more pieces for your toddler to assemble. This challenges their problem-solving abilities, fine motor skills, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 266,
+        "title": "Storytelling and Role-playing",
+        "description": "Use puppets, stuffed animals, or dolls to tell stories or act out scenarios. Encourage your toddler to participate and use their imagination to create their own narratives. This activity enhances language skills, creativity, and social interaction.",
+        "imageUrls": []
+      }
+    ]
+  } 
 ]
 
 
