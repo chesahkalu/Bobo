@@ -1500,7 +1500,84 @@
         "imageUrls": []
       }
     ]
-  }
+  },
+  {
+    "month": 23,
+    "activities": [
+      {
+        "id": 243,
+        "title": "Simple Puzzles",
+        "description": "Introduce puzzles with more pieces and complexity. Choose puzzles with their favorite characters, animals, or vehicles. This activity promotes problem-solving skills, fine motor control, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 244,
+        "title": "Playdough Fun",
+        "description": "Provide your toddler with playdough and child-friendly tools like plastic cookie cutters, rolling pins, and molds. Encourage them to create shapes, animals, or objects using their imagination. This activity promotes fine motor skills, creativity, and sensory exploration.",
+        "imageUrls": []
+      },
+      {
+        "id": 245,
+        "title": "Pretend Tea Party",
+        "description": "Set up a pretend tea party with toy cups, saucers, and plates. Encourage your toddler to pour 'tea' and serve imaginary guests. This activity enhances imagination, social skills, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 246,
+        "title": "Sensory Bin Exploration",
+        "description": "Create a sensory bin with various materials like colored rice, kinetic sand, or dried pasta. Add small toys or objects for your toddler to discover, manipulate, and sort. This activity stimulates sensory exploration, fine motor skills, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 247,
+        "title": "Gross Motor Obstacle Course",
+        "description": "Set up a mini obstacle course in your living room or backyard using pillows, cones, tunnels, and stepping stones. Encourage your toddler to climb, crawl, jump, and balance. This activity promotes gross motor skills, coordination, and physical confidence.",
+        "imageUrls": []
+      },
+      {
+        "id": 248,
+        "title": "Name That Object",
+        "description": "Show your toddler various objects or flashcards with pictures and encourage them to name each one. This activity enhances vocabulary, object recognition, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 249,
+        "title": "Building Towers",
+        "description": "Provide building blocks or Duplo bricks for your toddler to build towers or structures. Encourage them to experiment with different shapes and sizes. This activity improves hand-eye coordination, spatial awareness, and problem-solving skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 250,
+        "title": "Nature Walk",
+        "description": "Take your toddler for a walk in a park or garden. Encourage them to explore nature, collect leaves or rocks, and point out different plants and animals. This activity promotes sensory awareness, appreciation for the environment, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 251,
+        "title": "Musical Instruments",
+        "description": "Offer simple musical instruments like drums, shakers, or xylophones for your toddler to experiment with. Encourage them to make sounds, follow rhythms, and express themselves through music. This activity enhances sensory development, coordination, and auditory skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 252,
+        "title": "Cooking Together",
+        "description": "Involve your toddler in simple cooking tasks, such as stirring, pouring, or decorating cookies. This activity promotes fine motor skills, following instructions, and fosters a sense of independence.",
+        "imageUrls": []
+      },
+      {
+        "id": 253,
+        "title": "Watercolor Painting",
+        "description": "Provide your toddler with large sheets of paper and watercolor paints. Encourage them to explore different colors, patterns, and textures. This activity promotes creativity, fine motor skills, and artistic expression.",
+        "imageUrls": []
+      },
+      {
+        "id": 254,
+        "title": "Follow the Leader",
+        "description": "Engage in a game of 'Follow the Leader' where you take turns leading different movements like jumping, spinning, or clapping. This activity improves coordination, listening skills, and promotes physical activity.",
+        "imageUrls": []
+      }
+    ]
+  }  
 ]
 
 
