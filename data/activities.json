@@ -1269,7 +1269,161 @@
         "imageUrls": []
       }
     ]
-  }
+  },
+  {
+    "month": 20,
+    "activities": [
+      {
+        "id": 207,
+        "title": "Sensory Bin Exploration",
+        "description": "Create sensory bins filled with materials like rice, sand, or kinetic sand. Add small toys, spoons, and cups for your toddler to manipulate and explore. This activity encourages sensory exploration, fine motor skills, and imaginative play.",
+        "imageUrls": []
+      },
+      {
+        "id": 208,
+        "title": "Sticker Play",
+        "description": "Provide your toddler with stickers and a large sheet of paper. Encourage them to peel off the stickers and place them on the paper or create simple sticker scenes. This activity enhances fine motor skills, hand-eye coordination, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 209,
+        "title": "Shape Puzzles",
+        "description": "Introduce shape puzzles with multiple pieces that your toddler can fit together. Start with simpler puzzles and gradually increase the complexity. This activity promotes problem-solving skills, shape recognition, and hand-eye coordination.",
+        "imageUrls": []
+      },
+      {
+        "id": 210,
+        "title": "Pretend Play with Props",
+        "description": "Set up a pretend play area with props like a kitchen set, doctor's kit, or toolset. Encourage your toddler to engage in imaginative play, imitating real-life activities. Pretend play enhances creativity, language development, and social skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 211,
+        "title": "Ball Play",
+        "description": "Engage in rolling, throwing, and kicking soft balls with your toddler. This activity improves gross motor skills, hand-eye coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 212,
+        "title": "Art Exploration",
+        "description": "Provide your toddler with crayons, markers, or washable paints along with large sheets of paper. Encourage them to create their own artwork through scribbling, coloring, or finger painting. This activity promotes creativity, fine motor skills, and self-expression.",
+        "imageUrls": []
+      },
+      {
+        "id": 213,
+        "title": "Shape and Color Sorting Games",
+        "description": "Use colored blocks or objects in different shapes and ask your toddler to sort them into corresponding containers. This activity enhances shape and color recognition, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 214,
+        "title": "Playdough Fun",
+        "description": "Offer playdough to your toddler and let them explore and manipulate it with their hands. Provide cookie cutters, rolling pins, and other playdough tools for added engagement. Playdough play enhances fine motor skills, sensory exploration, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 215,
+        "title": "Music and Movement",
+        "description": "Play music and encourage your toddler to dance, jump, or march to the rhythm. Sing songs and engage them in simple actions like clapping or stomping. This activity promotes coordination, rhythm, and language skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 216,
+        "title": "Nature Walks",
+        "description": "Take your toddler for short walks in a park or garden, allowing them to explore and observe nature. Point out different trees, flowers, or animals you encounter, stimulating their curiosity and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 217,
+        "title": "Building with Blocks",
+        "description": "Provide your toddler with a variety of building blocks or interlocking blocks to create towers, bridges, or structures. This activity promotes spatial awareness, problem-solving skills, and fine motor development.",
+        "imageUrls": []
+      },
+      {
+        "id": 218,
+        "title": "Matching Games",
+        "description": "Use cards or objects with matching pairs, such as animal cards or socks. Help your toddler find the matching pairs and encourage them to make connections. Matching games support cognitive development, memory skills, and visual discrimination.",
+        "imageUrls": []
+      }
+    ]
+  },
+  {
+    "month": 21,
+    "activities": [
+      {
+        "id": 219,
+        "title": "Sensory Baking",
+        "description": "Involve your toddler in simple baking activities, like mixing ingredients, stirring, or adding toppings. Let them explore the textures, smells, and tastes of the ingredients. This activity encourages sensory exploration, fine motor skills, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 220,
+        "title": "Playdough Fun",
+        "description": "Provide your toddler with playdough and child-safe tools like cookie cutters, rolling pins, or plastic utensils. Let them squish, mold, and create different shapes. This activity improves fine motor skills, hand-eye coordination, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 221,
+        "title": "Nature Walk",
+        "description": "Take your toddler for a nature walk in a nearby park or garden. Encourage them to observe and point out different plants, flowers, insects, or animals. This activity promotes sensory exploration, language development, and an appreciation for the environment.",
+        "imageUrls": []
+      },
+      {
+        "id": 222,
+        "title": "Pretend Picnic",
+        "description": "Arrange a pretend picnic with your toddler using play food, plates, and a blanket. Let them practice feeding their stuffed animals or dolls. This activity enhances imaginative play, social skills, and fine motor coordination.",
+        "imageUrls": []
+      },
+      {
+        "id": 223,
+        "title": "Color Scavenger Hunt",
+        "description": "Create a color scavenger hunt by hiding objects of different colors around the house. Give your toddler a color prompt and ask them to find objects matching that color. This activity improves color recognition, attention to detail, and problem-solving skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 224,
+        "title": "Action Songs",
+        "description": "Teach your toddler action songs with simple movements, such as \"Head, Shoulders, Knees, and Toes\" or \"If You're Happy and You Know It.\" Sing and perform the actions together. This activity promotes gross motor skills, coordination, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 225,
+        "title": "Shape Puzzles",
+        "description": "Offer puzzles with various shapes and encourage your toddler to match the pieces to the corresponding holes. Start with puzzles that have large, easy-to-grasp pieces. This activity enhances problem-solving skills, hand-eye coordination, and shape recognition.",
+        "imageUrls": []
+      },
+      {
+        "id": 226,
+        "title": "Balloon Play",
+        "description": "Inflate a balloon and engage your toddler in gentle play by bouncing, tossing, or rolling the balloon together. Ensure close supervision and use larger balloons to avoid choking hazards. This activity promotes gross motor skills, coordination, and sensory stimulation.",
+        "imageUrls": []
+      },
+      {
+        "id": 227,
+        "title": "Sorting and Matching",
+        "description": "Provide objects like buttons, blocks, or toys in different colors or shapes. Ask your toddler to sort and match them based on specific attributes. This activity improves categorization skills, fine motor control, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 228,
+        "title": "Obstacle Course",
+        "description": "Create a simple indoor or outdoor obstacle course using cushions, tunnels, cones, or stepping stones. Encourage your toddler to climb, crawl, and balance through the course. This activity enhances gross motor skills, coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 229,
+        "title": "Watercolor Painting",
+        "description": "Set up a watercolor painting activity for your toddler using large brushes, watercolors, and paper. Let them explore and create their own artwork. This activity improves fine motor skills, hand-eye coordination, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 230,
+        "title": "Storytelling with Puppets",
+        "description": "Use finger puppets or simple hand puppets to act out stories or songs. Encourage your toddler to join in and make up their own stories. This activity enhances language development, imagination, and social skills.",
+        "imageUrls": []
+      }
+    ]
+  }  
 ]
 
 
