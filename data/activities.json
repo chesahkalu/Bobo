@@ -1423,7 +1423,85 @@
         "imageUrls": []
       }
     ]
-  }  
+  },
+  {
+    "month": 22,
+    "activities": [
+      {
+        "id": 231,
+        "title": "Sensory Play with Playdough",
+        "description": "Provide your toddler with non-toxic playdough and various tools like cookie cutters, rolling pins, and plastic utensils. This activity enhances sensory exploration, fine motor skills, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 232,
+        "title": "Scavenger Hunt",
+        "description": "Hide toys or objects around a room and provide your toddler with a basket or bag to collect them. Encourage them to find and collect the items, which promotes object recognition, problem-solving, and gross motor skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 233,
+        "title": "Simple Puzzles",
+        "description": "Offer puzzles with larger and more complex pieces that your toddler can manipulate and assemble. Look for puzzles with familiar objects, animals, or shapes. This activity develops problem-solving, fine motor skills, and cognitive abilities.",
+        "imageUrls": []
+      },
+      {
+        "id": 234,
+        "title": "Ball Play",
+        "description": "Introduce soft balls of various sizes and encourage your toddler to roll, toss, and kick them. This activity improves gross motor skills, hand-eye coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 235,
+        "title": "Sorting and Matching",
+        "description": "Provide objects or toys that can be sorted or matched based on attributes such as color, shape, or size. Encourage your toddler to sort and match them accordingly. This activity enhances cognitive development, classification skills, and logical thinking.",
+        "imageUrls": []
+      },
+      {
+        "id": 236,
+        "title": "Indoor Obstacle Course",
+        "description": "Create a safe indoor obstacle course using pillows, cushions, tunnels, and low obstacles. Guide your toddler through the course, encouraging crawling, climbing, and balance. This activity promotes gross motor skills, coordination, and physical confidence.",
+        "imageUrls": []
+      },
+      {
+        "id": 237,
+        "title": "Name and Picture Recognition",
+        "description": "Show your toddler family photos or pictures of familiar objects. Help them identify and name the people or objects in the pictures. This activity supports language development, visual recognition, and personal connection.",
+        "imageUrls": []
+      },
+      {
+        "id": 238,
+        "title": "Art Exploration",
+        "description": "Offer various art supplies such as washable markers, crayons, finger paints, and stickers. Allow your toddler to experiment and create their own artwork. This activity enhances creativity, fine motor skills, and self-expression.",
+        "imageUrls": []
+      },
+      {
+        "id": 239,
+        "title": "Nature Walk",
+        "description": "Take your toddler on a nature walk, exploring a local park or garden. Point out different plants, flowers, or animals, and engage them in conversation about their observations. This activity encourages sensory exploration, language development, and a connection with the natural world.",
+        "imageUrls": []
+      },
+      {
+        "id": 240,
+        "title": "Simon Says",
+        "description": "Play a simple game of Simon Says, giving your toddler commands like \"touch your nose\" or \"jump up and down.\" This activity promotes listening skills, body awareness, and following instructions.",
+        "imageUrls": []
+      },
+      {
+        "id": 241,
+        "title": "Music and Movement",
+        "description": "Play lively music and encourage your toddler to dance, clap, or stomp their feet. Provide musical instruments like shakers or drums for them to explore and make sounds. Music and movement activities enhance coordination, rhythm, and self-expression.",
+        "imageUrls": []
+      },
+      {
+        "id": 242,
+        "title": "Daily Chores",
+        "description": "Involve your toddler in simple age-appropriate chores like putting away toys, wiping surfaces, or sorting laundry. This promotes a sense of responsibility, fine motor skills, and a feeling of contributing to the family.",
+        "imageUrls": []
+      }
+    ]
+  }
+  
 ]
 
 
