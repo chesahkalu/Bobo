@@ -1192,6 +1192,83 @@
         "imageUrls": []
       }
     ]
+  },
+  {
+    "month": 19,
+    "activities": [
+      {
+        "id": 195,
+        "title": "Block Stacking",
+        "description": "Provide soft building blocks or large Lego-style blocks for your toddler to stack and knock down. This activity promotes hand-eye coordination, spatial awareness, and problem-solving skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 196,
+        "title": "Shape Sorting",
+        "description": "Introduce shape sorting toys or puzzles where your child can match shapes to corresponding holes. This activity enhances fine motor skills, cognitive development, and shape recognition.",
+        "imageUrls": []
+      },
+      {
+        "id": 197,
+        "title": "Pretend Play",
+        "description": "Encourage your toddler to engage in pretend play by providing them with toys like dolls, kitchen sets, or stuffed animals. This type of play enhances imagination, social skills, and language development.",
+        "imageUrls": []
+      },
+      {
+        "id": 198,
+        "title": "Gross Motor Play",
+        "description": "Set up an obstacle course using cushions, tunnels, or low stools for your toddler to crawl over, under, and through. This helps develop their gross motor skills, balance, and coordination.",
+        "imageUrls": []
+      },
+      {
+        "id": 199,
+        "title": "Sensory Bins",
+        "description": "Create a sensory bin filled with materials like rice, pasta, or dried beans. Add spoons, cups, or small toys for your toddler to explore and manipulate. This activity stimulates sensory exploration, fine motor skills, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 200,
+        "title": "Color Sorting",
+        "description": "Provide a variety of objects or toys in different colors and ask your toddler to sort them into corresponding baskets or containers. This activity enhances color recognition, hand-eye coordination, and categorization skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 201,
+        "title": "Outdoor Play",
+        "description": "Take your toddler to the park or backyard to engage in activities like swinging, sliding, or playing in a sandbox. Outdoor play promotes gross motor skills, social interaction, and an appreciation for nature.",
+        "imageUrls": []
+      },
+      {
+        "id": 202,
+        "title": "Puzzles",
+        "description": "Offer age-appropriate puzzles with large pieces for your toddler to assemble. Start with simple puzzles featuring familiar objects or animals. Puzzles encourage problem-solving, hand-eye coordination, and cognitive development.",
+        "imageUrls": []
+      },
+      {
+        "id": 203,
+        "title": "Dancing and Singing",
+        "description": "Play lively music and encourage your toddler to dance and sing along. This activity promotes physical coordination, rhythm, and language skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 204,
+        "title": "Water Play",
+        "description": "Fill a basin with water and provide your toddler with cups, funnels, and bath toys for pouring and splashing. Water play improves fine motor skills, hand-eye coordination, and sensory exploration.",
+        "imageUrls": []
+      },
+      {
+        "id": 205,
+        "title": "Reading Time",
+        "description": "Read books with engaging stories and colorful illustrations to your toddler. Encourage them to point at objects and repeat simple words. Reading promotes language development, vocabulary expansion, and a love for books.",
+        "imageUrls": []
+      },
+      {
+        "id": 206,
+        "title": "Shape Tracing",
+        "description": "Draw basic shapes on a large piece of paper and have your toddler trace them using crayons or markers. This activity enhances hand-eye coordination, fine motor skills, and shape recognition.",
+        "imageUrls": []
+      }
+    ]
   }
 ]
 
