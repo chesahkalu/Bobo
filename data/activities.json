@@ -867,6 +867,71 @@
         "imageUrls": []
       }
     ]
+  },
+  {
+    "month": 14,
+    "activities": [
+      {
+        "id": 145,
+        "title": "Stack and Sort",
+        "description": "Provide your baby with blocks or cups that they can stack and sort. Encourage them to build towers or nest the cups inside one another, promoting their fine motor skills, hand-eye coordination, and problem-solving abilities.",
+        "imageUrls": []
+      },
+      {
+        "id": 146,
+        "title": "Shape Sorters",
+        "description": "Introduce shape sorters that have different openings for various shapes. Encourage your baby to match the shapes with the corresponding holes, helping them refine their hand-eye coordination, problem-solving skills, and shape recognition.",
+        "imageUrls": []
+      },
+      {
+        "id": 147,
+        "title": "Pretend Play",
+        "description": "Set up a pretend play area with toy kitchen items, dolls, or stuffed animals. Encourage your baby to engage in imaginative play by pretending to cook, feed the dolls, or have tea parties. This activity enhances their creativity, language development, and social skills.",
+        "imageUrls": []
+      },
+      {
+        "id": 148,
+        "title": "Scribbling and Drawing",
+        "description": "Offer large crayons or washable markers and a large sheet of paper or a coloring book. Let your baby experiment with making marks and scribbles, promoting their fine motor skills and creativity. Ensure the art supplies are safe and non-toxic.",
+        "imageUrls": []
+      },
+      {
+        "id": 149,
+        "title": "Puzzles",
+        "description": "Introduce simple puzzles with large pieces and vibrant pictures. Help your baby complete the puzzles and gradually encourage them to do it independently. This activity enhances their problem-solving abilities, hand-eye coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 150,
+        "title": "Outdoor Exploration",
+        "description": "Take your baby outdoors to explore nature. Allow them to touch leaves, feel grass, and observe insects or animals (from a safe distance). Outdoor play promotes sensory development, curiosity, and physical activity.",
+        "imageUrls": []
+      },
+      {
+        "id": 151,
+        "title": "Ball Play",
+        "description": "Provide soft, lightweight balls for your baby to roll, toss, or kick. Engage in a gentle back-and-forth ball play, promoting their gross motor skills, hand-eye coordination, and spatial awareness.",
+        "imageUrls": []
+      },
+      {
+        "id": 152,
+        "title": "Dancing and Movement",
+        "description": "Play music and encourage your baby to dance and move to the rhythm. Show them simple dance moves or copy their movements, promoting their physical coordination, self-expression, and sense of rhythm.",
+        "imageUrls": []
+      },
+      {
+        "id": 153,
+        "title": "Water and Sand Play",
+        "description": "Set up a water table or a shallow container with sand. Offer cups, spoons, and toys for your baby to pour, scoop, and explore. Water and sand play enhance sensory development, fine motor skills, and creativity.",
+        "imageUrls": []
+      },
+      {
+        "id": 154,
+        "title": "Simple Obstacle Course",
+        "description": "Create a simple obstacle course using pillows, cushions, and other safe objects. Encourage your baby to crawl under, climb over, and maneuver through the obstacles, promoting their gross motor skills, balance, and coordination.",
+        "imageUrls": []
+      }
+    ]
   }
 ]
 
