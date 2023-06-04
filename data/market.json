@@ -19,6 +19,24 @@
         "image": "https://example.com/baby-car-seat.jpg"
       },
       {
+        "name": "Philips AVENT Baby Bottle Sterilizer",
+        "description": "An electric steam sterilizer to keep your baby's bottles and accessories hygienically clean.",
+        "price": "₦6,800",
+        "discount": "15%",
+        "category": "Feeding",
+        "brand": "Philips AVENT",
+        "image": "https://example.com/philips-avent-bottle-sterilizer.jpg"
+      },
+      {
+        "name": "Fisher-Price Baby Gym",
+        "description": "A colorful and interactive baby gym that promotes sensory development and play.",
+        "price": "₦3,500",
+        "discount": null,
+        "category": "Toys",
+        "brand": "Fisher-Price",
+        "image": "https://example.com/fisher-price-baby-gym.jpg"
+      },
+      {
         "name": "Baby Chair",
         "description": "A comfortable and sturdy chair specially designed for babies.",
         "price": "₦12,000",
