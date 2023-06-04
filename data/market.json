@@ -6,6 +6,7 @@
         "price": "₦8,500",
         "discount": "10%",
         "category": "Hygiene",
+        "brand": "ABC Company",
         "image": "https://example.com/baby-bath.jpg"
       },
       {
@@ -14,6 +15,7 @@
         "price": "₦45,000",
         "discount": "20%",
         "category": "Safety",
+        "brand": "XYZ Brand",
         "image": "https://example.com/baby-car-seat.jpg"
       },
       {
@@ -22,6 +24,7 @@
         "price": "₦12,000",
         "discount": null,
         "category": "Nursery",
+        "brand": "123 Manufacturing",
         "image": "https://example.com/baby-chair.jpg"
       },
       {
@@ -30,7 +33,98 @@
         "price": "₦5,500",
         "discount": null,
         "category": "Clothing",
+        "brand": "Cozy Comforts",
         "image": "https://example.com/baby-blanket.jpg"
+      },
+      {
+        "name": "Baby Bottle Set",
+        "description": "A set of 4 BPA-free baby bottles with anti-colic vents.",
+        "price": "₦3,500",
+        "discount": null,
+        "category": "Feeding",
+        "brand": "LittleMunch",
+        "image": "https://example.com/baby-bottle-set.jpg"
+      },
+      {
+        "name": "Diaper Bag Backpack",
+        "description": "A spacious and durable backpack with multiple compartments for organizing baby essentials.",
+        "price": "₦7,800",
+        "discount": "15%",
+        "category": "Diapering",
+        "brand": "HappyTots",
+        "image": "https://example.com/diaper-bag-backpack.jpg"
+      },
+      {
+        "name": "Baby Activity Gym",
+        "description": "A colorful and interactive activity gym for baby's sensory development.",
+        "price": "₦6,200",
+        "discount": null,
+        "category": "Education",
+        "brand": "PlaySmart",
+        "image": "https://example.com/baby-activity-gym.jpg"
+      },
+      {
+        "name": "Cotton Baby Onesies",
+        "description": "A pack of 5 soft and breathable cotton onesies for everyday wear.",
+        "price": "₦2,500",
+        "discount": "10%",
+        "category": "Clothing",
+        "brand": "CuteCubs",
+        "image": "https://example.com/cotton-baby-onesies.jpg"
+      },
+      {
+        "name": "Plush Stuffed Animal",
+        "description": "A cuddly and huggable plush stuffed animal toy for your little one.",
+        "price": "₦1,200",
+        "discount": null,
+        "category": "Toys",
+        "brand": "SnuggleBuddies",
+        "image": "https://example.com/plush-stuffed-animal.jpg"
+      },
+      {
+        "name": "Baby Shampoo and Wash",
+        "description": "A gentle and tear-free shampoo and wash for your baby's bath time.",
+        "price": "₦1,800",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "PureBaby",
+        "image": "https://example.com/baby-shampoo-wash.jpg"
+      },
+      {
+        "name": "Baby Safety Gate",
+        "description": "A sturdy safety gate to restrict access to certain areas and ensure your baby's safety.",
+        "price": "₦9,500",
+        "discount": null,
+        "category": "Safety",
+        "brand": "SafeGuard",
+        "image": "https://example.com/baby-safety-gate.jpg"
+      },
+      {
+        "name": "Nursery Bedding Set",
+        "description": "A complete bedding set with a crib sheet, quilt, and crib skirt for your baby's nursery.",
+        "price": "₦12,900",
+        "discount": "20%",
+        "category": "Nursery",
+        "brand": "DreamyNest",
+        "image": "https://example.com/nursery-bedding-set.jpg"
+      },
+      {
+        "name": "Baby Nasal Aspirator",
+        "description": "A gentle and effective nasal aspirator for clearing baby's congested nose.",
+        "price": "₦1,100",
+        "discount": null,
+        "category": "Essential",
+        "brand": "ClearAir",
+        "image": "https://example.com/baby-nasal-aspirator.jpg"
+      },
+      {
+        "name": "Baby Teether Set",
+        "description": "A set of 3 BPA-free silicone teethers to soothe baby's teething discomfort.",
+        "price": "₦1,400",
+        "discount": "10%",
+        "category": "Toys",
+        "brand": "HappyTeeth",
+        "image": "https://example.com/baby-teether-set.jpg"
       }
     ]
   }
