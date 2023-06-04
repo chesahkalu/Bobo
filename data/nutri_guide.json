@@ -45,6 +45,42 @@
         "title": "12-18 Month-Old Munchkins and Appropriate Nutrition",
         "imageUrls": [],
         "content": "The period between 12 to 18 months is an exciting time for babies as they continue to grow and explore new tastes and textures. Providing appropriate nutrition during this stage is crucial to support their rapid development. Here are some essential nutritional advice to help guide you in nourishing your 12-18 month-old baby:\n\nOffer a Variety of Foods:\nIntroduce a wide range of nutrient-rich foods to expose your baby to different flavors, textures, and nutrients. Include fruits, vegetables, whole grains, lean proteins, and dairy products in their meals. This helps establish a diverse and balanced diet.\n\nEmphasize Whole Foods:\nOpt for whole foods over processed or packaged ones. Whole foods are minimally processed and retain their natural nutritional value. Include whole grains like brown rice, quinoa, and whole wheat bread to provide essential nutrients and fiber.\n\nContinue Breastfeeding or Formula Feeding:\nBreast milk or formula remains an important source of nutrition for your baby. It should continue to be their primary source of milk until at least 12 months of age. Aim for breastfeeding or formula feeding at least 3-4 times a day, or as per your baby's needs.\n\nEncourage Self-Feeding:\nAllow your baby to explore self-feeding and develop their fine motor skills. Offer appropriate finger foods that are soft and easy to chew, such as small pieces of cooked vegetables, soft fruits, or bite-sized cheese cubes. This promotes independence and encourages healthy eating habits.\n\nLimit Added Sugar and Salt:\nMinimize the consumption of foods and beverages with added sugar and salt. Excessive intake of sugar can lead to tooth decay and the development of a preference for overly sweet foods. Use herbs and spices instead of salt to season meals and avoid adding sugar to their drinks and foods.\n\nServe Healthy Snacks:\nOffer nutritious snacks between meals to keep your baby energized and satisfied. Opt for fresh fruits, vegetable sticks with hummus, yogurt, or whole grain crackers. Avoid sugary snacks, processed foods, and candies.\n\nMonitor Iron Intake:\nIron is vital for your baby's growth and brain development. Include iron-rich foods such as lean meats, poultry, fish, fortified cereals, beans, and tofu in their meals. Serve these foods alongside vitamin C-rich options like citrus fruits or tomatoes to enhance iron absorption.\n\nEnsure Adequate Hydration:\nOffer water in a sippy cup or small amounts from a regular cup during mealtimes and throughout the day. This helps maintain hydration and supports the proper functioning of their bodies. Avoid sugary drinks and limit the consumption of fruit juices, if offered.\n\nSeek Professional Guidance:\nConsult with a pediatrician or a registered dietitian for personalized nutritional advice for your baby. They can assess your baby's growth and development, address any specific concerns, and provide guidance on meeting their unique nutritional needs.\n\nBe Mindful of Choking Hazards:\nPay attention to food textures and sizes to reduce the risk of choking. Cut foods into small, manageable pieces, avoid hard or round foods, and closely supervise your baby during mealtimes. It is important to create a safe eating environment.\n\nRemember that every child develops at their own pace, and their appetite and preferences may vary. Stay attuned to your baby's cues, encourage a positive mealtime atmosphere, and promote a balanced diet to support their growth and development during this exciting stage." 
+    },
+    {
+        "title": "Drafting Diet Plan",
+        "imageUrls": [],
+        "content": "As toddlers grow and develop, their nutritional needs evolve significantly. A well-planned diet is essential during this critical stage to provide them with the necessary nutrients for optimal growth and development. Designing a balanced and wholesome diet plan for toddlers involves understanding their unique nutritional requirements and incorporating a variety of foods. Here, we explore the importance of a thoughtfully crafted diet plan and provide an example to guide you:\n\nImportance of a Diet Plan for Toddlers:\n\n- Nutrient Needs: Toddlers require a balanced intake of macronutrients (carbohydrates, proteins, and fats) as well as essential micronutrients (vitamins and minerals) to support their rapid growth and cognitive development.\n\n- Energy Requirements: Toddlers have higher energy needs compared to infants, which necessitates appropriate calorie intake from nutrient-dense foods to fuel their active lifestyles.\n\n- Establishing Healthy Habits: Introducing a wide range of foods and flavors during the toddler years helps shape their taste preferences, establish healthy eating habits, and reduce the risk of developing picky eating tendencies.\n\n- Brain Development: Proper nutrition plays a crucial role in supporting brain development, cognitive function, and overall learning abilities in toddlers.\n\n- Disease Prevention: A balanced diet helps strengthen the immune system, reduces the risk of chronic diseases, and promotes overall health and well-being in the long run.\n\nRemember to adjust portion sizes and food choices based on your toddler's preferences, dietary restrictions, and any guidance from healthcare professionals. They can help address any concerns, provide additional nutritional advice, and ensure your toddler's diet plan supports their healthy growth and development.\n\nIt's essential to offer a variety of foods from different food groups, including fruits, vegetables, whole grains, lean proteins, and dairy products, while limiting added sugars and salts. Encourage self-feeding and involve your toddler in meal planning and preparation when appropriate.\n\nBy prioritizing a well-designed diet plan, you are nurturing your toddler's health and setting them up for a lifetime of good eating habits and overall well-being.",
+        "table": [
+          {
+            "headers": ["Time", "Breakfast", "Morning Snack", "Lunch", "Afternoon Snack", "Dinner", "Evening Snack"],
+            "rows": [
+              {
+                "Time": "",
+                "Breakfast": "Oatmeal made with whole oats, cooked in milk\nSliced bananas\nSprinkle of ground cinnamon\nSoft scrambled eggs\nSmall cup of water or milk"
+              },
+              {
+                "Time": "Morning Snack",
+                "Morning Snack": "Sliced apple or pear\nWhole grain crackers\nPlain yogurt or small cheese cube"
+              },
+              {
+                "Time": "Lunch",
+                "Lunch": "Whole grain bread or wrap with mashed avocado and turkey\nSteamed broccoli florets\nCherry tomatoes"
+              },
+              {
+                "Time": "Afternoon Snack",
+                "Afternoon Snack": "Carrot sticks or cucumber slices with hummus dip\nSmall handful of unsalted nuts or seeds"
+              },
+              {
+                "Time": "Dinner",
+                "Dinner": "Baked salmon fillet\nQuinoa or brown rice\nSteamed green beans\nCooked sweet potato cubes"
+              },
+              {
+                "Time": "Evening Snack",
+                "Evening Snack": "Sliced strawberries or grapes\nWhole grain cereal with milk\nPlain rice cakes"
+              }
+            ]
+          }
+        ]
     }
   ]
 }
