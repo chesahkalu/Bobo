@@ -125,7 +125,169 @@
         "category": "Toys",
         "brand": "HappyTeeth",
         "image": "https://example.com/baby-teether-set.jpg"
+      },
+      {
+        "name": "Baby Bibs",
+        "description": "A pack of 5 waterproof and stain-resistant bibs to keep your baby clean during mealtime.",
+        "price": "₦1,200",
+        "discount": null,
+        "category": "Feeding",
+        "brand": "Bibsters",
+        "image": "https://example.com/baby-bibs.jpg"
+      },
+      {
+        "name": "Baby Diapers",
+        "description": "A pack of 40 disposable diapers with a wetness indicator and breathable outer cover.",
+        "price": "₦2,500",
+        "discount": null,
+        "category": "Diapering",
+        "brand": "DryBottoms",
+        "image": "https://example.com/baby-diapers.jpg"
+      },
+      {
+        "name": "Baby Play Mat",
+        "description": "A soft and cushioned play mat for your baby's tummy time and playtime.",
+        "price": "₦2,800",
+        "discount": null,
+        "category": "Education",
+        "brand": "PlaySmart",
+        "image": "https://example.com/baby-play-mat.jpg"
+      },
+      {
+        "name": "Baby Bottle Warmer",
+        "description": "A portable and easy-to-use bottle warmer for heating baby's milk and food.",
+        "price": "₦2,200",
+        "discount": null,
+        "category": "Feeding",
+        "brand": "WarmNSnug",
+        "image": "https://example.com/baby-bottle-warmer.jpg"
+      },
+      {
+        "name": "Baby Carrier",
+        "description": "A comfortable and ergonomic baby carrier for carrying your baby around.",
+        "price": "₦4,500",
+        "discount": null,
+        "category": "Essential",
+        "brand": "BabyBuddy",
+        "image": "https://example.com/baby-carrier.jpg"
+      },
+      {
+        "name": "Baby Wipes",
+        "description": "A pack of 80 unscented and hypoallergenic baby wipes for cleaning baby's skin.",
+        "price": "₦1,200",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "PureBaby",
+        "image": "https://example.com/baby-wipes.jpg"
+      },
+      {
+        "name": "Baby Lotion",
+        "description": "A gentle and moisturizing lotion for your baby's delicate skin.",
+        "price": "₦2,500",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "Pears",
+        "image": "https://example.com/pears-baby-lotion.jpg"
+      },
+      {
+        "name": "Baby Shampoo",
+        "description": "A mild and tear-free shampoo that keeps your baby's hair soft and shiny.",
+        "price": "₦1,800",
+        "discount": "15%",
+        "category": "Hygiene",
+        "brand": "Johnson's",
+        "image": "https://example.com/johnsons-baby-shampoo.jpg"
+      },
+      {
+        "name": "Baby Walker",
+        "description": "An interactive and sturdy baby walker to support your little one's first steps.",
+        "price": "₦9,500",
+        "discount": null,
+        "category": "Toys",
+        "brand": "Smart Kids",
+        "image": "https://example.com/smart-kids-baby-walker.jpg"
+      },
+      {
+        "name": "Baby Bottle Set",
+        "description": "A set of BPA-free baby bottles with natural nipples for easy feeding.",
+        "price": "₦6,200",
+        "discount": "10%",
+        "category": "Feeding",
+        "brand": "Philips AVENT",
+        "image": "https://example.com/philips-avent-baby-bottle.jpg"
+      },
+      {
+        "name": "Baby Swing",
+        "description": "A soothing and entertaining baby swing with multiple swing speeds and music.",
+        "price": "₦18,000",
+        "discount": null,
+        "category": "Toys",
+        "brand": "Fisher-Price",
+        "image": "https://example.com/fisher-price-baby-swing.jpg"
+      },
+      {
+        "name": "Cerelac Baby Cereal",
+        "description": "A nutritious baby cereal with essential vitamins and minerals.",
+        "price": "₦1,200",
+        "discount": null,
+        "category": "Feeding",
+        "brand": "Nestle",
+        "image": "https://example.com/nestle-cerelac-baby-cereal.jpg"
+      },
+      {
+        "name": "Baby Oil",
+        "description": "A mild and gentle oil for moisturizing and massaging your baby's skin.",
+        "price": "₦1,500",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "Johnson's",
+        "image": "https://example.com/johnsons-baby-oil.jpg"
+      },
+      {
+        "name": "Baby Play Mat",
+        "description": "A colorful and soft play mat with stimulating designs for your baby's playtime.",
+        "price": "₦3,800",
+        "discount": "20%",
+        "category": "Toys",
+        "brand": "Smart Kids",
+        "image": "https://example.com/smart-kids-baby-play-mat.jpg"
+      },
+      {
+        "name": "Baby Soap",
+        "description": "A mild and gentle soap bar that cleanses and moisturizes your baby's skin.",
+        "price": "₦800",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "Pears",
+        "image": "https://example.com/pears-baby-soap.jpg"
+      },
+      {
+        "name": "Baby Bouncer",
+        "description": "A comfortable and soothing baby bouncer with calming vibrations and interactive toys.",
+        "price": "₦5,500",
+        "discount": "15%",
+        "category": "Toys",
+        "brand": "Fisher-Price",
+        "image": "https://example.com/fisher-price-baby-bouncer.jpg"
+      },
+      {
+        "name": "Pears Baby Wipes",
+        "description": "Gentle and fragrance-free baby wipes for quick and convenient cleaning.",
+        "price": "₦1,200",
+        "discount": "10%",
+        "category": "Hygiene",
+        "brand": "Pears",
+        "image": "https://example.com/pears-baby-wipes.jpg"
+      },
+      {
+        "name": "Johnsons Baby Powder",
+        "description": "A silky-smooth baby powder that keeps your baby's skin dry and comfortable.",
+        "price": "₦900",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "Johnson's",
+        "image": "https://example.com/johnsons-baby-powder.jpg"
       }
     ]
-  }
+}
   
