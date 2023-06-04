@@ -7,7 +7,7 @@
         "author": "Vic Kay"
     },
     {
-        "title": "The Power of Supportive Parenting: Nurturing Your Child's Growth and Well-being",
+        "title": "The Power of Supportive Parenting",
         "introduction": "Parenting is an extraordinary journey filled with joy, challenges, and endless opportunities for personal growth. As parents, one of the most important roles we play is being a pillar of support for our children. By providing a nurturing and supportive environment, we can empower them to navigate life's ups and downs with confidence and resilience. In this article, we will explore the essence of being a supportive parent and provide some valuable advice on how to cultivate a strong and positive parent-child relationship.",
         "points": [
         "Unconditional Love: The foundation of supportive parenting is unconditional love. Showing your child that you love and accept them for who they are helps build a deep sense of security and self-worth.",
@@ -22,7 +22,7 @@
         "author": "Mayen Kalu"
     },
     {
-        "title": "The Importance of Self-Care for Parents: Tips and Advice for a Healthy and Balanced Life",
+        "title": "Self-Care for Parents: Tips for a Healthy and Balanced Life",
         "imageUrls": [],
         "content": [
           "Parenting is a rewarding and fulfilling journey, but it can also be physically and emotionally demanding. Amidst the busyness of taking care of children, managing household tasks, and juggling various responsibilities, parents often neglect their own well-being. However, it is crucial for parents to prioritize self-care in order to maintain a healthy and balanced life. Taking care of oneself not only benefits parents individually but also enhances their ability to be present and supportive for their children. In this article, we will explore the importance of self-care for parents and provide some valuable advice and tips to help parents prioritize their own well-being.",
@@ -90,6 +90,24 @@
           "Conclusion:\nPlay is an integral part of early childhood development..."
         ],
         "author": "Mayen Kalu"
-    }       
-  ]
+    },
+    {
+        "title": "Understanding Delayed Development: Causes, Signs, and Support",
+        "imageUrls": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg"
+        ],
+        "content": [
+          "Introduction:\nEvery child follows a unique developmental path...",
+          "1. Causes of Delayed Development:\nDelayed development can stem from...",
+          "2. Signs of Delayed Development:\nRecognizing the signs of delayed development...",
+          "3. Seeking Professional Evaluation:\nIf you suspect that your child...",
+          "4. Creating a Supportive Environment:\nA nurturing and supportive environment...",
+          "5. Collaboration with Professionals and Support Networks:\nParents and caregivers...",
+          "6. Embracing Progress and Celebrating Achievements:\nSupporting a child with delayed development...",
+          "Conclusion:\nDelayed development is a complex and multifaceted issue..."
+        ],
+        "author": "Jane Smith"
+      }
+    ]
 }
