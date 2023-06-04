@@ -19,7 +19,7 @@
         "image": "https://example.com/baby-car-seat.jpg"
       },
       {
-        "name": "Philips AVENT Baby Bottle Sterilizer",
+        "name": "Baby Bottle Sterilizer",
         "description": "An electric steam sterilizer to keep your baby's bottles and accessories hygienically clean.",
         "price": "₦6,800",
         "discount": "15%",
@@ -28,7 +28,7 @@
         "image": "https://example.com/philips-avent-bottle-sterilizer.jpg"
       },
       {
-        "name": "Fisher-Price Baby Gym",
+        "name": "Baby Gym",
         "description": "A colorful and interactive baby gym that promotes sensory development and play.",
         "price": "₦3,500",
         "discount": null,
@@ -44,6 +44,33 @@
         "category": "Nursery",
         "brand": "123 Manufacturing",
         "image": "https://example.com/baby-chair.jpg"
+      },
+      {
+        "name": "Cerelac Rice",
+        "description": "A nutritious rice-based baby cereal with added vitamins and minerals.",
+        "price": "₦1,200",
+        "discount": null,
+        "category": "Feeding",
+        "brand": "Nestle",
+        "image": "https://example.com/nestle-cerelac-rice.jpg"
+      },
+      {
+        "name": "Baby Lotion",
+        "description": "A gentle and moisturizing lotion for your baby's delicate skin.",
+        "price": "₦1,500",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "Johnson's",
+        "image": "https://example.com/johnsons-baby-lotion.jpg"
+      },
+      {
+        "name": "Baby Rattle Set",
+        "description": "A set of colorful and stimulating baby rattles to enhance motor skills and sensory development.",
+        "price": "₦1,200",
+        "discount": "20%",
+        "category": "Toys",
+        "brand": "Smart Kids",
+        "image": "https://example.com/smart-kids-baby-rattles.jpg"
       },
       {
         "name": "Baby Blanket",
@@ -62,6 +89,24 @@
         "category": "Feeding",
         "brand": "LittleMunch",
         "image": "https://example.com/baby-bottle-set.jpg"
+      },
+      {
+        "name": "Baby Shampoo",
+        "description": "A mild and tear-free shampoo that keeps your baby's hair soft and clean.",
+        "price": "₦1,200",
+        "discount": null,
+        "category": "Hygiene",
+        "brand": "Pears",
+        "image": "https://example.com/pears-baby-shampoo.jpg"
+      },
+      {
+        "name": "Baby Bouncer",
+        "description": "A comfortable and entertaining baby bouncer with soothing vibrations and playful toys.",
+        "price": "₦4,800",
+        "discount": "10%",
+        "category": "Toys",
+        "brand": "Fisher-Price",
+        "image": "https://example.com/fisher-price-baby-bouncer.jpg"
       },
       {
         "name": "Diaper Bag Backpack",
