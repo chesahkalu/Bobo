@@ -1,0 +1,37 @@
+{
+    "products": [
+      {
+        "name": "Baby Bath",
+        "description": "A comfortable and safe baby bath for your little one.",
+        "price": "₦8,500",
+        "discount": "10%",
+        "category": "Hygiene",
+        "image": "https://example.com/baby-bath.jpg"
+      },
+      {
+        "name": "Baby Car Seat",
+        "description": "A high-quality car seat designed to keep your baby safe during car rides.",
+        "price": "₦45,000",
+        "discount": "20%",
+        "category": "Safety",
+        "image": "https://example.com/baby-car-seat.jpg"
+      },
+      {
+        "name": "Baby Chair",
+        "description": "A comfortable and sturdy chair specially designed for babies.",
+        "price": "₦12,000",
+        "discount": null,
+        "category": "Nursery",
+        "image": "https://example.com/baby-chair.jpg"
+      },
+      {
+        "name": "Baby Blanket",
+        "description": "A soft and cozy blanket to keep your baby warm and snug.",
+        "price": "₦5,500",
+        "discount": null,
+        "category": "Clothing",
+        "image": "https://example.com/baby-blanket.jpg"
+      }
+    ]
+  }
+  
