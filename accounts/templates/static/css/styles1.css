@@ -1,0 +1,387 @@
+/* Global Styles */
+html {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;  
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+/* Top Bar */
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    border-top: 6px solid #ccc;
+    background-color: #33053f;
+    overflow: hidden;
+}
+
+.bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+
+.bar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.bar a.index {
+    display: none;
+}
+
+.bar-item {
+    padding: 8px 16px;
+    display: block;
+    width: auto;
+    border: none;
+    outline: 0;
+}
+
+.bar-item:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.purple {
+    background-color: #33053f;
+    color: white;
+}
+
+.purple:hover {
+    background-color: thistle;
+    color: black;
+}
+
+/* Navbar on small screens */
+#navDemo .bar-item {
+    display: inline-block;
+    position: absolute;
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+    font-size: 15px;
+    white-space: normal;
+}
+
+#navDemo .button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Image Header */
+.display-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0px;
+}
+
+.display-container img {
+    width: 100%;
+    min-height: 350px;
+    max-height: 600px;
+    height: auto;
+}
+
+.display-container .action {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.display-container .action,
+.display-container .hero-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.display-container .hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.display-container .hero-text h1 {
+    margin-top: 0;
+    font-size: 30px;
+    background: linear-gradient(to right, #33053f, thistle);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.display-container .hero-text h3 {
+  margin: 0;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.display-container .hero-text input {
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: black 1px solid;
+  border-left: black 1px solid;
+}
+
+.display-container .action button,
+.display-container .hero-text button {
+  color: black;
+  font-weight: 700;
+  background-color: rgb(75, 184, 140);
+  border: none;
+  border-radius: 5px;
+  border-bottom: black 1px solid;
+  padding: 2px;
+}
+
+/* Features Section */
+.features {
+  padding-top: 13px;
+  text-align: center;
+  background-color: rgb(248, 237, 223);
+}
+
+.features h2,
+.about h2,
+.team h2 {
+  text-align: center;
+}
+
+.features .row,
+.team .row,
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.one-third,
+.one-two,
+.half,
+.part {
+  float: none;
+  width: 40%;
+  padding: 10px;
+}
+
+.one-third img,
+.one-two img,
+.part img {
+  border-radius: 50%;
+}
+
+.part img {
+  width: 70%;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.part div p {
+  background-color: aliceblue;
+  padding: 5px;
+  border-style: outset;
+  border-left: 3px solid rgb(0, 162, 255);
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1205px) {
+  .auto {
+    max-width: 95%;
+  }
+  .display-container .action a {
+    margin: 10px;
+  }
+  .display-container .action button {
+    font-size: 18px;
+  }
+  .display-container .hero-text h1 {
+    font-size: 30px;
+    margin-left: 90px;
+  }
+  .display-container .hero-text h3 {
+    font-size: 15px;
+    margin-left: 90px;
+    padding-right: 300px;
+  }
+  .display-container .hero-text input {
+    font-size: 18px;
+    margin-left: 90px;
+  }
+  .display-container .hero-text button {
+    font-size: 18px;
+  }
+  .features h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .one-third img,
+  .one-two img {
+    width: 90px;
+    height: 110px;
+  }
+  .one-third h3,
+  .one-two h3 {
+    font-size: 12px;
+  }
+  .one-third p,
+  .one-two p {
+    font-size: 10px;
+  }
+  .team img {
+    border-radius: 8px;
+    height: 150px;
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hide-small {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .bar-item.mobile {
+    text-align: center;
+  }
+  .bar .dropdown {
+    float: none;
+    overflow: hidden;
+  }
+  .bar .dropdown button {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .bar-item .right {
+    float: none;
+  }
+  .display-container .action a {
+    margin: 5px;
+  }
+  .display-container .action button {
+    font-size: 10px;
+  }
+  .display-container .hero-text h1 {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  .display-container .hero-text h3 {
+    font-size: 8px;
+    padding-right: 160px;
+    margin-left: 30px;
+  }
+  .display-container .hero-text input {
+    margin-left: 30px;
+    font-size: 9px;
+    padding: 2px;
+  }
+  .display-container .hero-text button {
+    font-size: 10px;
+    padding: 2px;
+  }
+  .features h2,
+  .about h2,
+  .team h2 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .one-third img,
+  .one-two img {
+    width: 60px;
+    height: 60px;
+  }
+  .one-third h3,
+  .one-two h3,
+  .team h3 {
+    font-size: 9px;
+  }
+  .one-third p,
+  .one-two p,
+  .half p {
+    font-size: 7px;
+  }
+  .team img {
+    border-radius: 8px;
+    height: 80px;
+    width: auto;
+  }
+  .team p {
+    margin-top: -5px;
+  }
+}
+
+@media (min-width: 993px) {
+  .hide-large {
+    display: none;
+  }
+  .right {
+    float: right;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  .hide-medium {
+    display: none;
+  }
+  .right {
+    float: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .auto {
+    max-width: 100%;
+  }
+}

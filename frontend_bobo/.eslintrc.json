@@ -1,0 +1,4 @@
+module.exports = {
+  parser: '@next/eslint-plugin-next',
+  // ...other ESLint configuration options
+};

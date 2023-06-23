@@ -2,17 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My App</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>Bobo</title>
+    <link rel="icon" href="accounts/static/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            
+            <img src="accounts/static/favicon.ico" alt="BOBO">
         </nav>
     </header>
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
     </main>
+    <footer>
+        <link rel="icon" href="accounts/static/favicon.ico" type="image/x-icon">
+        <p>BOBO</p>
+        <p>© 2023 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
