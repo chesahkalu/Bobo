@@ -145,6 +145,72 @@ data = [
       }
     ]
   },
+{
+  "month": 2,
+  "activities": [
+    {
+      "id": 279,
+      "title": "New Activity 1",
+      "description": "This is a new activity for month 2.",
+      "imageUrls": []
+    },
+    {
+      "id": 280,
+      "title": "New Activity 2",
+      "description": "This is another new activity for month 2.",
+      "imageUrls": []
+    },
+    {
+      "id": 281,
+      "title": "New Activity 3",
+      "description": "Engage your baby with interactive toys and games.",
+      "imageUrls": []
+    },
+    {
+      "id": 282,
+      "title": "New Activity 4",
+      "description": "Introduce your baby to different sounds and musical toys.",
+      "imageUrls": []
+    },
+    {
+      "id": 283,
+      "title": "New Activity 5",
+      "description": "Encourage your baby to explore different textures with sensory toys.",
+      "imageUrls": []
+    },
+    {
+      "id": 284,
+      "title": "New Activity 6",
+      "description": "Create a safe play area for your baby with soft mats and cushions.",
+      "imageUrls": []
+    },
+    {
+      "id": 285,
+      "title": "New Activity 7",
+      "description": "Play peek-a-boo with your baby using a soft cloth or blanket.",
+      "imageUrls": []
+    },
+    {
+      "id": 286,
+      "title": "New Activity 8",
+      "description": "Introduce your baby to simple puzzles and shape sorters.",
+      "imageUrls": []
+    },
+    {
+      "id": 287,
+      "title": "New Activity 9",
+      "description": "Engage your baby in water play with a shallow tub or basin.",
+      "imageUrls": []
+    },
+    {
+      "id": 288,
+      "title": "New Activity 10",
+      "description": "Encourage your baby to explore their surroundings with supervised crawling or scooting.",
+      "imageUrls": []
+    }
+  ]
+}
+,
   {
     "month": 3,
     "activities": [
