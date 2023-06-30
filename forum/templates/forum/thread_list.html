@@ -1,18 +1,35 @@
-<!-- templates/forum/thread_list.html -->
-
 {% extends 'base_forum.html' %}
+{% load static %}
 
 {% block content %}
-  <h2>Threads in {{ category.name }}</h2>
-  <ul>
-    {% for thread in category.threads.all %}
-      <li>
-        <a href="{% url 'forum:thread_detail' thread.id %}">{{ thread.title }}</a>
-        <p>Created by {{ thread.created_by.username }} on {{ thread.created_at }}</p>
-      </li>
-    {% empty %}
-      <li>No threads have been created in this category yet.</li>
-    {% endfor %}
-  </ul>
-  <a href="{% url 'forum:thread_create' category.id %}">Create a new thread</a>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+            </div>
+            <h2 class="text-center">Threads in {{ category.name }}</h2>
+            <a href="{% url 'forum:thread_create' category.id %}">Create a new thread</a>
+            {% if category.threads.all %}
+              <ul class="list-group">
+                {% for thread in category.threads.all %}
+                  <li class="list-group-item">
+                    <h4><a href="{% url 'forum:thread_detail' thread.id %}">{{ thread.title }}</a></h4>
+                    <p>Created by {{ thread.created_by.username }} on {{ thread.created_at }}</p>
+                  </li>
+                {% empty %}
+                  <li class="list-group-item">No threads have been created in this category yet.</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p>No threads have been created in this category yet.</p>
+            {% endif %}
+            <a href="{% url 'forum:thread_create' category.id %}">Create a new thread</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

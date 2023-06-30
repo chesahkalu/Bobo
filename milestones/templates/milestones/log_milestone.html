@@ -1,6 +1,9 @@
+{% extends 'base_milestones.html' %}
+{% load static %}
 {% load dict_filters %}
 {% load range_filter %}
 
+{% block content %}
 {% if messages %}
     <ul class="messages">
         {% for message in messages %}
@@ -9,47 +12,61 @@
     </ul>
 {% endif %}
 
-<h1>Welcome to {{ baby.name }}'s Milestone Tracker</h1>
-
-<p>Hello, and thank you for using our milestone tracker. Today, {{ baby.name }} is {{ baby.age_in_months }} months old. You're currently viewing the milestones for month {{ month }}.</p>
-
-<p>Below, you'll find a list of developmental milestones that babies often reach around this age. This isn't a checklist, so don't worry if {{ baby.name }} hasn't reached all of them yet. All babies develop at their own pace!</p>
-
-<p>We recommend using this page to track {{ baby.name }}'s growth and development. It can be a fun way to document these special moments and observe how {{ baby.name }} is learning and growing. Plus, this information can be helpful for pediatrician visits. Please select each milestone that {{ baby.name }} has reached, and include the date it was observed.</p>
-
-<p>Additionally, you can navigate through the history of logged milestones by clicking on the links below. Each link corresponds to a previous month, and by clicking on it, you'll be taken to the milestones for that month. You can log milestones from the past, and also view the ones that have already been logged.</p>
-
-<h2>Months:</h2>
-{% for i in baby.age_in_months|times %}
-    {% if i == month %}
-        <b><a href="{% url 'milestones:log_previous_milestone' baby.id i %}">Month {{ i }}</a></b>
-    {% else %}
-        <a href="{% url 'milestones:log_previous_milestone' baby.id i %}">Month {{ i }}</a>
-    {% endif %}
-{% endfor %}
-<a href="{% url 'milestones:log_milestone' baby.id %}">Back to Current Month ({{ baby.age_in_months }})</a>
-
-<form method="post">
-    {% csrf_token %}
-    {% for area, milestones in grouped_milestones.items %}
-        <h2>{{ area }}</h2>
-        {% for milestone in milestones %}
-            <div class="milestone-item">
-                <input type="checkbox" id="milestone_{{ milestone.0 }}" name="logged_milestones" value="{{ milestone.0 }}" {% if milestone.0 in logged_milestones %} checked {% endif %}>
-                <label for="milestone_{{ milestone.0 }}">{{ milestone.1 }}</label>
-                <label for="milestone_date_{{ milestone.0 }}">Date Observed:</label>
-                {% if milestone.0 in logged_milestones %}
-                    {% with milestone_date=logged_milestones|get_item:milestone.0 %}
-                        <input type="date" id="milestone_date_{{ milestone.0 }}" name="milestone_date_{{ milestone.0 }}" value="{{ milestone_date|date:'Y-m-d' }}">
-                    {% endwith %}
-                {% else %}
-                    <input type="date" id="milestone_date_{{ milestone.0 }}" name="milestone_date_{{ milestone.0 }}">
-                {% endif %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+                        <h1>Welcome to {{ baby.name }}'s Milestone Tracker</h1>
+                    </div>
+                    <p>Hello, and thank you for using our milestone tracker. Today, {{ baby.name }} is {{ baby.age_in_months }} months old. You're currently viewing the milestones for month {{ month }}.</p>
+                    <p>Below, you'll find a list of developmental milestones that babies often reach around this age. This isn't a checklist, so don't worry if {{ baby.name }} hasn't reached all of them yet. All babies develop at their own pace!</p>
+                    <p>We recommend using this page to track {{ baby.name }}'s growth and development. It can be a fun way to document these special moments and observe how {{ baby.name }} is learning and growing. Plus, this information can be helpful for pediatrician visits. Please select each milestone that {{ baby.name }} has reached, and include the date it was observed.</p>
+                    <p>Additionally, you can navigate through the history of logged milestones by clicking on the links below. Each link corresponds to a previous month, and by clicking on it, you'll be taken to the milestones for that month. You can log milestones from the past and also view the ones that have already been logged.</p>
+                    <h2>Months:</h2>
+                    <div class="months-navigation">
+                        {% for i in baby.age_in_months|times %}
+                            {% if i == month %}
+                                <a href="{% url 'milestones:log_previous_milestone' baby.id i %}" class="active">Month {{ i }}</a>
+                            {% else %}
+                                <a href="{% url 'milestones:log_previous_milestone' baby.id i %}">Month {{ i }}</a>
+                            {% endif %}
+                        {% endfor %}
+                        <a href="{% url 'milestones:log_milestone' baby.id %}" class="current">Back to Current Month ({{ baby.age_in_months }})</a>
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+                        {% for area, milestones in grouped_milestones.items %}
+                            <h2>{{ area }}</h2>
+                            {% for milestone in milestones %}
+                                <div class="milestone-item">
+                                    <input type="checkbox" id="milestone_{{ milestone.0 }}" name="logged_milestones" value="{{ milestone.0 }}" {% if milestone.0 in logged_milestones %} checked {% endif %}>
+                                    <label for="milestone_{{ milestone.0 }}">{{ milestone.1 }}</label>
+                                    <label for="milestone_date_{{ milestone.0 }}">Date Observed:</label>
+                                    {% if milestone.0 in logged_milestones %}
+                                        {% with milestone_date=logged_milestones|get_item:milestone.0 %}
+                                            <input type="date" id="milestone_date_{{ milestone.0 }}" name="milestone_date_{{ milestone.0 }}" value="{{ milestone_date|date:'Y-m-d' }}">
+                                        {% endwith %}
+                                    {% else %}
+                                        <input type="date" id="milestone_date_{{ milestone.0 }}" name="milestone_date_{{ milestone.0 }}">
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Log Milestones</button>
+                        </div>
+                    </form>
+                    <p><a href="{% url 'milestones:view_activities' baby.id %}" class="btn btn-link">View Activities</a> Jump to activities that are tailored towards helping {{ baby.name }} hit most of this month's expected milestones</p>
+                    <p><a href="{% url 'babies:baby_detail' baby.id %}" class="btn btn-link">Back to Baby Profile</a></p>
+                    <a href="{% url 'home' %}" class="btn btn-link">Home</a>
+                </div>
             </div>
-        {% endfor %}
-    {% endfor %}
-    <button type="submit">Log Milestones</button>
-</form>
+        </div>
+    </div>
+</div>
 
 <script>
     window.onload = function() {
@@ -71,6 +88,5 @@
         });
     };
 </script>
-<p><a href="{% url 'milestones:view_activities' baby.id %}">View Activities:</a> Jump to activities that are tailored towards helping {{ baby.name }} hit most of this month's expected milestones</p>
-<p><a href="{% url 'babies:baby_detail' baby.id %}">Back to baby profile</a></p>
-<a href="{% url 'home' %}">home</a>
+
+{% endblock %}

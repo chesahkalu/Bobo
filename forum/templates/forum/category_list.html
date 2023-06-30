@@ -1,17 +1,33 @@
-<!-- templates/forum/category_list.html -->
-
 {% extends 'base_forum.html' %}
+{% load static %}
 
 {% block content %}
-  <h2>Forum Categories</h2>
-  <ul>
-    {% for category in categories %}
-      <li>
-        <a href="{% url 'forum:thread_list' category.id %}">{{ category.name }}</a>
-        <p>{{ category.description }}</p>
-      </li>
-    {% empty %}
-      <li>No categories have been created yet.</li>
-    {% endfor %}
-  </ul>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+            </div>
+            <h2 class="text-center">Forum Categories</h2>
+            {% if categories %}
+              <ul class="list-group">
+                {% for category in categories %}
+                  <li class="list-group-item">
+                    <h4><a href="{% url 'forum:thread_list' category.id %}">{{ category.name }}</a></h4>
+                    <p>{{ category.description }}</p>
+                  </li>
+                {% empty %}
+                  <li class="list-group-item">No categories have been created yet.</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p>No categories have been created yet.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

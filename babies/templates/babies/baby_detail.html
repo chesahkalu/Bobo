@@ -1,33 +1,71 @@
-{% extends 'base_generic.html' %}
-
+{% extends 'base_babies.html' %}
+{% load static %}
 {% block content %}
-  <h2>Welcome to your Babies Journey, {{ baby.parent_name }}!</h2>
-  <h1>Meet {{ baby.name }}</h1>
-  {% if baby.picture %}
-    <img src="{{ baby.picture.url }}" alt="{{ baby.name }}">
-  {% else %}
-    <p>No picture available. You can add a picture by updating {{ baby.name }}'s profile.</p>
-  {% endif %}
-  <p>Here's a snapshot of {{ baby.name }}'s details:</p>
-  <p>Gender: {{ baby.gender }}</p>
-  <p>Date of birth: {{ baby.date_of_birth }}</p>
-  <p>Weight: {{ baby.weight }} kg</p>
-  <p>Height: {{ baby.height }} cm</p>
-  <p>Age in months: {{ baby.age_in_months }}</p>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="text-center">
+                <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+            </div>
+            <h2 class="text-center">Welcome to your Baby's Journey, {{ baby.parent_name }}!</h2>
+            <h1 class="text-center">Meet {{ baby.name }}</h1>
+            {% if baby.picture %}
+                <img src="{{ baby.picture.url }}" alt="{{ baby.name }}" class="img-fluid rounded-circle mb-4" style="max-width: 200px; height: auto;">
+            {% else %}
+                <p class="text-center">No picture available. You can add a picture by updating {{ baby.name }}'s profile.</p>
+            {% endif %}
+            <div class="baby-details">
+                <p class="text-center">Here's a snapshot of {{ baby.name }}'s details:</p>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Gender:</strong> {{ baby.gender }}</li>
+                    <li class="list-group-item"><strong>Date of birth:</strong> {{ baby.date_of_birth }}</li>
+                    <li class="list-group-item"><strong>Weight:</strong> {{ baby.weight }} kg</li>
+                    <li class="list-group-item"><strong>Height:</strong> {{ baby.height }} cm</li>
+                    <li class="list-group-item"><strong>Age in months:</strong> {{ baby.age_in_months }}</li>
+                </ul>
+            </div>
 
-  <p>On this page, you can track {{ baby.name }}'s development and growth, log milestones, view the expected milestones for {{ baby.name }}'s current age, and engage with fun activities and nutritious meal guides suitable for {{ baby.name }}.</p>
+            <div class="baby-features">
+                <h4>Milestones</h4>
+                <p>Log and track the milestones that {{ baby.name }} has reached, such as first words or first steps. You can also view the milestones reached in the past months.</p>
+                <a href="{% url 'milestones:log_milestone' baby.id %}" class="btn btn-primary">Log Milestone</a>
+            </div>
 
-  <p><a href="{% url 'milestones:log_milestone' baby.id %}">Milestones:</a> Here you can log the milestones that {{ baby.name }} has reached, such as first words or first steps. This is also where you can see the milestones reached in the past months.</p>
+            <div class="baby-features">
+                <h4>Activities</h4>
+                <p>Check out these recommended activities you can do with {{ baby.name }}. They are designed to be fun and promote development.</p>
+                <a href="{% url 'milestones:view_activities' baby.id %}" class="btn btn-primary">View Activities</a>
+            </div>
 
-  <p><a href="{% url 'milestones:view_activities' baby.id %}">View Activities:</a> Check out these recommended activities you can do with {{ baby.name }}. They are designed to be fun and to promote development.</p>
+            <div class="baby-features">
+                <h4>Nutrition Guide</h4>
+                <p>Access a nutrition guide with recommendations for {{ baby.name }}'s diet, including meal ideas and portion sizes.</p>
+                <a href="{% url 'milestones:view_nutrition_guide' baby.id %}" class="btn btn-primary">View Nutrition Guide</a>
+            </div>
 
-  <p><a href="{% url 'milestones:view_nutrition_guide' baby.id %}">View Nutrition Guide:</a> This nutrition guide provides recommendations for {{ baby.name }}'s diet, including meal ideas and portion sizes.</p>
+            <div class="baby-features">
+                <h4>Update Baby Profile</h4>
+                <p>Keep {{ baby.name }}'s profile up-to-date by updating information like weight and height, or adding a picture.</p>
+                <a href="{% url 'babies:baby_update' baby.id %}" class="btn btn-primary">Update Profile</a>
+            </div>
 
-  <p><a href="{% url 'babies:baby_update' baby.id %}">Update {{ baby.name }}'s Profile:</a> Keep {{ baby.name }}'s profile up-to-date by clicking here. You can change information like weight and height, and you can also add a picture.</p>
+            <div class="baby-features">
+                <h4>Home</h4>
+                <p>Go back to the home page, where you can select another baby's profile or create a new one.</p>
+                <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+            </div>
 
-  <p><a href="{% url 'home' %}">Home:</a> Click here to go back to the home page, where you can select another baby's profile or create a new one.</p>
+            <div class="baby-features">
+                <h4>Delete Baby Profile</h4>
+                <p>If needed, you can delete {{ baby.name }}'s profile. Please be careful, this action cannot be undone!</p>
+                <a href="{% url 'babies:baby_delete' baby.id %}" class="btn btn-danger">Delete Profile</a>
+            </div>
 
-  <p><a href="{% url 'babies:baby_delete' baby.id %}">Delete {{ baby.name }}'s Profile:</a> If you need to, you can delete {{ baby.name }}'s profile by clicking this link. Please be careful, this action cannot be undone!</p>
-
-  <p>Progress Report: Here is the latest report on {{ baby.name }}'s progress: {{ baby.progress.report }}</p>
+            <div class="baby-progress-report">
+                <h4>Progress Report</h4>
+                <p>Here is the latest report on {{ baby.name }}'s progress: {{ baby.progress.report }}</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -1,4 +1,3 @@
-
 {% extends 'base_generic.html' %}
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
@@ -6,37 +5,42 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-    <div class="form-container">
-        <h1>Join BoBo</h1>
-        <form method="POST" id="signUpForm">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <div id="formMessage" class="form-message"></div>
-            <button type="submit" class="submit-btn">Create account</button>
-        </form>
-        <img class="form-image" src="{% static 'images/signup.png' %}" alt="Sign up image">
-    </div>
-    <div class="intro-container">
-        <h2>Welcome to BoBo</h2>
-        <p>Track milestones, access expert advice tailored to your baby's age, and engage in enriching activities. Plus, chat anytime with our AI model, trained to provide insights and discussions on baby growth. Explore our community forum or peruse our curated marketplace - all at your fingertips. BoBo - your partner in celebrating every moment of your baby's journey. Come on in, or explore as a guest.</p>
-        <img class="intro-image" src="{% static 'images/baby.png' %}" alt="baby image">
-        <ul class="feature-list">
-            <li>Track milestones</li>
-            <li>Access expert advice</li>
-            <li>Engage in enriching activities</li>
-            <li>Chat anytime with our AI model</li>
-            <li>Explore our community forum</li>
-            <li>Peruse our curated marketplace</li>
-        </ul>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+                        <h1 class="card-title">Join BoBo</h1>
+                    </div>
+                    <form method="POST" id="signUpForm">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div id="formMessage" class="form-message"></div>
+                        <button type="submit" class="btn btn-primary btn-block">Create account</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Have an account already? <a href="{% url 'login' %}">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12 mt-4">
+            <div class="text-center mb-4">
+                <h2>Welcome to BoBo</h2>
+            </div>
+            <p>Track milestones, access expert advice tailored to your baby's age, and engage in enriching activities. Explore our community forum or peruse our curated marketplace - all at your fingertips. BoBo - your partner in celebrating every moment of your baby's journey. Come on in, or explore as a guest.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Track milestones</li>
+                <li class="list-group-item">Access expert advice</li>
+                <li class="list-group-item">Engage in enriching activities</li>
+                <li class="list-group-item">Explore our community forum</li>
+                <li class="list-group-item">Peruse our curated marketplace</li>
+            </ul>
+        </div>
     </div>
 </div>
 
-<script>
-document.getElementById('signUpForm').addEventListener('submit', function(event){
-    event.preventDefault();
-    var formMessage = document.getElementById('formMessage');
-    formMessage.textContent = 'Thank you for signing up! Please check your email for confirmation.';
-});
-</script>
+
 {% endblock %}

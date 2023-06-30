@@ -1,31 +1,43 @@
+{% extends 'base_milestones.html' %}
+{% load static %}
 {% block content %}
-  <h2>Welcome to {{ baby.name }}'s Activity Center!</h2>
-  
-  <p>
-    At {{ baby.age_in_months }} months old, your baby is growing rapidly and exploring the world. Regularly engaging your child with various activities is essential for their cognitive and physical development.
-  </p>
-  
-  <p>
-    Activities don't just keep your little one busy - they also nurture curiosity, foster learning, and promote physical well-being. Try to find time each day for these activities. Remember, they are not just for your baby's development but also a wonderful way to strengthen your bond with your baby.
-  </p>
-  
-  <p>
-    Here are some activities suitable for {{ baby.name }} at {{ baby.age_in_months }} months old:
-  </p>
+  <div class="container py-5">
+    <h2 class="text-center">Welcome to {{ baby.name }}'s Activity Center!</h2>
 
-  <ul>
-  {% for activity in activities %}
-    <li>
-      <h3>{{ activity.title }}</h3>
-      <p>{{ activity.activity }}</p>
-      {% if activity.imageUrls %}
-        <img src="{{ activity.imageUrls }}" alt="{{ activity.title }}">
-      {% endif %}
-    </li>
-  {% empty %}
-    <li>No activities available for this month. Keep exploring and creating memorable moments with your baby!</li>
-  {% endfor %}
-  </ul>
+    <p class="text-center">
+      At {{ baby.age_in_months }} months old, your baby is growing rapidly and exploring the world. Regularly engaging your child with various activities is essential for their cognitive and physical development.
+    </p>
 
-  <a href="{% url 'babies:baby_detail' baby.id %}">Back to baby profile</a>
+    <p class="text-center">
+      Activities don't just keep your little one busy - they also nurture curiosity, foster learning, and promote physical well-being. Try to find time each day for these activities. Remember, they are not just for your baby's development but also a wonderful way to strengthen your bond with your baby.
+    </p>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8">
+        <h3>Activities suitable for {{ baby.name }} at {{ baby.age_in_months }} months old:</h3>
+
+        {% if activities %}
+          <ul class="list-unstyled">
+            {% for activity in activities %}
+              <li class="mb-5">
+                <h4>{{ activity.title }}</h4>
+                <p>{{ activity.activity }}</p>
+                {% if activity.imageUrls %}
+                  <img src="{{ activity.imageUrls }}" alt="{{ activity.title }}" class="img-fluid">
+                {% endif %}
+              </li>
+            {% empty %}
+              <li>No activities available for this month. Keep exploring and creating memorable moments with your baby!</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No activities available for this month. Keep exploring and creating memorable moments with your baby!</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="{% url 'babies:baby_detail' baby.id %}" class="btn btn-primary">Back to baby profile</a>
+    </div>
+  </div>
 {% endblock %}

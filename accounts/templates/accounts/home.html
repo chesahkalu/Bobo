@@ -1,29 +1,46 @@
 {% extends 'base_generic.html' %}
-
+{% load static %}
 {% block content %}
-  <h2>Welcome to the Home Page</h2>
-  <p>You are successfully logged in!</p>
-  
-  {% if babies %}
-    <h3>Here are the babies in your family:</h3>
-    {% for baby in babies %}
-      <div>
-        {% if baby.picture %}
-          <img src="{{ baby.picture.url }}" alt="{{ baby.name }}'s picture" style="width: 100px; height: auto;">
-        {% else %}
-          <p>No picture available.</p>
-        {% endif %}
-        <h4><a href="{% url 'babies:baby_detail' baby.id %}">{{ baby.name }}</a></h4>
-        <p>Age: {{ baby.age_in_months }} months</p>
-      </div>
-    {% endfor %}
-    <a href="{% url 'babies:baby_create' %}">Add another baby</a> <!-- This is the link to create a new baby profile -->
-  {% else %}
-    <p>You don't have any baby profiles. <a href="{% url 'babies:baby_create' %}">Create one now.</a></p>
-  {% endif %}
+<div class="container py-5">
+    <div class="text-center mb-4">
+        <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+        <h1>Welcome to BoBo</h1>
+        <p class="lead">You are successfully logged in!</p>
+    </div>
 
-  <a href="{% url 'logout' %}">Logout</a> <!-- This is the logout button -->
-  <a href="{% url 'delete_account' %}">Delete Account</a> <!-- This is the delete account button -->
-  <a href="{% url 'forum:category_list' %}">Forum</a> <!-- This is the link to the forum -->
-  <a href="{% url 'marketplace:category_list' %}">MarketPlace</a>
+    <div class="row">
+        {% if babies %}
+            <h3>Here are the babies in your family:</h3>
+            {% for baby in babies %}
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        {% if baby.picture %}
+                            <img src="{{ baby.picture.url }}" class="card-img-top" alt="{{ baby.name }}'s picture">
+                        {% else %}
+                            <div class="card-body">
+                                <p class="card-text">No picture available.</p>
+                            </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{% url 'babies:baby_detail' baby.id %}">{{ baby.name }}</a></h5>
+                            <p class="card-text">Age: {{ baby.age_in_months }} months</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="mt-3">
+                <a href="{% url 'babies:baby_create' %}" class="btn btn-primary">Add another baby</a>
+            </div>
+        {% else %}
+            <p class="lead">You don't have any baby profiles. <a href="{% url 'babies:baby_create' %}" class="btn btn-primary">Create one now.</a></p>
+        {% endif %}
+    </div>
+
+    <div class="mt-5">
+        <a href="{% url 'logout' %}" class="btn btn-secondary">Logout</a>
+        <a href="{% url 'delete_account' %}" class="btn btn-danger">Delete Account</a>
+        <a href="{% url 'forum:category_list' %}" class="btn btn-info">Forum</a>
+        <a href="{% url 'marketplace:category_list' %}" class="btn btn-success">MarketPlace</a>
+    </div>
+</div>
 {% endblock %}

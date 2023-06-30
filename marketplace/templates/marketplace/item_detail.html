@@ -1,32 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MarketPlace</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="{% url 'home' %}">Home</a> |
-      <a href="{% url 'marketplace:category_list' %}">Categories</a>
-      <a href="{% url 'marketplace:item_list' item.category.id %}">Go back to items</a>
-    </nav>
-  </header>
-  <main>
-    {% block content %}
-  <h1>{{ item.name }}</h1>
-  <img src="{{ item.image.url }}" alt="{{ item.name }}">
-  <p>Description: {{ item.description }}</p>
-  <p>Price: {{ item.price }} Naria</p>
-  <p>Sellers Contact Info: {{ item.contact}}</p>
+{% extends 'base_marketplace.html' %}
+{% load static %}
+{% block content %}
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+            </div>
+            <h2 class="text-center">{{ item.name }}</h2>
+            <img src="{{ item.image.url }}" alt="{{ item.name }}" class="img-fluid mb-4">
+            <p>Description: {{ item.description }}</p>
+            <p>Price: {{ item.price }} Naira</p>
+            <p>Seller's Contact Info: {{ item.contact }}</p>
 
-  {% if user.is_authenticated and item.user == user %}
-    <a href="{% url 'marketplace:item_update' item.id %}">Edit</a>
-    <a href="{% url 'marketplace:item_delete' item.id %}">Delete</a>
-  {% endif %}
+            {% if user.is_authenticated and item.user == user %}
+              <a href="{% url 'marketplace:item_update' item.id %}" class="btn btn-primary">Edit</a>
+              <a href="{% url 'marketplace:item_delete' item.id %}" class="btn btn-danger">Delete</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
-
-
-
-  </main>
-</body>
-</html>
