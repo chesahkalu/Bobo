@@ -1,23 +1,40 @@
 {% extends 'base_generic.html' %}
-
+{% load static %}
 {% block content %}
-  <h2>Login</h2>
-  {% if error %}
-    <p>{{ error }}</p>
-  {% endif %}
-
-  <ul class="messages">
-    {% for message in messages %}
-      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-    {% endfor %}
-  </ul>
-
-  <form method="POST">
-  {% csrf_token %}
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-    <button type="submit">Login</button>
-  </form>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+                        <h1 class="card-title">Login to BoBo</h1>
+                    </div>
+                    {% if error %}
+                        <div class="alert alert-danger" role="alert">
+                          {{ error }}
+                        </div>
+                    {% endif %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

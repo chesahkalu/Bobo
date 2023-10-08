@@ -5,13 +5,14 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
+from babies.models import Baby
 
 # This view handles the home page of the application.
 # The login_required decorator ensures that only authenticated users can access this view.
 @login_required
 def home_view(request):
     # The render function is used to generate the HTML for the home page.
-    return render(request, 'accounts/home.html')
+    return render(request, 'accounts/home.html', {'babies': Baby.objects.filter(user=request.user)})
 
 # This view handles the signup page and the user creation process.
 def signup_view(request):

@@ -1,11 +1,26 @@
 {% extends 'base_marketplace.html' %}
+{% load static %}
 
 {% block content %}
-  <h1>Categories</h1>
-  <ul>
-    {% for category in categories %}
-      <li><a href="{% url 'marketplace:item_list' category.id %}">{{ category.name }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+            </div>
+            <h2 class="text-center">Shop Categories</h2>
+            <ul class="list-group">
+              {% for category in categories %}
+                <li class="list-group-item">
+                  <a href="{% url 'marketplace:item_list' category.id %}">{{ category.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
-

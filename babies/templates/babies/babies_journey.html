@@ -5,12 +5,13 @@
   {% if babies %}
     {% for baby in babies %}
       <div>
-        <h3><a href="{% url 'babies:welcome_page' baby.id %}">{{ baby.name }}</a></h3>
         {% if baby.picture %}
-          <img src="{{ baby.picture.url }}" alt="{{ baby.name }}'s picture">
+          <img src="{{ baby.picture.url }}" alt="{{ baby.name }}'s picture" style="width: 100px; height: auto;">
         {% else %}
           <p>No picture available.</p>
         {% endif %}
+        <h3><a href="{% url 'babies:baby_detail' baby.id %}">{{ baby.name }}</a></h3>
+        <p>Age: {{ baby.age_in_months }} months</p>
       </div>
     {% endfor %}
   {% else %}

@@ -16,7 +16,7 @@ def baby_create_view(request):
             # create Progress instance for this baby if it doesn't exist
             Progress.objects.get_or_create(baby=baby)
 
-            return redirect('babies:welcome_page', baby.id)
+            return redirect('babies:baby_detail', baby.id)
     else:
         form = BabyForm()
     return render(request, 'babies/baby_form.html', {'form': form})

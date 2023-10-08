@@ -1,15 +1,29 @@
 {% extends 'base_marketplace.html' %}
+{% load static %}
 
 {% block content %}
-  <h1>Items in {{ category.name }}</h1>
-  <ul>
-    {% for item in items %}
-      <li>
-        <a href="{% url 'marketplace:item_detail' item.id %}">
-          <img src="{{ item.image.url }}" alt="{{ item.name }}" style="width:100px;height:100px;">
-          {{ item.name }} - {{ item.price }} Naira
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="card mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="{% static 'images/favicon.png' %}" alt="logo" class="img-fluid rounded-circle mb-4" style="width: 100px; height: 100px;">
+            </div>
+            <h2 class="text-center">Items in {{ category.name }}</h2>
+            <ul class="list-group">
+              {% for item in items %}
+                <li class="list-group-item">
+                  <a href="{% url 'marketplace:item_detail' item.id %}">
+                    <img src="{{ item.image.url }}" alt="{{ item.name }}" style="width: 100px; height: 100px;">
+                    {{ item.name }} - {{ item.price }} Naira
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
