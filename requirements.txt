@@ -4,7 +4,7 @@ django-crispy-forms==1.11.0
 python-dateutil==2.8.1
 django-filter==2.4.0
 djangorestframework==3.12.4
-mysqlclient==2.0.3
 django-environ==0.4.5
 django-allauth==0.44.0
 python-dotenv==0.17.0
+mysqlclient==2.0.3
