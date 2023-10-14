@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'forum',
     'marketplace',
     'chatbot',
+    'django_extensions',
     
 ]
 
