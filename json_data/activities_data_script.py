@@ -1824,8 +1824,7 @@ for item in data:
     month = item['month']
     activities = item['activities']
     for activity in activities:
-        activity_id = activity['id']
         title = activity['title']
         description = activity['description']
         image_urls = activity['imageUrls']
-        Activity.objects.create(month=month, id=activity_id, title=title, activity=description, imageUrls=image_urls)
+        Activity.objects.create(month=month, title=title, description=description, imageUrls=image_urls)
