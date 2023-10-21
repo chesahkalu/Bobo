@@ -3,18 +3,31 @@
 Bobo is a comprehensive web platform designed for parents to monitor and track the growth and development of their babies.
 With a range of features, from logging milestones to accessing research-based expert advice and nutrition guides specific to a baby's age, Bobo is an essential tool for new parents.
 
-Additionally, Bobo provides an interactive community platform with a forum and marketplace, where parents can discuss various topics and exchange baby items. For quick information and guidance,
-we also offer an advanced AI chatbot.
+Additionally, Bobo provides an interactive community platform with a forum and marketplace, where parents can discuss various topics and exchange baby items. For quick information and guidance, we also offer an advanced AI chatbot.
+
+For a comprehensive documentation of the project, please refer to the google docs [link](https://drive.google.com/drive/folders/1AIiVTPoAHUFwb8M4En24w4JnKT1XB9iV?ths=true) 
+
+## Table of Contents
+- [Tech Stack](#tech-stack)
+- [Current Features](#current-features)
+- [Setup](#setup)
+- [Testing](#testing)
+- [Devops](#devops)
+    - [Containerization](#containerization)
 
 ## Tech Stack
-This application is developed using `Django`, a Python-based free and open-source web framework that follows the model-view-controller (MVC) architectural pattern.
-Our database of choice is `MySQL`, a widely-used, reliable, and robust relational database management system.
-
-The application is still at an early stage;
-At the current stage, we have successfully created a Django project implemented user registration and authentication. Users can sign up, log in, and navigate to the home page. 
-All passwords are securely hashed for storage, ensuring user privacy and security.
+- The application is developed with `Django`, a Python-based open-source web framework that promotes rapid development and clean, pragmatic design following the model-view-controller (MVC) architectural 
+- For local development, `MySQL` is our chosen database, recognized for its reliability and robustness.
+- `Bootstrap` ensures our platform is responsive and mobile-friendly, adapting seamlessly to different devices. The front-end is open to further development with `React` in the future.
+- The system is containerized using `Docker`, bundling the app, its environment, and dependencies for consistent deployment.
+- We leverage `AWS` for cloud deployment, utilizing services like `RDS, S3, and EC2` for database management, file storage, and scalability respectively-.
+- `Serverless` architecture is adopted in AWS for reduced operational overhead, automatic scaling, and cost efficiency.
+- CI/CD is implemented using `Github Actions` for automated code integration and deployment. `AWS CodeBuild and AWS CodePipeline` are used for continuous delivery.
+- `AWS CloudWatch and X-Ray` provide real-time monitoring, logging, and insights into application behavior.
+- For further details on the tech stack, please refer to the [documentation](https://docs.google.com/document/d/1Z3PiI8lw9dGJV0mQvHsQy8WGt-saNliRlJ6uvrEQygQ/edit)
 
 ## Current Features
+
 ### User Authentication:
 - **User Registration**: Users can create a new account providing their email and password.
 - **User Login**: Users can securely log into their account using their credentials.
