@@ -56,7 +56,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 
 ### Chatbot: 
 
-## Setup :
+## Setup
 To set up the project on your local machine, follow the steps below:
 
 1. Clone the repository to your machine
@@ -85,9 +85,9 @@ You can test the application by creating a new user, logging in, and navigating 
 To run the tests locally, use the following command:
 `python3 manage.py test 'app'`
 
-## 🐳 Containerization with Docker
+## Containerization with Docker
 
-Containerization, powered by Docker, provides an isolated and consistent environment for our Bobo application, ensuring it runs uniformly from a developer's local environment to a production server. This section outlines the steps to set up, build, and run the Bobo application using Docker and Docker Compose.
+Containerization, powered by Docker🐳 , provides an isolated and consistent environment for our Bobo application, ensuring it runs uniformly from a developer's local environment to a production server. This section outlines the steps to set up, build, and run the Bobo application using Docker and Docker Compose.
 
 ### 🌟 Why Docker?
 
@@ -140,9 +140,10 @@ Docker Compose simplifies the process of managing multi-container applications. 
 The initial setup of our MySQL container is steered by environment variables in `docker-compose.yml`. Once you spin up the containers, ensure that the `settings.py` in your Django app is pointing to this MySQL instance by setting the database `HOST` to `db`. To run migrations inside the container:
 ```bash
 docker-compose exec web python manage.py migrate
-
+```
 
 ## Contribute
+
 We enthusiastically welcome contributions. If you encounter any bugs or have a feature suggestion, please open an issue.
 Also, feel free to fork the repository and submit a pull request.
 Before submitting a pull request, ensure that your changes do not break the application.
