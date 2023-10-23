@@ -12,8 +12,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - [Current Features](#current-features)
 - [Setup](#setup)
 - [Testing](#testing)
-- [Devops](#devops)
-    - [Containerization](#containerization)
+- [Containerization](#containerization)
 
 ## Tech Stack
 - The application is developed with `Django`, a Python-based open-source web framework that promotes rapid development and clean, pragmatic design following the model-view-controller (MVC) architectural 
@@ -82,6 +81,63 @@ You can test the application by creating a new user, logging in, and navigating 
 
 To run the tests locally, use the following command:
 `python3 manage.py test 'app'`
+
+## 🐳 Containerization with Docker
+
+Containerization, powered by Docker, provides an isolated and consistent environment for our Bobo application, ensuring it runs uniformly from a developer's local environment to a production server. This section outlines the steps to set up, build, and run the Bobo application using Docker and Docker Compose.
+
+### 🌟 Why Docker?
+
+- **Consistency**: Say goodbye to "it works on my machine" issues.
+- **Scalability**: Easily scale up services as needed.
+- **Isolation**: Your application and its environment are bundled together.
+
+### 🛠️ Setting Up with Local MySQL Server
+
+If you're running a MySQL server locally and wish the containerized Bobo app to connect to it, update the `settings.py` in the Django application. Set the `DATABASES` configuration's `HOST` field to `host.docker.internal`. This ensures seamless communication between the containerized app and services on the host machine.
+
+### 🔧 Building and Running without Docker Compose
+
+1. **Building the Image**: Use the Docker CLI to build an image from the Dockerfile.
+    ```bash
+    docker build -t bobo_app:v1 .
+    ```
+2. **View Built Images**: Confirm the image was created.
+    ```bash
+    docker images
+    ```
+3. **Run a Container**: Spin up a container instance from the built image.
+    ```bash
+    docker run -d -p 8000:8000 bobo_app:v1
+    ```
+4. **Check Containers**: View all running containers.
+    ```bash
+    docker ps
+    ```
+5. **Stopping a Container**: When done, you can stop the container.
+    ```bash
+    docker stop [CONTAINER_ID]
+    ```
+
+### 🔄 Using Docker Compose
+
+Docker Compose simplifies the process of managing multi-container applications. For the Bobo app, it's the magic wand that builds and runs both the Django application and its MySQL database effortlessly.
+
+- **Start Services**: This builds (if needed) and runs the services.
+    ```bash
+    docker-compose up
+    ```
+- **Stop Services**: When done, use the following command to stop the services.
+    ```bash
+    docker-compose down
+    ```
+
+### 🗃️ Configuring MySQL in Docker
+
+The initial setup of our MySQL container is steered by environment variables in `docker-compose.yml`. Once you spin up the containers, ensure that the `settings.py` in your Django app is pointing to this MySQL instance by setting the database `HOST` to `db`. To run migrations inside the container:
+```bash
+docker-compose exec web python manage.py migrate
+
 
 ## Contribute
 We enthusiastically welcome contributions. If you encounter any bugs or have a feature suggestion, please open an issue.
