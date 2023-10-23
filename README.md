@@ -20,7 +20,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - For local development, `MySQL` is our chosen database, recognized for its reliability and robustness.
 - `Bootstrap` ensures our platform is responsive and mobile-friendly, adapting seamlessly to different devices. The front-end is open to further development with `React` in the future.
 - The system is containerized using `Docker`, bundling the app, its environment, and dependencies for consistent deployment.
-- We leverage `AWS` for cloud deployment, utilizing services like `RDS, S3, and EC2` for database management, file storage, and scalability respectively-.
+- We leverage `AWS` for cloud deployment, utilizing services like `RDS, S3, and EC2` for database management, file storage, and scalability.
 - `Serverless` architecture is adopted in AWS for reduced operational overhead, automatic scaling, and cost efficiency.
 - CI/CD is implemented using `Github Actions` for automated code integration and deployment. `AWS CodeBuild and AWS CodePipeline` are used for continuous delivery.
 - `AWS CloudWatch and X-Ray` provide real-time monitoring, logging, and insights into application behavior.

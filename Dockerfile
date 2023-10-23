@@ -1,4 +1,4 @@
-# Use the slim variant of Python 3.9 as the base image
+# Use the slim variant of Python 3.9 as the base image, It is a good practice to keep your local development environment python version same with the docker image python version.
 FROM python:3.9-slim
 
 # Set environment variables

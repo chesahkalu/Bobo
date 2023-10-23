@@ -1,0 +1,49 @@
+# Version of the Docker Compose file format being used
+version: '3.9'
+
+# Define services, networks, and volumes
+services:
+
+  # Web service for the Django application
+  web:
+    # Name the image built with this service. This will appear when you run 'docker images'
+    image: bobo_web:v1
+    
+    # Directory containing the Dockerfile to use for building the image
+    build: .
+    
+    # Command to run when the container starts
+    command: python manage.py runserver 0.0.0.0:8000
+    
+    # Mount the current directory on the host to /app inside the container
+    # This ensures that changes made to the source code are reflected inside the container in real-time
+    volumes:
+      - .:/app
+      
+    # Map port 8000 inside the container to port 8000 on the host
+    ports:
+      - "8000:8000"
+    
+    # Ensure the 'web' service only starts after the 'db' service
+    depends_on:
+      - db
+      
+  # Database service for MySQL
+  db:
+    # Use the MySQL 5.7 image from Docker Hub
+    image: mysql:5.7
+    
+    # Set environment variables to configure the MySQL instance
+    environment:
+      MYSQL_DATABASE: 'bobo'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      
+    # Create a named volume for persisting database data
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+# Define named volumes used by services
+volumes:
+  mysql-data:
