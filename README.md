@@ -12,7 +12,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - [Current Features](#current-features)
 - [Setup](#setup)
 - [Testing](#testing)
-- [Containerization](# 🐳 Containerization with Docker)
+- [🐳 Containerization with Docker](#🐳-containerization-with-docker)
 
 ## Tech Stack
 - The application is developed with `Django`, a Python-based open-source web framework that promotes rapid development and clean, pragmatic design following the model-view-controller (MVC) architectural 
