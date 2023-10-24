@@ -143,6 +143,8 @@ The initial setup of our MySQL container is steered by environment variables in 
 docker-compose exec web python manage.py migrate
 ```
 
+## Continous Integration
+
 ## Contribute
 
 We enthusiastically welcome contributions. If you encounter any bugs or have a feature suggestion, please open an issue.
