@@ -5,10 +5,10 @@ name: Bobo CI
 on:
   # Trigger the workflow on push events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   # Trigger the workflow on pull request events but only for the main branch
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 # Define the jobs to be executed as part of the workflow
 jobs:
@@ -38,7 +38,7 @@ jobs:
       # Step 4: Run tests
       - name: Run tests
         run: |
-          python manage.py test app
+          python manage.py test
 
       # Step 5: Build Docker image
       - name: Build Docker image
@@ -48,4 +48,4 @@ jobs:
       # Step 6: Run tests inside Docker container
       - name: Run tests inside Docker container
         run: |
-          docker run bobo-app python manage.py test app
+          docker run bobo-app python manage.py test
