@@ -91,7 +91,7 @@ if os.environ.get('GITHUB_ACTIONS'):
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'test_db',
-            'USER': 'root',
+            'USER': 'regular',
             'PASSWORD': 'password',
             'HOST': 'mysql',
             'PORT': '3306',
