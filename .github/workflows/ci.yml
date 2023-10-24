@@ -23,10 +23,8 @@ jobs:
       mysql:
         image: mysql:5.7
         env:
-          MYSQL_ROOT_PASSWORD: password  # This is the root password for MySQL
-          MYSQL_DATABASE: test_db        # This is the name of the database you want to create
-          MYSQL_USER: root               # Using the root user for simplicity
-          MYSQL_PASSWORD: password       # Password for the root user
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: test_db
         ports:
           - 3306:3306
         # Health checks to ensure the MySQL container is up and running
