@@ -1,0 +1,51 @@
+# Name of the CI workflow
+name: Bobo CI
+
+# Define the events that trigger the workflow
+on:
+  # Trigger the workflow on push events but only for the main branch
+  push:
+    branches: [ main ]
+  # Trigger the workflow on pull request events but only for the main branch
+  pull_request:
+    branches: [ main ]
+
+# Define the jobs to be executed as part of the workflow
+jobs:
+  # Define a job with the identifier 'build'
+  build:
+    # Specify the runner to use for the job which is the machine that will execute the job provided by GitHub
+    runs-on: ubuntu-latest
+
+    # Define the sequence of tasks to be executed as part of the job
+    steps:
+      # Step 1: Check out the repository code to the runner, like you would do with git clone
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Python 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Run tests
+      - name: Run tests
+        run: |
+          python manage.py test app
+
+      # Step 5: Build Docker image
+      - name: Build Docker image
+        run: |
+          docker build -t bobo-app .
+
+      # Step 6: Run tests inside Docker container
+      - name: Run tests inside Docker container
+        run: |
+          docker run bobo-app python manage.py test app
