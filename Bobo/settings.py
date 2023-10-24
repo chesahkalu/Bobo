@@ -93,7 +93,7 @@ if os.environ.get('GITHUB_ACTIONS'):
             'NAME': 'test_db',
             'USER': 'root',
             'PASSWORD': 'password',
-            'HOST': 'localhost',
+            'HOST': 'mysql',
             'PORT': '3306',
         }
     }
