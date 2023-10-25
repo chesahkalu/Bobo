@@ -17,21 +17,6 @@ jobs:
     # Specify the runner to use for the job which is the machine that will execute the job provided by GitHub
     runs-on: ubuntu-latest
 
-    # Set up service containers to run with the job
-    services:
-      # Configuration for the MySQL service container for running tests
-      mysql:
-        image: mysql:5.7
-        env:
-          MYSQL_ROOT_PASSWORD: password
-          MYSQL_DATABASE: test_db
-          MYSQL_USER: root
-          MYSQL_PASSWORD: password
-        ports:
-          - 3306:3306
-        # Health checks to ensure the MySQL container is up and running
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
-
     # Define the sequence of tasks to be executed as part of the job
     steps:
       # Step 1: Check out the repository code to the runner, like you would do with git clone
