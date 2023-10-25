@@ -100,7 +100,7 @@ DATABASES = {
 }
 
 # For Docker container
-elif os.path.exists('/.dockerenv'):
+if os.path.exists('/.dockerenv'):
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DB_NAME'),
