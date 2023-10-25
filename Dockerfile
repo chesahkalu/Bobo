@@ -13,8 +13,9 @@ WORKDIR /app
 # Copy the current directory contents(including requirements.txt) into the container at /app
 COPY . /app
 
+RUN pip install --upgrade pip
 # Install Python dependencies from requirements.txt. The --no-cache-dir flag keeps the container lean by preventing the caching of the index locally.
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Install system-level dependencies (if any)
 #RUN apt-get update && apt-get install -y some-package-needed
