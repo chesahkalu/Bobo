@@ -13,7 +13,12 @@ WORKDIR /app
 # Copy the current directory contents(including requirements.txt) into the container at /app
 COPY . /app
 
+# Upgrade pip
 RUN pip install --upgrade pip
+
+# Install system-level dependencies to ensure availability of certain libraries and headers for mysqlclient requirement instalation
+RUN apt-get update && apt-get install -y default-libmysqlclient-dev
+
 # Install Python dependencies from requirements.txt. The --no-cache-dir flag keeps the container lean by preventing the caching of the index locally.
 RUN pip install -r requirements.txt
 
