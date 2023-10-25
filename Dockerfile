@@ -17,7 +17,7 @@ COPY . /app
 RUN pip install --upgrade pip
 
 # Install system-level dependencies to ensure availability of certain libraries and headers for mysqlclient requirement instalation
-RUN apt-get update && apt-get install -y default-libmysqlclient-dev
+RUN apt-get update && apt-get install -y build-essential default-libmysqlclient-dev
 
 # Install Python dependencies from requirements.txt. The --no-cache-dir flag keeps the container lean by preventing the caching of the index locally.
 RUN pip install -r requirements.txt
