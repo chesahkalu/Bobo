@@ -99,16 +99,6 @@ DATABASES = {
     }
 }
 
-if os.environ.get('GITHUB_ACTIONS'):
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test_db',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'HOST': 'mysql',
-        'PORT': '3306',
-    }
-
 # For Docker container
 elif os.path.exists('/.dockerenv'):
     DATABASES['default'] = {
