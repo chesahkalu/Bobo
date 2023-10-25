@@ -99,18 +99,8 @@ DATABASES = {
     }
 }
 
-# For Docker container
-if os.path.exists('/.dockerenv'):
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': 'host.docker.internal',  # or use your host system IP address
-        'PORT': '3306',
-    }
 
-elif 'test' in sys.argv:
+if 'test' in sys.argv:
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'test_db.sqlite3',
