@@ -57,6 +57,12 @@ jobs:
       - name: Run tests
         run: |
           python manage.py test
+        env:
+        DATABASE_HOST: mysql
+        DATABASE_PORT: 3306
+        DATABASE_USER: regular
+        DATABASE_PASSWORD: password
+        DATABASE_NAME: test_db
 
       # Step 5: Build Docker image
       - name: Build Docker image
