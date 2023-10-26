@@ -99,7 +99,7 @@ DATABASES = {
     }
 }
 
-
+# If we are running tests, use Django's built-in SQLite database
 if 'test' in sys.argv:
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.sqlite3',
