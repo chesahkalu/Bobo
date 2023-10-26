@@ -43,9 +43,9 @@ jobs:
       # Step 5: Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t bobo-app .
+          docker build -t bobo-web:v1 .
 
       # Step 6: Run tests inside Docker container
       - name: Run tests inside Docker container
         run: |
-          docker run bobo-app python manage.py test
+          docker run bobo-web:v1 python manage.py test
