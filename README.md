@@ -13,7 +13,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - [Setup](#setup)
 - [Testing](#testing)
 - [Containerization with Docker](#containerization-with-docker)
-- [Continous Integration](#continous_integration)
+- [Continous Integration(CI)](#continous_integration)
 - [Contribute](#contribute)
 - [License](#license)
 - [Authors](#authors)
@@ -144,6 +144,35 @@ docker-compose exec web python manage.py migrate
 ```
 
 ## Continous Integration
+
+## Continuous Integration(CI)
+
+Continuous Integration (CI) is a foundational pillar in DevOps, emphasizing the regular integration of code into a shared repository. Each integration can then be automatically tested and verified, ensuring that new changes don't introduce bugs. For our Bobo application, CI ensures that our codebase remains reliable, efficient, and ready for deployment at all times.
+
+### Why GitHub Actions?
+
+GitHub Actions is a CI/CD tool provided directly within GitHub, enabling developers to automate tasks right within their repositories. With GitHub Actions, Bobo's codebase undergoes automated processes every time there's a change, ensuring quality and consistency.
+
+### Setting Up GitHub Actions
+
+1. **Navigate to Your Repository**: Access the "Actions" tab within your GitHub repository.
+2. **Workflow Creation**: Choose a predefined workflow or set up a custom workflow.
+3. **YAML File Configuration**: Define your workflow using the provided YAML editor. This file dictates the actions, triggers, and jobs.
+4. **Commit**: Save and commit your YAML file to the repository.
+5. **Monitor**: Post-commit, GitHub Actions will execute the workflow. Monitor the progress under the "Actions" tab.
+
+### Bobo's CI Workflow
+
+The `.yml` file for Bobo details our CI steps:
+
+- **Triggers**: Activates on `push` and `pull_request` events to the master branch.
+- **Jobs**: Runs on the latest Ubuntu machine.
+- **Steps**:
+  1. **Code Checkout**: Fetches the latest code.
+  2. **Python Setup**: Initiates Python 3.9.
+  3. **Dependencies**: Installs requirements via pip.
+  4. **Testing**: Executes Django's testing suite.
+  5. **Docker Integration**: Builds a Docker image and runs tests inside the Docker container.
 
 ## Contribute
 
