@@ -174,12 +174,23 @@ The `.yml` file for Bobo details our CI steps:
   4. **Testing**: Executes Django's testing suite.
   5. **Docker Integration**: Builds a Docker image and runs tests inside the Docker container.
 
-## Contribute
 
-We enthusiastically welcome contributions. If you encounter any bugs or have a feature suggestion, please open an issue.
-Also, feel free to fork the repository and submit a pull request.
-Before submitting a pull request, ensure that your changes do not break the application.
-Run the tests locally and check that all are passing.
+
+## Contribute to Bobo
+
+We're on the lookout for enthusiastic contributors like you! 🌟
+
+### Found a Bug or Have a Feature Idea?
+- Open an issue and tell us all about it.
+
+### Ready to Code?
+- Fork the repo, make your updates, and submit a pull request.
+- Ensure all tests pass before submitting by running `python3 manage.py test`.
+
+### Frontend Contributors Needed!
+- If you're skilled in modern frontend frameworks, we need you to bring our API to life with a stunning UI.
+- Check out the [API docs](https://example.com/api-docs) and let your creativity flow!
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details. 
