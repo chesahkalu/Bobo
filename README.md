@@ -13,7 +13,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - [Setup](#setup)
 - [Testing](#testing)
 - [Containerization with Docker](#containerization-with-docker)
-- [Continous Integration(CI)](#continous_integration)
+- [Continous Integration](#continous_integration)
 - [Contribute](#contribute)
 - [License](#license)
 - [Authors](#authors)
@@ -31,31 +31,31 @@ For a comprehensive documentation of the project, please refer to the google doc
 
 ## Current Features
 
-### User Authentication:
+### -User Authentication:
 - **User Registration**: Users can create a new account providing their email and password.
 - **User Login**: Users can securely log into their account using their credentials.
 - **Password Hashing**: All passwords are securely hashed for storage, ensuring user privacy and security.
 
-### Baby Profiles:
+### -Baby Profiles:
 - **Creation**: Users can create detailed profiles for their babies, including name, gender, date of birth, weight, height, parent's details and pictures.
 - **Update & Deletion**: Users have the flexibility to update or delete the baby profiles.
 
-### Milestones, Activities, and Nutrition Guides: 
+### -Milestones, Activities, and Nutrition Guides: 
 - **Milestones**: Users can log their baby's milestones, which will include the date and the description. The milestones will be displayed on the baby's profile.
 - **Activities**: Users can access activities that are appropriate for their baby's age and milestone expectancy. The activities will be displayed on the baby's profile.
 - **Nutrition Guides**: Users can access nutrition guides that are appropriate for their baby's age. The nutrition guides will be displayed on the baby's profile.
 `Most of milestone logic have beeen integrated with very scanty data, Code adjustment might come soon to handle a largely populated milestone database`
 
-### Forum:
+### -Forum:
 - **Categories**: Default categories will be provided to create threads and view posts. These would include general, health, nutrition, and development etc.
 - **Threads**: Users can create threads in the forum, which will be displayed in the appropriate category. Threads will include a title and description.
 - **Posts**: Users can create posts in the forum, which will be displayed in the appropriate thread. Posts will include a title and description.
 
-### Marketplace:
+### -Marketplace:
 - **Items**: Users can create items to sell in the marketplace. Items will include a title, description, price, image and contact information.
 - **Categories**: Default categories will be provided to create items and view items. These would include general, health, nutrition, and development etc.
 
-### Chatbot: 
+### -Chatbot: 
 
 ## Setup
 To set up the project on your local machine, follow the steps below:
@@ -145,15 +145,13 @@ docker-compose exec web python manage.py migrate
 
 ## Continous Integration
 
-## Continuous Integration(CI)
-
 Continuous Integration (CI) is a foundational pillar in DevOps, emphasizing the regular integration of code into a shared repository. Each integration can then be automatically tested and verified, ensuring that new changes don't introduce bugs. For our Bobo application, CI ensures that our codebase remains reliable, efficient, and ready for deployment at all times.
 
-### Why GitHub Actions?
+### -Why GitHub Actions?
 
 GitHub Actions is a CI/CD tool provided directly within GitHub, enabling developers to automate tasks right within their repositories. With GitHub Actions, Bobo's codebase undergoes automated processes every time there's a change, ensuring quality and consistency.
 
-### Setting Up GitHub Actions
+### -Setting Up GitHub Actions
 
 1. **Navigate to Your Repository**: Access the "Actions" tab within your GitHub repository.
 2. **Workflow Creation**: Choose a predefined workflow or set up a custom workflow.
@@ -161,7 +159,7 @@ GitHub Actions is a CI/CD tool provided directly within GitHub, enabling develop
 4. **Commit**: Save and commit your YAML file to the repository.
 5. **Monitor**: Post-commit, GitHub Actions will execute the workflow. Monitor the progress under the "Actions" tab.
 
-### Bobo's CI Workflow
+### -Bobo's CI Workflow
 
 The `.yml` file for Bobo details our CI steps:
 
@@ -176,20 +174,20 @@ The `.yml` file for Bobo details our CI steps:
 
 
 
-## Contribute to Bobo
+## Contribute
 
 We're on the lookout for enthusiastic contributors like you! 🌟
 
-### Found a Bug or Have a Feature Idea?
+### -Found a Bug or Have a Feature Idea?
 - Open an issue and tell us all about it.
 
-### Ready to Code?
+### -Ready to Code?
 - Fork the repo, make your updates, and submit a pull request.
 - Ensure all tests pass before submitting by running `python3 manage.py test`.
 
-### Frontend Contributors Needed!
+### -Frontend Contributors Needed!
 - If you're skilled in modern frontend frameworks, we need you to bring our API to life with a stunning UI.
-- Check out the [API docs](https://example.com/api-docs) and let your creativity flow!
+- Check out the [API docs](https://docs.google.com/document/d/1kkgUIu-6aiNDWcKMP4yipJjBpSj5-0eSxkqD8QwJMjs/edit) and let your creativity flow!
 
 
 ## License
