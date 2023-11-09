@@ -13,7 +13,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - [Setup](#setup)
 - [Testing](#testing)
 - [Containerization with Docker](#containerization-with-docker)
-- [Continous Integration](#continous_integration)
+- [Continous Integration](#continous-integration)
 - [Contribute](#contribute)
 - [License](#license)
 - [Authors](#authors)
