@@ -191,9 +191,12 @@ We're on the lookout for enthusiastic contributors like you! 🌟
 
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details. 
+This project is licensed under the Apache License 2.0. For more information, please refer to the [LICENSE](LICENSE) file.
 This README is subject to updates as the application evolves, so be sure to check back for the latest information.
 
 ## Authors
 Chesachi victor kalu
 Mayen kalu
+
+
+## <h3 align="center"> © Bobo 2023. All rights reserved. <h3/>
