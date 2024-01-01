@@ -27,7 +27,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - `Serverless` architecture is adopted in AWS for reduced operational overhead, automatic scaling, and cost efficiency.
 - CI/CD is implemented using `Github Actions` for automated code integration and deployment. `AWS CodeBuild and AWS CodePipeline` are used for continuous delivery.
 - `AWS CloudWatch and X-Ray` provide real-time monitoring, logging, and insights into application behavior.
-- For further details on the tech stack, please refer to the [documentation](https://docs.google.com/document/d/1Z3PiI8lw9dGJV0mQvHsQy8WGt-saNliRlJ6uvrEQygQ/edit)
+- For further details on the tech stack, please refer to the [documentation](https://drive.google.com/drive/folders/1AIiVTPoAHUFwb8M4En24w4JnKT1XB9iV?ths=true)
 
 ## Current Features
 
@@ -195,8 +195,9 @@ This project is licensed under the Apache License 2.0. For more information, ple
 This README is subject to updates as the application evolves, so be sure to check back for the latest information.
 
 ## Authors
-Chesachi victor kalu
-Mayen kalu
+[Chesachi Kalu](https://chesahkalu.github.io/my_resume/)
+
+[Mayen kalu](https://www.linkedin.com/in/mayen-kalu/)
 
 
 ## <h3 align="center"> © Bobo 2023. All rights reserved. <h3/>
