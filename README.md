@@ -55,7 +55,6 @@ For a comprehensive documentation of the project, please refer to the google doc
 - **Items**: Users can create items to sell in the marketplace. Items will include a title, description, price, image and contact information.
 - **Categories**: Default categories will be provided to create items and view items. These would include general, health, nutrition, and development etc.
 
-### -Chatbot: 
 
 ## Setup
 To set up the project on your local machine, follow the steps below:
