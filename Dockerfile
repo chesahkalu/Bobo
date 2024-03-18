@@ -22,6 +22,12 @@ RUN apt-get update && apt-get install -y build-essential default-libmysqlclient-
 # Install Python dependencies from requirements.txt. The --no-cache-dir flag keeps the container lean by preventing the caching of the index locally.
 RUN pip install -r requirements.txt
 
+# Expose port 8000 to the outside world for the container to be accessed
+EXPOSE 8000
+
+# Command to run the Django app
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
 # Install system-level dependencies (if any)
 #RUN apt-get update && apt-get install -y some-package-needed
 
