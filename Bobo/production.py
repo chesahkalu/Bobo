@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'your-default-secret-key')
 
 
 # Automatically configure the allowed hosts using Azure environment variable
-ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'], 'bobo-1st.azurewebsites.net'] if 'WEBSITE_HOSTNAME' in os.environ else ['bobo-1st.azurewebsites.net']
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 
 
