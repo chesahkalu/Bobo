@@ -1,11 +1,16 @@
-Django==3.2.4
-Pillow==8.2.0
-django-crispy-forms==1.11.0
-python-dateutil==2.8.1
-django-filter==2.4.0
-djangorestframework==3.12.4
-django-environ==0.4.5
-django-allauth==0.44.0
-python-dotenv==0.17.0
-mysqlclient==2.0.3
-django_extensions==3.2.3
+Django==3.2.4 # Core Django framework
+Pillow==8.2.0 # Image processing library required by Django for ImageField and others
+django-crispy-forms==1.11.0 # Form rendering plugin for Django, helps with rendering forms in templates
+python-dateutil==2.8.1 # Provides powerful extensions to the standard datetime module
+django-filter==2.4.0 # # Filtering tool to easily filter querysets from URL parameters
+djangorestframework==3.12.4 # Toolkit for building Web Restful APIs
+django-environ==0.4.5 # Environment variables handling
+django-allauth==0.44.0 # Authentication app for Django that "just works"
+python-dotenv==0.17.0 # Reads the key-value pair from .env file and adds them to environment variable
+mysqlclient==2.0.3 # MySQL client for Python
+django_extensions==3.2.3 # Adds some useful features for Django
+psycopg2-binary==2.8.6  # For PostgreSQL support
+django-storages==1.11.1  # For enhanced storage options
+azure-storage-blob==12.8.1  # For Azure Blob Storage
+whitenoise==6.6.0 # Simplified static file serving for Python web apps
+django-redis==5.4.0 # Redis cache backend for Django
