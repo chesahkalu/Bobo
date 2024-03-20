@@ -1,5 +1,5 @@
 """
-Bobo settings file for prodcution.
+Bobo settings file for prodcution in Azure.
 
 Building upon settings.py file.
 
