@@ -58,27 +58,21 @@ CACHES = {
         },
     }
 }
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
-
-STATIC_URL = '/static/'
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'accounts/static'),]
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-#LOGIN_REDIRECT_URL = 'home'
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# Configure Azure Blob Storage for media files
+conn_str2 = os.environ['AZURE_STORAGE_CONNECTIONSTRING']
+conn_str2_params = {pair.split('=')[0]: pair.split('=')[1] for pair in conn_str.split(' ')}
+AZURE_CONTAINER = "media"
+
+AZURE_ACCOUNT_NAME = conn_str2_params('AccountName')
+AZURE_ACCOUNT_KEY = conn_str2_params('AccountKey')
+
+DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{AZURE_CONTAINER}/'
+
 
 """
 # STATIC AND MEDIA FILES CONFIGURATION
@@ -97,5 +91,5 @@ DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 AZURE_ACCOUNT_NAME = os.environ.get('AZURE_STORAGE_ACCOUNT_NAME')
 AZURE_ACCOUNT_KEY = os.environ.get('AZURE_STORAGE_ACCOUNT_KEY')
 AZURE_CONTAINER = os.environ.get('AZURE_STORAGE_CONTAINER_NAME')
-AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+AZURE_CUSTOM_DOMAIN = f'{bobostorage1}.blob.core.windows.net'
 MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{AZURE_CONTAINER}/' """
