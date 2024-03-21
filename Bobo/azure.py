@@ -60,7 +60,6 @@ CACHES = {
 }
 
 
-
 # Configure Azure Blob Storage for media files
 conn_str2 = os.environ['AZURE_STORAGE_CONNECTIONSTRING']
 conn_str2_params = {pair.split('=')[0]: pair.split('=')[1] for pair in conn_str.split(' ')}

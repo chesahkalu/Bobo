@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'marketplace',
     'chatbot',
     'django_extensions',
+    'storages',
    
     
 ]
