@@ -59,10 +59,18 @@ CACHES = {
     }
 }
 
+conn_str2 = "DefaultEndpointsProtocol=https;AccountName=bobostorage1;AccountKey=Pf1zJv92u+cAUC9QNBqa4cz8UoksEQErByQpx3uvVhRhC8bYUjdZyheFMZYJO6pNvUma24da6M86+AStCwsDcA==;EndpointSuffix=core.windows.net"
+conn_str2_params = {pair.split('=')[0]: '='.join(pair.split('=')[1:]) for pair in conn_str2.split(';')}
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
 
+
+AZURE_ACCOUNT_NAME = conn_str2_params['AccountName']
+AZURE_ACCOUNT_KEY = conn_str2_params['AccountKey']
+
+AZURE_CONTAINER = "media"
+DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{AZURE_CONTAINER}/'
 
 """
 # STATIC AND MEDIA FILES CONFIGURATION
