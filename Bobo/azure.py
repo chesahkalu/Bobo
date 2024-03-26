@@ -59,9 +59,25 @@ CACHES = {
     }
 }
 
+
+
+
 conn_str2 = os.getenv('AZURE_STORAGEBLOB_CONNECTIONSTRING')
 conn_str2_params = {pair.split('=')[0]: '='.join(pair.split('=')[1:]) for pair in conn_str2.split(';')}
 
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.azure_storage.AzureStorage",
+        "AZURE_ACCOUNT_NAME" : conn_str2_params['AccountName'],
+        "AZURE_ACCOUNT_KEY" : conn_str2_params['AccountKey'],
+        "azure_container": "pictures",
+        "DEFAULT_FILE_STORAGE" : 'storages.backends.azure_storage.AzureStorage',
+        "AZURE_CUSTOM_DOMAIN" : f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net',
+        "MEDIA_URL" : f'https://{AZURE_CUSTOM_DOMAIN}/{AZURE_CONTAINER}/',
+        },
+}
+
+"""
 AZURE_ACCOUNT_NAME = conn_str2_params['AccountName']
 AZURE_ACCOUNT_KEY = conn_str2_params['AccountKey']
 
@@ -69,6 +85,7 @@ AZURE_CONTAINER = "pictures"
 DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
 MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{AZURE_CONTAINER}/'
+"""
 
 """
 # STATIC AND MEDIA FILES CONFIGURATION
