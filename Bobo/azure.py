@@ -59,7 +59,7 @@ CACHES = {
     }
 }
 
-conn_str2 = os.environ['AZURE_STORAGEBLOB_CONNECTIONSTRING']
+conn_str2 = os.getenv('AZURE_STORAGEBLOB_CONNECTIONSTRING')
 conn_str2_params = {pair.split('=')[0]: '='.join(pair.split('=')[1:]) for pair in conn_str2.split(';')}
 
 AZURE_ACCOUNT_NAME = conn_str2_params['AccountName']
