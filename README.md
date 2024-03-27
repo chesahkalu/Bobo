@@ -1,19 +1,30 @@
 # Bobo
 
-Bobo is a comprehensive web platform designed for parents to monitor and track the growth and development of their babies.
+![Bobo Logo](static/images/favicon.png)
+
+Landing Page @ [Bobo](https://chesahkalu.github.io/Bobo/)
+Live on Azure @ [Bobo](https://bobo-1st.azurewebsites.net/accounts/signup/)
+
+Bobo is a simple comprehensive web platform designed for parents to monitor and track the growth and development of their babies.
 With a range of features, from logging milestones to accessing research-based expert advice and nutrition guides specific to a baby's age, Bobo is an essential tool for new parents.
 
-Additionally, Bobo provides an interactive community platform with a forum and marketplace, where parents can discuss various topics and exchange baby items. For quick information and guidance, we also offer an advanced AI chatbot.
+Additionally, Bobo provides an interactive community platform with a forum and marketplace, where parents can discuss various topics and exchange baby items.
+The platform is designed to be user-friendly, intuitive, and accessible, ensuring that parents can easily navigate and utilize the features.
 
+Bobo was developed as a learning project to integrate every aspect of software development, from planning and design to implementation and deployment. Currently, the primary focus is on Devops principles, CI/CD, and cloud deployment with Azure.
+
+The project is open-source, and we welcome contributions from developers interested in enhancing the platform. 
 For a comprehensive documentation of the project, please refer to the google docs [link](https://drive.google.com/drive/folders/1AIiVTPoAHUFwb8M4En24w4JnKT1XB9iV?ths=true) 
 
 ## Table of Contents
 - [Tech Stack](#tech-stack)
 - [Current Features](#current-features)
+- [Requirements](#requirements)
 - [Setup](#setup)
 - [Testing](#testing)
 - [Containerization with Docker](#containerization-with-docker)
 - [Continous Integration](#continous-integration)
+- [Deploy To Azure](#deploy-to-azure)
 - [Contribute](#contribute)
 - [License](#license)
 - [Authors](#authors)
@@ -23,10 +34,10 @@ For a comprehensive documentation of the project, please refer to the google doc
 - For local development, `MySQL` is our chosen database, recognized for its reliability and robustness.
 - `Bootstrap` ensures our platform is responsive and mobile-friendly, adapting seamlessly to different devices. The front-end is open to further development with `React` in the future.
 - The system is containerized using `Docker`, bundling the app, its environment, and dependencies for consistent deployment.
-- We leverage `AWS` for cloud deployment, utilizing services like `RDS, S3, and EC2` for database management, file storage, and scalability.
-- `Serverless` architecture is adopted in AWS for reduced operational overhead, automatic scaling, and cost efficiency.
-- CI/CD is implemented using `Github Actions` for automated code integration and deployment. `AWS CodeBuild and AWS CodePipeline` are used for continuous delivery.
-- `AWS CloudWatch and X-Ray` provide real-time monitoring, logging, and insights into application behavior.
+- `Azure` is used for hosting the application and database. Leveraging Azure's app services, PostrgreSQL database, and Azure Blob Storage for media files.
+- CI/CD is implemented using `Github Actions` for automated code integration, automating the building and testing of the application, and deployment. 
+- `Azure` DevOps is used for project management, issue tracking, and sprint planning.
+- `Azure` Monitor is used for monitoring the application and database performance.
 - For further details on the tech stack, please refer to the [documentation](https://drive.google.com/drive/folders/1AIiVTPoAHUFwb8M4En24w4JnKT1XB9iV?ths=true)
 
 ## Current Features
@@ -55,6 +66,27 @@ For a comprehensive documentation of the project, please refer to the google doc
 - **Items**: Users can create items to sell in the marketplace. Items will include a title, description, price, image and contact information.
 - **Categories**: Default categories will be provided to create items and view items. These would include general, health, nutrition, and development etc.
 
+## Requirements
+The [requirements.txt](./requirements.txt) has the following packages, all used by a typical data-driven Django application, and also including packages for Azure deployment.
+| Package | Version | Description |
+| ------- | ------- | ----------- |
+| [Django](https://pypi.org/project/Django/) | 3.2.4 | Core Django framework. |
+| [Pillow](https://pypi.org/project/Pillow/) | 8.2.0 | Image processing library required by Django for `ImageField` and others. |
+| [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) | 1.11.0 | Form rendering plugin for Django, helps with rendering forms in templates. |
+| [python-dateutil](https://pypi.org/project/python-dateutil/) | 2.8.1 | Provides powerful extensions to the standard datetime module. |
+| [django-filter](https://pypi.org/project/django-filter/) | 2.4.0 | Filtering tool to easily filter querysets from URL parameters. |
+| [djangorestframework](https://pypi.org/project/djangorestframework/) | 3.12.4 | Toolkit for building Web Restful APIs. |
+| [django-environ](https://pypi.org/project/django-environ/) | 0.4.5 | Environment variables handling. |
+| [django-allauth](https://pypi.org/project/django-allauth/) | 0.44.0 | Authentication app for Django that "just works". |
+| [python-dotenv](https://pypi.org/project/python-dotenv/) | 0.17.0 | Reads the key-value pair from .env file and adds them to environment variable. |
+| [mysqlclient](https://pypi.org/project/mysqlclient/) | 2.0.3 | MySQL client for Python. |
+| [django_extensions](https://pypi.org/project/django-extensions/) | 3.2.3 | Adds some useful features for Django. |
+| [psycopg2-binary](https://pypi.org/project/psycopg2-binary/) | 2.8.6 | PostgreSQL database adapter for Python. |
+| [whitenoise](https://pypi.org/project/whitenoise/) | 6.6.0 | Simplified static file serving for Python web apps. |
+| [django-redis](https://pypi.org/project/django-redis/) | 5.4.0 | Redis cache backend for Django. |
+| [django-storages](https://pypi.org/project/django-storages/) | * | For enhanced storage options. |
+| [azure-storage-blob](https://pypi.org/project/azure-storage-blob/) | * | For Azure Blob Storage integration. |
+
 
 ## Setup
 To set up the project on your local machine, follow the steps below:
@@ -65,11 +97,11 @@ To set up the project on your local machine, follow the steps below:
 2. Navigate to the project directory:
 `cd Bobo`
 
-3. Ensure you have Python 3.8+ and pip installed. Then, set up a virtual environment and install the dependencies:
+3. Ensure you have Python 3.9+ and pip installed. Then, set up a virtual environment and install the dependencies:
 `pip3 install -r requirements.txt`
 
 4. Set up the database
-The application uses MySQL. Ensure you have it installed and running. Update the DATABASES configuration in Bobo/settings.py with your MySQL credentials.
+The application uses MySQL for local development. Ensure you have it installed and running. Update the DATABASES configuration in Bobo/settings.py with your MySQL credentials.
 Run the following commands to integrate your database 
 `python3 manage.py makemigrations`
 `python3 manage.py migrate`
@@ -171,6 +203,44 @@ The `.yml` file for Bobo details our CI steps:
   4. **Testing**: Executes Django's testing suite.
   5. **Docker Integration**: Builds a Docker image and runs tests inside the Docker container.
 
+## [Deploy To Azure] (https://learn.microsoft.com/en-us/azure/app-service/tutorial-python-postgresql-app?tabs=django%2Cmac-linux&pivots=azure-portal) 
+
+Azure, Microsoft's cloud computing platform, provides a robust infrastructure for hosting applications, databases, and services. For Bobo, Azure App Services, Azure Database for PostgreSQL, and Azure Blob Storage are utilized to host the application, database, and media files, respectively.
+
+### -Azure App Services
+- **Web App and Database**: Search for "Web App + Database" in the Azure portal to create new resources. Choose Python 3.9 for the runtime stack, and select PostgreSQL for the database.
+- **Resource Group**: Create a new group to house the resources.
+- **Hosting Plan**: Start with the Basic tier, and adjust according to your needs as your application scales.
+
+### -Configure Application Settings
+In the Azure portal, under your App Service's Configuration section, verify that the auto-generated connection strings for PostgreSQL and Redis are present. These settings are crucial for the application's database interactions and caching mechanism.
+
+### -Deploy the Application
+**Configure GitHub Actions for continuous deployment**:
+- Configure the [azure.py](./Bobo/settings/azure.py) file with the PostgreSQL and Redis connection strings, enable the [settings.py](./Bobo/settings.py) to use the azure.py file in production.
+- Navigate to the "Deployment Center" in your App Service.
+- Select GitHub as the source and configure the build provider with your repository details.
+- Save to commit a workflow file to your repository, enabling automatic deployment on git push events.
+
+### -Verify Connectivity and Run Migrations
+Ensure your application can connect to the database and cache services:
+
+- Use the SSH feature in App Service to open a terminal session.
+- Run python manage.py migrate to apply database migrations.
+
+### -Blob Storage for Media Files
+Azure Blob Storage is a cost-effective solution for storing media files, such as images and videos. To integrate Blob Storage with Bobo:
+
+- Create a new Blob Storage account in the Azure portal.
+- Generate a new container for storing media files.
+- Create and add blob storage as a service connector to your App Service in the Azure portal.
+- Update the [azure.py](./Bobo/settings/azure.py) file with the Blob Storage credentials.
+
+### -Monitor Application Performance
+Azure Monitor provides insights into your application's performance, health, and usage. Use Azure Monitor to track metrics, set up alerts, and monitor the application's overall health.
+
+### -Scaling and Load Balancing
+Azure App Services offer scalable options to handle increased traffic and load. Configure auto-scaling rules and load balancing to ensure your application remains performant and responsive.
 
 
 ## Contribute
@@ -195,8 +265,5 @@ This README is subject to updates as the application evolves, so be sure to chec
 
 ## Authors
 [Chesachi Kalu](https://chesahkalu.github.io/my_resume/)
-
-[Mayen kalu](https://www.linkedin.com/in/mayen-kalu/)
-
 
 ## <h3 align="center"> © Bobo 2023. All rights reserved. <h3/>
