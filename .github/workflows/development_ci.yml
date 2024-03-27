@@ -1,0 +1,136 @@
+# Name of the CI workflow
+name: Bobo CI
+
+# Define the events that trigger the workflow
+on:
+  # Trigger the workflow on push events but only for the main branch
+  push:
+    branches: [ master ]
+  # Trigger the workflow on pull request events but only for the main branch
+  pull_request:
+    branches: [ master ]
+
+# Define the jobs to be executed as part of the workflow
+jobs:
+  # Define a job with the identifier 'build'
+  build:
+    # Specify the runner to use for the job which is the machine that will execute the job provided by GitHub
+    runs-on: ubuntu-latest
+
+    # Define the sequence of tasks to be executed as part of the job
+    steps:
+      # Step 1: Check out the repository code to the runner, like you would do with git clone
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Python 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      # Step 3: Upgrade pip and install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Run tests
+      - name: Run tests
+        run: |
+          python manage.py test
+
+      # Step 5: Build Docker image
+      - name: Build Docker image
+        run: |
+          docker build -t bobo-web:v1 .
+
+      # Step 6: Run tests inside Docker container
+      - name: Run tests inside Docker container
+        run: |
+          docker run bobo-web:v1 python manage.py test
+
+
+
+
+name: Bobo CI/CD Workflow - Build and deploy Python app to Azure Web App - bobo-1st
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.9'
+
+      - name: Create and start virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Optional: Include this step if you have unit tests to run
+      - name: Run tests
+        run: python manage.py test
+
+      # Optional: Build Docker image if your deployment relies on Docker
+      - name: Build Docker image
+        run: docker build -t bobo-web:v1 .
+
+      # Optional: Run tests inside the Docker container if necessary
+      - name: Run tests inside Docker container
+        run: docker run bobo-web:v1 python manage.py test
+
+      # If using Docker, adjust the following deployment steps as needed
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    environment: 'Production'
+    permissions:
+      id-token: write
+
+    steps:
+      # Optional: Download artifact from build job if you're using artifacts
+      - name: Download artifact from build job
+        if: false # Set to true and configure properly if needed
+        uses: actions/download-artifact@v2
+        with:
+          name: python-app
+
+      # Optional: Unzip artifact for deployment if you're using artifacts
+      - name: Unzip artifact for deployment
+        if: false # Set to true and configure properly if needed
+        run: unzip release.zip
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'bobo-1st'
+          # Remove slot-name if not deploying to a specific slot
+          # slot-name: 'Production' # Uncomment if using deployment slots
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+
+      # Optional: Include additional steps for Docker-based deployment if necessary
