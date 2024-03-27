@@ -61,10 +61,11 @@ CACHES = {
 
 
 # Azure Blob Storage configuration for media files
+"""
 DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 AZURE_CONNECTION_STRING = os.getenv('AZURE_STORAGEBLOB_CONNECTIONSTRING')
 azure_container = "pictures" 
-
+"""
 
 """
 conn_str2 = os.getenv('AZURE_STORAGEBLOB_CONNECTIONSTRING')
