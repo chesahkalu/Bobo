@@ -1,5 +1,5 @@
 # Name of the CI workflow
-name: Bobo CI
+name: Bobo CI for Development
 
 # Define the events that trigger the workflow
 on:
