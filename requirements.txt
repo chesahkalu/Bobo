@@ -10,7 +10,7 @@ python-dotenv==0.17.0 # Reads the key-value pair from .env file and adds them to
 mysqlclient==2.0.3 # MySQL client for Python
 django_extensions==3.2.3 # Adds some useful features for Django
 psycopg2-binary==2.8.6  # For PostgreSQL support
-django-storages==1.11.1  # For enhanced storage options
-azure-storage-blob==12.8.1  # For Azure Blob Storage
 whitenoise==6.6.0 # Simplified static file serving for Python web apps
 django-redis==5.4.0 # Redis cache backend for Django
+django-storages  # For enhanced storage options
+azure-storage-blob  # For Azure Blob Storage
