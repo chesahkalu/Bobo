@@ -217,7 +217,7 @@ In the Azure portal, under your App Service's Configuration section, verify that
 
 ### -Deploy the Application
 **Configure GitHub Actions for continuous deployment**:
-- Configure the [azure.py](./Bobo/settings/azure.py) file with the PostgreSQL and Redis connection strings, enable the [settings.py](./Bobo/settings.py) to use the azure.py file in production.
+- Configure the [azure.py](./Bobo/azure.py) file with the PostgreSQL and Redis connection strings, enable the [settings.py](./Bobo/settings.py) to use the azure.py file in production.
 - Navigate to the "Deployment Center" in your App Service.
 - Select GitHub as the source and configure the build provider with your repository details.
 - Save to commit a workflow file to your repository, enabling automatic deployment on git push events.
@@ -234,7 +234,7 @@ Azure Blob Storage is a cost-effective solution for storing media files, such as
 - Create a new Blob Storage account in the Azure portal.
 - Generate a new container for storing media files.
 - Create and add blob storage as a service connector to your App Service in the Azure portal.
-- Update the [azure.py](./Bobo/settings/azure.py) file with the Blob Storage credentials.
+- Update the [azure.py](./Bobo/azure.py) file with the Blob Storage credentials.
 
 ### -Monitor Application Performance
 Azure Monitor provides insights into your application's performance, health, and usage. Use Azure Monitor to track metrics, set up alerts, and monitor the application's overall health.
