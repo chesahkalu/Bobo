@@ -5,6 +5,8 @@
 Landing Page @ [Bobo](https://chesahkalu.github.io/Bobo/)
 Live on Azure @ [Bobo](https://bobo-1st.azurewebsites.net/accounts/signup/)
 
+---
+
 Bobo is a simple comprehensive web platform designed for parents to monitor and track the growth and development of their babies.
 With a range of features, from logging milestones to accessing research-based expert advice and nutrition guides specific to a baby's age, Bobo is an essential tool for new parents.
 
@@ -15,6 +17,8 @@ Bobo was developed as a learning project to integrate every aspect of software d
 
 The project is open-source, and we welcome contributions from developers interested in enhancing the platform. 
 For a comprehensive documentation of the project, please refer to the google docs [link](https://drive.google.com/drive/folders/1AIiVTPoAHUFwb8M4En24w4JnKT1XB9iV?ths=true) 
+
+---
 
 ## Table of Contents
 - [Tech Stack](#tech-stack)
@@ -28,6 +32,7 @@ For a comprehensive documentation of the project, please refer to the google doc
 - [Contribute](#contribute)
 - [License](#license)
 - [Authors](#authors)
+---
 
 ## Tech Stack
 - The application is developed with `Django`, a Python-based open-source web framework that promotes rapid development and clean, pragmatic design following the model-view-controller (MVC) architectural 
@@ -39,6 +44,8 @@ For a comprehensive documentation of the project, please refer to the google doc
 - `Azure` DevOps is used for project management, issue tracking, and sprint planning.
 - `Azure` Monitor is used for monitoring the application and database performance.
 - For further details on the tech stack, please refer to the [documentation](https://drive.google.com/drive/folders/1AIiVTPoAHUFwb8M4En24w4JnKT1XB9iV?ths=true)
+
+---
 
 ## Current Features
 
@@ -66,6 +73,8 @@ For a comprehensive documentation of the project, please refer to the google doc
 - **Items**: Users can create items to sell in the marketplace. Items will include a title, description, price, image and contact information.
 - **Categories**: Default categories will be provided to create items and view items. These would include general, health, nutrition, and development etc.
 
+---
+
 ## Requirements
 The [requirements.txt](./requirements.txt) has the following packages, all used by a typical data-driven Django application, and also including packages for Azure deployment.
 | Package | Version | Description |
@@ -87,6 +96,7 @@ The [requirements.txt](./requirements.txt) has the following packages, all used 
 | [django-storages](https://pypi.org/project/django-storages/) | * | For enhanced storage options. |
 | [azure-storage-blob](https://pypi.org/project/azure-storage-blob/) | * | For Azure Blob Storage integration. |
 
+---
 
 ## Setup
 To set up the project on your local machine, follow the steps below:
@@ -109,6 +119,8 @@ Run the following commands to integrate your database
 5. Run the application
 `python3 manage.py runserver`
 
+---
+
 ## Testing
 We utilize Django's testing framework for ensuring our application's robustness. 
 Our test cases for now, cover user authentication, baby model creation, and various view functionalities associated with baby profiles.
@@ -116,6 +128,8 @@ You can test the application by creating a new user, logging in, and navigating 
 
 To run the tests locally, use the following command:
 `python3 manage.py test 'app'`
+
+---
 
 ## Containerization with Docker
 
@@ -174,6 +188,8 @@ The initial setup of our MySQL container is steered by environment variables in 
 docker-compose exec web python manage.py migrate
 ```
 
+---
+
 ## Continous Integration
 
 Continuous Integration (CI) is a foundational pillar in DevOps, emphasizing the regular integration of code into a shared repository. Each integration can then be automatically tested and verified, ensuring that new changes don't introduce bugs. For our Bobo application, CI ensures that our codebase remains reliable, efficient, and ready for deployment at all times.
@@ -202,6 +218,8 @@ The `.yml` file for Bobo details our CI steps:
   3. **Dependencies**: Installs requirements via pip.
   4. **Testing**: Executes Django's testing suite.
   5. **Docker Integration**: Builds a Docker image and runs tests inside the Docker container.
+
+---
 
 ## Deploy To Azure
 
@@ -242,6 +260,7 @@ Azure Monitor provides insights into your application's performance, health, and
 ### -Scaling and Load Balancing
 Azure App Services offer scalable options to handle increased traffic and load. Configure auto-scaling rules and load balancing to ensure your application remains performant and responsive.
 
+---
 
 ## Contribute
 
@@ -258,10 +277,13 @@ We're on the lookout for enthusiastic contributors like you! 🌟
 - If you're skilled in modern frontend frameworks, we need you to bring our API to life with a stunning UI.
 - Check out the [API docs](https://docs.google.com/document/d/1kkgUIu-6aiNDWcKMP4yipJjBpSj5-0eSxkqD8QwJMjs/edit) and let your creativity flow!
 
+---
 
 ## License
 This project is licensed under the Apache License 2.0. For more information, please refer to the [LICENSE](LICENSE) file.
 This README is subject to updates as the application evolves, so be sure to check back for the latest information.
+
+---
 
 ## Authors
 [Chesachi Kalu](https://chesahkalu.github.io/my_resume/)
