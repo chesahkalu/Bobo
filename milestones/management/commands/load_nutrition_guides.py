@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from health.models import NutritionGuide
+from milestones.models import NutritionGuide
 
 class Command(BaseCommand):
     help = 'Load nutritional guides into the database'

@@ -1817,8 +1817,8 @@ class Command(BaseCommand):
             activities = item['activities']
             for activity in activities:
                 title = activity['title']
-                activity_description = activity['activity']
+                activity_description = activity['description']
                 image_urls = activity['imageUrls']
-                Activity.objects.create(month=month, title=title, description=description, imageUrls=image_urls)
+                Activity.objects.create(month=month, title=title, activity=activity_description, imageUrls=image_urls)
 
         self.stdout.write(self.style.SUCCESS('Successfully loaded all activities.'))
