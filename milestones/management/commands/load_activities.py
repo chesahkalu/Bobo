@@ -1817,7 +1817,7 @@ class Command(BaseCommand):
             activities = item['activities']
             for activity in activities:
                 title = activity['title']
-                description = activity['description']
+                activity_description = activity['activity']
                 image_urls = activity['imageUrls']
                 Activity.objects.create(month=month, title=title, description=description, imageUrls=image_urls)
 
