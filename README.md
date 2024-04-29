@@ -225,7 +225,7 @@ The `.yml` file for Bobo details our CI steps:
 
 Azure, Microsoft's cloud computing platform, provides a robust infrastructure for hosting applications, databases, and services. For Bobo, Azure App Services, Azure Database for PostgreSQL, and Azure Blob Storage are utilized to host the application, database, and media files, respectively. For a comprehensive guide, check Azure documentation [here](https://learn.microsoft.com/en-us/azure/app-service/tutorial-python-postgresql-app?tabs=django%2Cmac-linux&pivots=azure-portal)
 
-! [stack](static/images/Screenshot 2024-04-28 at 2.22.48 PM.png)
+![stack](static/images/Screenshot 2024-04-28 at 2.22.48 PM.png)
 
 ### -Azure App Services
 - **Web App and Database**: Search for "Web App + Database" in the Azure portal to create new resources. Choose Python 3.9 for the runtime stack, and select PostgreSQL for the database.
