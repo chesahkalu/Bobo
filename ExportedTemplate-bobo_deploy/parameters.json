@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_bobo_1st_name": {
+            "value": null
+        },
+        "Redis_bobo_1st_cache_name": {
+            "value": null
+        },
+        "components_bobo_1st_name": {
+            "value": null
+        },
+        "storageAccounts_bobostore_name": {
+            "value": null
+        },
+        "serverfarms_ASP_bobodeploy_a7b9_name": {
+            "value": null
+        },
+        "virtualNetworks_bobo_1stVnet_name": {
+            "value": null
+        },
+        "flexibleServers_bobo_1st_server_name": {
+            "value": null
+        },
+        "userAssignedIdentities_bobo_1st_id_bc8b_name": {
+            "value": null
+        },
+        "privateEndpoints_bobo_1st_cache_privateEndpoint_name": {
+            "value": null
+        },
+        "actionGroups_Application_Insights_Smart_Detection_name": {
+            "value": null
+        },
+        "privateDnsZones_privatelink_redis_cache_windows_net_name": {
+            "value": null
+        },
+        "privateDnsZones_privatelink_postgres_database_azure_com_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___bobo_1st_name": {
+            "value": null
+        },
+        "workspaces_DefaultWorkspace_a30dd4d4_4809_4d70_b422_c3669892e56a_EUS_externalid": {
+            "value": null
+        }
+    }
+}
