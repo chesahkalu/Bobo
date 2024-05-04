@@ -241,6 +241,7 @@ In the Azure portal, under your App Service's Configuration section, verify that
 - Navigate to the "Deployment Center" in your App Service.
 - Select GitHub as the source and configure the build provider with your repository details.
 - Save to commit a workflow file to your repository, enabling automatic deployment on git push events.
+- A workflow file will be created in the `.github/workflows` directory, detailing the deployment steps.
 
 ### -Verify Connectivity and Run Migrations
 Ensure your application can connect to the database and cache services:
