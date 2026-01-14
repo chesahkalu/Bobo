@@ -72,13 +72,14 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
         {babies.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {babies.map((baby) => (
-              <div
+              <Link
                 key={baby.id}
-                className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                href={`/dashboard/babies/${baby.id}`}
+                className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer block"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 rounded-full bg-[#f4f6f5] flex items-center justify-center text-3xl">
-                    {baby.gender === "male" ? "👶" : baby.gender === "female" ? "👧" : "👶"}
+                    {baby.gender === "male" ? "👦" : baby.gender === "female" ? "👧" : "👶"}
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900">{baby.name}</h3>
@@ -102,20 +103,23 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
                     <div className="text-xs text-gray-500">Diaper</div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         ) : null}
 
         {/* Add Baby Card */}
-        <div className="bg-white rounded-2xl p-8 border-2 border-dashed border-gray-200 text-center hover:border-[#425a51] transition-colors cursor-pointer">
+        <Link 
+          href="/dashboard/babies/new"
+          className="block bg-white rounded-2xl p-8 border-2 border-dashed border-gray-200 text-center hover:border-[#425a51] transition-colors cursor-pointer"
+        >
           <div className="text-5xl mb-4">👶</div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">Add a Baby</h3>
           <p className="text-gray-500 mb-4">Start tracking sleep, feeding, and milestones</p>
-          <button className="px-6 py-3 rounded-xl bg-[#425a51] text-white font-semibold hover:bg-[#364842] transition-colors">
+          <span className="inline-block px-6 py-3 rounded-xl bg-[#425a51] text-white font-semibold hover:bg-[#364842] transition-colors">
             Add Baby Profile
-          </button>
-        </div>
+          </span>
+        </Link>
 
         {/* Quick Actions */}
         <div className="mt-12">
