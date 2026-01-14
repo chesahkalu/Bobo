@@ -203,20 +203,20 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
           </div>
 
           {/* Community */}
-          <div className="bg-gradient-to-br from-[#f4f6f5] to-white rounded-2xl p-6 border border-gray-100">
+          <Link href="/dashboard/community" className="bg-gradient-to-br from-[#425a51] to-[#364842] rounded-2xl p-6 border border-[#425a51] hover:shadow-lg hover:-translate-y-1 transition-all block">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="font-bold text-gray-900 flex items-center gap-2">
+              <h3 className="font-bold text-white flex items-center gap-2">
                 <span>👥</span> Community
               </h3>
-              <span className="text-xs px-2 py-1 bg-gray-200 text-gray-600 rounded-full">Coming Soon</span>
+              <span className="text-xs px-2 py-1 bg-white/20 text-white rounded-full">50K+ Parents</span>
             </div>
-            <p className="text-sm text-gray-500 mb-4">Connect with other parents, share tips & experiences</p>
+            <p className="text-sm text-white/80 mb-4">Connect with other parents, share tips & experiences</p>
             <div className="flex gap-2">
-              <span className="text-2xl opacity-50">💬</span>
-              <span className="text-2xl opacity-50">👨‍👩‍👧</span>
-              <span className="text-2xl opacity-50">❤️</span>
+              <span className="text-2xl">💬</span>
+              <span className="text-2xl">👨‍👩‍👧</span>
+              <span className="text-2xl">❤️</span>
             </div>
-          </div>
+          </Link>
 
           {/* Marketplace */}
           <div className="bg-gradient-to-br from-white to-[#f4f6f5] rounded-2xl p-6 border border-gray-100">

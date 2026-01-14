@@ -173,62 +173,152 @@ export default function CommunityContent({
           </div>
         </div>
 
-        {/* Recent Discussions */}
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold text-gray-900">Recent Discussions</h2>
-            <Link href="/dashboard/community/all" className="text-sm text-[#425a51] hover:underline">
-              View all →
-            </Link>
+        {/* Two Column Layout: Recent & Trending */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          {/* Recent Discussions */}
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-bold text-gray-900">🕐 Recent Discussions</h2>
+            </div>
+
+            {recentThreads.length > 0 ? (
+              <div className="space-y-3">
+                {recentThreads.slice(0, 5).map((thread) => (
+                  <Link
+                    key={thread.id}
+                    href={`/dashboard/community/thread/${thread.id}`}
+                    className="block p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all"
+                  >
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-full bg-[#f4f6f5] flex items-center justify-center text-lg font-bold text-[#425a51]">
+                        {(thread.profiles?.full_name || thread.profiles?.email || "?").charAt(0).toUpperCase()}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          {thread.is_pinned && <span className="text-xs">📌</span>}
+                          <span className={`text-xs px-2 py-0.5 rounded-full ${colorMap[thread.forum_categories?.color || "blue"]}`}>
+                            {thread.forum_categories?.icon} {thread.forum_categories?.name}
+                          </span>
+                        </div>
+                        <h3 className="font-medium text-gray-900 truncate">{thread.title}</h3>
+                        <div className="flex items-center gap-4 mt-2 text-xs text-gray-400">
+                          <span>{timeAgo(thread.created_at)}</span>
+                          <span>•</span>
+                          <span>💬 {thread.forum_posts?.length || 0}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="bg-white rounded-2xl p-8 text-center border border-gray-100">
+                <div className="text-5xl mb-4">💬</div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">No discussions yet</h3>
+                <p className="text-gray-500 mb-4">Be the first to start a conversation!</p>
+                <button
+                  onClick={() => setShowNewThread(true)}
+                  className="px-6 py-3 rounded-xl bg-[#425a51] text-white font-semibold"
+                >
+                  Start a Discussion
+                </button>
+              </div>
+            )}
           </div>
 
-          {recentThreads.length > 0 ? (
-            <div className="space-y-3">
-              {recentThreads.map((thread) => (
-                <Link
-                  key={thread.id}
-                  href={`/dashboard/community/thread/${thread.id}`}
-                  className="block p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-full bg-[#f4f6f5] flex items-center justify-center text-lg font-bold text-[#425a51]">
-                      {(thread.profiles?.full_name || thread.profiles?.email || "?").charAt(0).toUpperCase()}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
-                        {thread.is_pinned && <span className="text-xs">📌</span>}
-                        <span className={`text-xs px-2 py-0.5 rounded-full ${colorMap[thread.forum_categories?.color || "blue"]}`}>
-                          {thread.forum_categories?.icon} {thread.forum_categories?.name}
-                        </span>
+          {/* Trending Discussions */}
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-bold text-gray-900">🔥 Trending Now</h2>
+            </div>
+
+            {recentThreads.length > 0 ? (
+              <div className="space-y-3">
+                {[...recentThreads]
+                  .sort((a, b) => (b.view_count + b.forum_posts?.length * 5) - (a.view_count + a.forum_posts?.length * 5))
+                  .slice(0, 5)
+                  .map((thread, index) => (
+                  <Link
+                    key={thread.id}
+                    href={`/dashboard/community/thread/${thread.id}`}
+                    className="block p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all"
+                  >
+                    <div className="flex items-start gap-3">
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                        index === 0 ? "bg-amber-100 text-amber-700" : 
+                        index === 1 ? "bg-gray-200 text-gray-600" : 
+                        index === 2 ? "bg-orange-100 text-orange-700" : "bg-gray-100 text-gray-500"
+                      }`}>
+                        {index + 1}
                       </div>
-                      <h3 className="font-medium text-gray-900 truncate">{thread.title}</h3>
-                      <div className="flex items-center gap-4 mt-2 text-xs text-gray-400">
-                        <span>{thread.profiles?.full_name || "Anonymous"}</span>
-                        <span>•</span>
-                        <span>{timeAgo(thread.created_at)}</span>
-                        <span>•</span>
-                        <span>💬 {thread.forum_posts?.length || 0} replies</span>
-                        <span>•</span>
-                        <span>👀 {thread.view_count} views</span>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-medium text-gray-900 truncate">{thread.title}</h3>
+                        <div className="flex items-center gap-3 mt-1 text-xs text-gray-400">
+                          <span>👀 {thread.view_count} views</span>
+                          <span>💬 {thread.forum_posts?.length || 0} replies</span>
+                        </div>
                       </div>
                     </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="bg-white rounded-2xl p-6 text-center border border-gray-100">
+                <div className="text-4xl mb-2">🔥</div>
+                <p className="text-gray-500 text-sm">Trending topics will appear here</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Parenting News & Expert Tips */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+          {/* Featured Articles */}
+          <div className="lg:col-span-2 bg-white rounded-2xl p-6 border border-gray-100">
+            <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span>📰</span> Parenting News & Tips
+            </h3>
+            <div className="space-y-4">
+              {[
+                { title: "AAP Updates Safe Sleep Guidelines for 2026", source: "American Academy of Pediatrics", time: "2 hours ago", icon: "🌙" },
+                { title: "Study: Benefits of Baby-Led Weaning Confirmed", source: "Pediatrics Journal", time: "5 hours ago", icon: "🍼" },
+                { title: "New Milestone App Features: AI Sleep Predictions", source: "Bobo Team", time: "1 day ago", icon: "🤖" },
+                { title: "How Screen Time Affects Infant Development", source: "Child Development Research", time: "2 days ago", icon: "📱" },
+              ].map((article, index) => (
+                <div key={index} className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer">
+                  <div className="text-2xl">{article.icon}</div>
+                  <div className="flex-1">
+                    <h4 className="font-medium text-gray-900 text-sm">{article.title}</h4>
+                    <p className="text-xs text-gray-400 mt-1">{article.source} • {article.time}</p>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
-          ) : (
-            <div className="bg-white rounded-2xl p-8 text-center border border-gray-100">
-              <div className="text-5xl mb-4">💬</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">No discussions yet</h3>
-              <p className="text-gray-500 mb-4">Be the first to start a conversation!</p>
-              <button
-                onClick={() => setShowNewThread(true)}
-                className="px-6 py-3 rounded-xl bg-[#425a51] text-white font-semibold"
-              >
-                Start a Discussion
+          </div>
+
+          {/* Expert Tips of the Day */}
+          <div className="bg-gradient-to-br from-[#fdf8f6] to-white rounded-2xl p-6 border border-[#f3dad3]">
+            <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span>💡</span> Expert Tip of the Day
+            </h3>
+            <div className="bg-white rounded-xl p-4 border border-gray-100 mb-4">
+              <p className="text-gray-700 italic text-sm leading-relaxed">
+                "The 'wake window' for a 4-month-old is about 1.5-2 hours. Watch for sleepy cues like yawning and eye rubbing before this window closes."
+              </p>
+              <div className="flex items-center gap-2 mt-3">
+                <div className="w-8 h-8 rounded-full bg-[#425a51] text-white flex items-center justify-center text-xs font-bold">DR</div>
+                <div>
+                  <p className="text-xs font-medium text-gray-900">Dr. Rachel Kim</p>
+                  <p className="text-xs text-gray-400">Pediatric Sleep Specialist</p>
+                </div>
+              </div>
+            </div>
+            <div className="text-center">
+              <button className="text-sm text-[#425a51] font-medium hover:underline">
+                See More Expert Tips →
               </button>
             </div>
-          )}
+          </div>
         </div>
 
         {/* Community Guidelines */}
