@@ -18,7 +18,7 @@ interface Baby {
 interface GrowthLog {
   id: string;
   baby_id: string;
-  recorded_date: string;
+  measurement_date: string;
   weight_kg: number | null;
   height_cm: number | null;
   head_circumference_cm: number | null;
@@ -71,14 +71,27 @@ export default function GrowthContent({
     
     setLoading(true);
     
-    await supabase.from("growth_logs").insert({
+    const insertData = {
       baby_id: selectedBaby,
-      recorded_date: recordedDate,
+      measurement_date: recordedDate,
       weight_kg: weight ? parseFloat(weight) : null,
       height_cm: height ? parseFloat(height) : null,
       head_circumference_cm: headCircumference ? parseFloat(headCircumference) : null,
       notes: notes || null,
-    });
+    };
+    
+    console.log("Inserting growth log:", insertData);
+    
+    const { data, error } = await supabase.from("growth_logs").insert(insertData).select();
+    
+    if (error) {
+      console.error("Error inserting growth log:", error);
+      alert(`Error saving: ${error.message}`);
+      setLoading(false);
+      return;
+    }
+    
+    console.log("Growth log inserted:", data);
 
     setShowAddModal(false);
     setWeight("");
@@ -183,12 +196,12 @@ export default function GrowthContent({
                   <div className="mt-3">
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-1">
                       <span>Percentile</span>
-                      <span>{Math.round(calculatePercentile(latestLog.weight_kg, getAgeMonths(latestLog.recorded_date), "weight", selectedBabyData?.gender || null))}th</span>
+                      <span>{Math.round(calculatePercentile(latestLog.weight_kg, getAgeMonths(latestLog.measurement_date), "weight", selectedBabyData?.gender || null))}th</span>
                     </div>
                     <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
                       <div 
                         className="h-full bg-[#425a51] rounded-full transition-all"
-                        style={{ width: `${calculatePercentile(latestLog.weight_kg, getAgeMonths(latestLog.recorded_date), "weight", selectedBabyData?.gender || null)}%` }}
+                        style={{ width: `${calculatePercentile(latestLog.weight_kg, getAgeMonths(latestLog.measurement_date), "weight", selectedBabyData?.gender || null)}%` }}
                       />
                     </div>
                   </div>
@@ -213,12 +226,12 @@ export default function GrowthContent({
                   <div className="mt-3">
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-1">
                       <span>Percentile</span>
-                      <span>{Math.round(calculatePercentile(latestLog.height_cm, getAgeMonths(latestLog.recorded_date), "height", selectedBabyData?.gender || null))}th</span>
+                      <span>{Math.round(calculatePercentile(latestLog.height_cm, getAgeMonths(latestLog.measurement_date), "height", selectedBabyData?.gender || null))}th</span>
                     </div>
                     <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
                       <div 
                         className="h-full bg-[#cf765d] rounded-full transition-all"
-                        style={{ width: `${calculatePercentile(latestLog.height_cm, getAgeMonths(latestLog.recorded_date), "height", selectedBabyData?.gender || null)}%` }}
+                        style={{ width: `${calculatePercentile(latestLog.height_cm, getAgeMonths(latestLog.measurement_date), "height", selectedBabyData?.gender || null)}%` }}
                       />
                     </div>
                   </div>
@@ -291,7 +304,7 @@ export default function GrowthContent({
                               style={{ height: `${Math.max(heightPercent, 5)}%` }}
                             />
                             <div className="text-xs text-gray-400">
-                              {getAgeMonths(log.recorded_date)}m
+                              {getAgeMonths(log.measurement_date)}m
                             </div>
                           </div>
                         );
@@ -320,11 +333,11 @@ export default function GrowthContent({
                     <div key={log.id} className="p-4 flex items-center justify-between">
                       <div>
                         <p className="font-medium text-gray-900">
-                          {new Date(log.recorded_date).toLocaleDateString("en-US", { 
+                          {new Date(log.measurement_date).toLocaleDateString("en-US", { 
                             month: "short", day: "numeric", year: "numeric" 
                           })}
                         </p>
-                        <p className="text-xs text-gray-400">Age: {getAgeMonths(log.recorded_date)} months</p>
+                        <p className="text-xs text-gray-400">Age: {getAgeMonths(log.measurement_date)} months</p>
                       </div>
                       <div className="flex gap-6 text-sm">
                         <div className="text-center">

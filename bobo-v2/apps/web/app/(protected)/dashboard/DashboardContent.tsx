@@ -171,36 +171,36 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
           </Link>
 
           {/* AI Chatbot */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 border border-gray-700">
+          <Link href="/dashboard/ai-chat" className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 border border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all block">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-bold text-white flex items-center gap-2">
                 <span>🤖</span> AI Assistant
               </h3>
-              <span className="text-xs px-2 py-1 bg-[#cf765d] text-white rounded-full">Coming Soon</span>
+              <span className="text-xs px-2 py-1 bg-[#cf765d] text-white rounded-full">NEW</span>
             </div>
             <p className="text-sm text-gray-400 mb-4">Get instant answers to parenting questions from our AI</p>
-            <div className="flex gap-2 text-gray-500">
-              <span className="text-2xl opacity-50">💬</span>
-              <span className="text-2xl opacity-50">🧠</span>
-              <span className="text-2xl opacity-50">✨</span>
+            <div className="flex gap-2">
+              <span className="text-2xl">💬</span>
+              <span className="text-2xl">🧠</span>
+              <span className="text-2xl">✨</span>
             </div>
-          </div>
+          </Link>
 
           {/* Insights */}
-          <div className="bg-gradient-to-br from-[#fdf8f6] to-white rounded-2xl p-6 border border-gray-100">
+          <Link href="/dashboard/insights" className="bg-gradient-to-br from-[#fdf8f6] to-white rounded-2xl p-6 border border-[#f3dad3] hover:shadow-lg hover:-translate-y-1 transition-all block">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-bold text-gray-900 flex items-center gap-2">
                 <span>📈</span> AI Insights
               </h3>
-              <span className="text-xs px-2 py-1 bg-[#cf765d] text-white rounded-full">Coming Soon</span>
+              <span className="text-xs px-2 py-1 bg-[#cf765d] text-white rounded-full">NEW</span>
             </div>
             <p className="text-sm text-gray-500 mb-4">Smart predictions for sleep patterns & feeding schedules</p>
             <div className="flex gap-2">
-              <span className="text-2xl opacity-50">📊</span>
-              <span className="text-2xl opacity-50">🔮</span>
-              <span className="text-2xl opacity-50">💡</span>
+              <span className="text-2xl">📊</span>
+              <span className="text-2xl">🔮</span>
+              <span className="text-2xl">💡</span>
             </div>
-          </div>
+          </Link>
 
           {/* Community */}
           <Link href="/dashboard/community" className="bg-gradient-to-br from-[#425a51] to-[#364842] rounded-2xl p-6 border border-[#425a51] hover:shadow-lg hover:-translate-y-1 transition-all block">

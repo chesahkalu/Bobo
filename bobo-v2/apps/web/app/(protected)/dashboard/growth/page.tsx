@@ -24,7 +24,7 @@ export default async function GrowthPage() {
       .from("growth_logs")
       .select("*")
       .in("baby_id", babies.map(b => b.id))
-      .order("recorded_date", { ascending: true });
+      .order("measurement_date", { ascending: true });
     growthLogs = data || [];
   }
 
