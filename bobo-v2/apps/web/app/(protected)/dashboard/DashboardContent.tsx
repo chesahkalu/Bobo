@@ -219,20 +219,20 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
           </Link>
 
           {/* Marketplace */}
-          <div className="bg-gradient-to-br from-white to-[#f4f6f5] rounded-2xl p-6 border border-gray-100">
+          <Link href="/dashboard/marketplace" className="bg-gradient-to-br from-[#fdf8f6] to-white rounded-2xl p-6 border border-[#f3dad3] hover:shadow-lg hover:-translate-y-1 transition-all block">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-bold text-gray-900 flex items-center gap-2">
                 <span>🛒</span> Marketplace
               </h3>
-              <span className="text-xs px-2 py-1 bg-gray-200 text-gray-600 rounded-full">Coming Soon</span>
+              <span className="text-xs px-2 py-1 bg-[#cf765d] text-white rounded-full">Browse Items</span>
             </div>
             <p className="text-sm text-gray-500 mb-4">Buy, sell & swap baby items with other parents</p>
             <div className="flex gap-2">
-              <span className="text-2xl opacity-50">👕</span>
-              <span className="text-2xl opacity-50">🧸</span>
-              <span className="text-2xl opacity-50">🛍️</span>
+              <span className="text-2xl">👕</span>
+              <span className="text-2xl">🧸</span>
+              <span className="text-2xl">🛍️</span>
             </div>
-          </div>
+          </Link>
 
           {/* Growth Charts */}
           <div className="bg-gradient-to-br from-[#fdf8f6] to-white rounded-2xl p-6 border border-gray-100">
