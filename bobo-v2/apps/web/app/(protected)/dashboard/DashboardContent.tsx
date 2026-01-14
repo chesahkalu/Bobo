@@ -235,20 +235,20 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
           </Link>
 
           {/* Growth Charts */}
-          <div className="bg-gradient-to-br from-[#fdf8f6] to-white rounded-2xl p-6 border border-gray-100">
+          <Link href="/dashboard/growth" className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6 border border-purple-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-bold text-gray-900 flex items-center gap-2">
                 <span>📏</span> Growth Charts
               </h3>
-              <span className="text-xs px-2 py-1 bg-gray-200 text-gray-600 rounded-full">Coming Soon</span>
+              <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded-full">WHO Standards</span>
             </div>
             <p className="text-sm text-gray-500 mb-4">Track weight, height & head circumference over time</p>
             <div className="flex gap-2">
-              <span className="text-2xl opacity-50">⚖️</span>
-              <span className="text-2xl opacity-50">📐</span>
-              <span className="text-2xl opacity-50">📊</span>
+              <span className="text-2xl">⚖️</span>
+              <span className="text-2xl">📐</span>
+              <span className="text-2xl">📊</span>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Premium Banner */}
