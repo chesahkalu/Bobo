@@ -1,9 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
-import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Lazy-load OpenAI only when needed
+let openai: any = null;
+
+function getOpenAI() {
+  if (!openai && process.env.OPENAI_API_KEY) {
+    const OpenAI = require("openai").default;
+    openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+  }
+  return openai;
+}
 
 const SYSTEM_PROMPT = `You are Bobo, a warm and knowledgeable AI parenting assistant. You help parents with questions about:
 - Baby sleep schedules and sleep training
@@ -44,7 +52,15 @@ export async function POST(request: NextRequest) {
 - Gender: ${babyInfo.gender || "Unknown"}`;
     }
 
-    const response = await openai.chat.completions.create({
+    const client = getOpenAI();
+    if (!client) {
+      return NextResponse.json(
+        { error: "AI service not configured. Please add OPENAI_API_KEY to enable AI chat." },
+        { status: 500 }
+      );
+    }
+
+    const response = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
         { role: "system", content: contextualPrompt },

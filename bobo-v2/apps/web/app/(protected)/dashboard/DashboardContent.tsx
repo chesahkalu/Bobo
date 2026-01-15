@@ -44,12 +44,16 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/dashboard" className="text-sm font-medium text-[#425a51]">Dashboard</Link>
             <Link href="/dashboard/milestones" className="text-sm font-medium text-gray-500 hover:text-[#425a51]">Milestones</Link>
-            <Link href="/dashboard/insights" className="text-sm font-medium text-gray-500 hover:text-[#425a51]">Insights</Link>
+            <Link href="/dashboard/nutrition" className="text-sm font-medium text-gray-500 hover:text-[#425a51]">Nutrition</Link>
+            <Link href="/dashboard/growth" className="text-sm font-medium text-gray-500 hover:text-[#425a51]">Growth</Link>
             <Link href="/dashboard/community" className="text-sm font-medium text-gray-500 hover:text-[#425a51]">Community</Link>
           </nav>
           
           <div className="flex items-center gap-4">
-            <span className="text-sm text-gray-500">
+            <Link href="/dashboard/ai-chat" className="text-sm text-gray-500 hover:text-[#425a51] hidden sm:block">
+              🤖 Ask AI
+            </Link>
+            <span className="text-sm text-gray-500 hidden md:block">
               Hello, <strong className="text-gray-900">{userName}</strong>
             </span>
             <button
@@ -247,6 +251,22 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
               <span className="text-2xl">⚖️</span>
               <span className="text-2xl">📐</span>
               <span className="text-2xl">📊</span>
+            </div>
+          </Link>
+
+          {/* Nutrition Guide */}
+          <Link href="/dashboard/nutrition" className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 border border-green-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="font-bold text-gray-900 flex items-center gap-2">
+                <span>🥗</span> Nutrition Guide
+              </h3>
+              <span className="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">Age-Based</span>
+            </div>
+            <p className="text-sm text-gray-500 mb-4">Feeding guides, food introduction & meal planning</p>
+            <div className="flex gap-2">
+              <span className="text-2xl">🍼</span>
+              <span className="text-2xl">🥣</span>
+              <span className="text-2xl">🍎</span>
             </div>
           </Link>
         </div>
