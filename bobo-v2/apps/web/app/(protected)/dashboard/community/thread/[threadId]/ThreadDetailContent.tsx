@@ -82,7 +82,7 @@ export default function ThreadDetailContent({
   const authorName = thread.profiles?.full_name || thread.profiles?.email?.split("@")[0] || "Anonymous";
 
   return (
-    <div className="min-h-screen bg-[#fafafa]">
+    <div className="min-h-screen bg-[#fafafa] dark:bg-gray-900">
       {/* Header */}
       <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-6 py-4">
