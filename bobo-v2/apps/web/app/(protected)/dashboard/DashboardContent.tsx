@@ -13,12 +13,19 @@ interface Baby {
   photo_url: string | null;
 }
 
+interface TodayLogs {
+  sleep: number;
+  feeding: number;
+  diaper: number;
+}
+
 interface DashboardContentProps {
   user: User;
   babies: Baby[];
+  todayLogs: TodayLogs;
 }
 
-export default function DashboardContent({ user, babies }: DashboardContentProps) {
+export default function DashboardContent({ user, babies, todayLogs }: DashboardContentProps) {
   const router = useRouter();
   const supabase = createClient();
 
@@ -79,6 +86,33 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
               : "Let's get started by adding your first baby profile."}
           </p>
         </div>
+
+        {/* Today's Activity Widget */}
+        {babies.length > 0 && (
+          <div className="bg-gradient-to-r from-[#425a51] to-[#364842] rounded-3xl p-6 mb-8">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-white font-bold text-lg">📅 Today's Activity</h2>
+              <span className="text-white/60 text-sm">{new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</span>
+            </div>
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-white/10 rounded-2xl p-4 text-center">
+                <div className="text-3xl mb-1">🌙</div>
+                <div className="text-3xl font-bold text-white">{todayLogs.sleep}</div>
+                <div className="text-white/70 text-sm">Sleep Sessions</div>
+              </div>
+              <div className="bg-white/10 rounded-2xl p-4 text-center">
+                <div className="text-3xl mb-1">🍼</div>
+                <div className="text-3xl font-bold text-white">{todayLogs.feeding}</div>
+                <div className="text-white/70 text-sm">Feedings</div>
+              </div>
+              <div className="bg-white/10 rounded-2xl p-4 text-center">
+                <div className="text-3xl mb-1">👶</div>
+                <div className="text-3xl font-bold text-white">{todayLogs.diaper}</div>
+                <div className="text-white/70 text-sm">Diapers</div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Baby Profiles Grid */}
         {babies.length > 0 ? (

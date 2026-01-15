@@ -48,6 +48,7 @@ export default function BabyDetailContent({
   diaperLogs 
 }: BabyDetailContentProps) {
   const [activeModal, setActiveModal] = useState<"sleep" | "feeding" | "diaper" | null>(null);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const supabase = createClient();
@@ -108,6 +109,24 @@ export default function BabyDetailContent({
     router.refresh();
   };
 
+  const handleDeleteBaby = async () => {
+    setLoading(true);
+    
+    // Delete all associated logs first
+    await supabase.from("sleep_logs").delete().eq("baby_id", baby.id);
+    await supabase.from("feeding_logs").delete().eq("baby_id", baby.id);
+    await supabase.from("diaper_logs").delete().eq("baby_id", baby.id);
+    await supabase.from("activity_logs").delete().eq("baby_id", baby.id);
+    await supabase.from("growth_logs").delete().eq("baby_id", baby.id);
+    
+    // Delete baby
+    await supabase.from("babies").delete().eq("id", baby.id);
+    
+    setLoading(false);
+    router.push("/dashboard");
+    router.refresh();
+  };
+
   return (
     <div className="min-h-screen bg-[#fafafa]">
       {/* Header */}
@@ -124,21 +143,37 @@ export default function BabyDetailContent({
       <main className="max-w-5xl mx-auto px-6 py-8">
         {/* Baby Info Header */}
         <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm mb-8">
-          <div className="flex items-center gap-6">
-            <div className="w-24 h-24 rounded-full bg-[#f4f6f5] flex items-center justify-center text-5xl">
-              {baby.gender === "male" ? "👦" : baby.gender === "female" ? "👧" : "👶"}
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-1">{baby.name}</h1>
-              <p className="text-gray-500">
-                {ageMonths >= 1 
-                  ? `${ageMonths} month${ageMonths > 1 ? "s" : ""} old`
-                  : `${ageWeeks} week${ageWeeks > 1 ? "s" : ""} old`}
-              </p>
-              <div className="flex gap-4 mt-3 text-sm text-gray-400">
-                {baby.weight_at_birth && <span>Birth weight: {baby.weight_at_birth} kg</span>}
-                {baby.height_at_birth && <span>Birth height: {baby.height_at_birth} cm</span>}
+          <div className="flex items-start justify-between">
+            <div className="flex items-center gap-6">
+              <div className="w-24 h-24 rounded-full bg-[#f4f6f5] flex items-center justify-center text-5xl">
+                {baby.gender === "male" ? "👦" : baby.gender === "female" ? "👧" : "👶"}
               </div>
+              <div>
+                <h1 className="text-3xl font-bold text-gray-900 mb-1">{baby.name}</h1>
+                <p className="text-gray-500">
+                  {ageMonths >= 1 
+                    ? `${ageMonths} month${ageMonths > 1 ? "s" : ""} old`
+                    : `${ageWeeks} week${ageWeeks > 1 ? "s" : ""} old`}
+                </p>
+                <div className="flex gap-4 mt-3 text-sm text-gray-400">
+                  {baby.weight_at_birth && <span>Birth weight: {baby.weight_at_birth} kg</span>}
+                  {baby.height_at_birth && <span>Birth height: {baby.height_at_birth} cm</span>}
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <Link 
+                href={`/dashboard/babies/${baby.id}/edit`}
+                className="px-4 py-2 rounded-xl bg-gray-100 text-gray-700 text-sm font-medium hover:bg-gray-200 transition-colors"
+              >
+                ✏️ Edit
+              </Link>
+              <button
+                onClick={() => setShowDeleteModal(true)}
+                className="px-4 py-2 rounded-xl bg-red-50 text-red-600 text-sm font-medium hover:bg-red-100 transition-colors"
+              >
+                🗑️ Delete
+              </button>
             </div>
           </div>
         </div>
@@ -373,6 +408,36 @@ export default function BabyDetailContent({
                 </div>
               </form>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* Delete Confirmation Modal */}
+      {showDeleteModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl">
+            <div className="text-center mb-6">
+              <div className="text-5xl mb-4">⚠️</div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Delete {baby.name}?</h2>
+              <p className="text-gray-500">
+                This will permanently delete all data including sleep logs, feeding logs, diaper logs, and growth records. This action cannot be undone.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <button 
+                onClick={() => setShowDeleteModal(false)} 
+                className="flex-1 py-3 rounded-xl border border-gray-200 font-medium hover:bg-gray-50"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={handleDeleteBaby} 
+                disabled={loading}
+                className="flex-1 py-3 rounded-xl bg-red-500 text-white font-medium hover:bg-red-600 disabled:opacity-50"
+              >
+                {loading ? "Deleting..." : "Delete Forever"}
+              </button>
+            </div>
           </div>
         </div>
       )}
