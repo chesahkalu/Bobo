@@ -12,6 +12,7 @@ interface Baby {
   gender: string | null;
   weight_at_birth: number | null;
   height_at_birth: number | null;
+  photo_url: string | null;
 }
 
 interface SleepLog {
@@ -145,8 +146,16 @@ export default function BabyDetailContent({
         <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm mb-8">
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-6">
-              <div className="w-24 h-24 rounded-full bg-[#f4f6f5] flex items-center justify-center text-5xl">
-                {baby.gender === "male" ? "👦" : baby.gender === "female" ? "👧" : "👶"}
+              <div className="w-24 h-24 rounded-full bg-[#f4f6f5] flex items-center justify-center text-5xl overflow-hidden">
+                {baby.photo_url ? (
+                  <img 
+                    src={baby.photo_url} 
+                    alt={baby.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  baby.gender === "male" ? "👦" : baby.gender === "female" ? "👧" : "👶"
+                )}
               </div>
               <div>
                 <h1 className="text-3xl font-bold text-gray-900 mb-1">{baby.name}</h1>
