@@ -91,35 +91,42 @@ export default function SettingsContent({ user }: SettingsContentProps) {
           <h2 className="text-lg font-bold text-gray-900 mb-4">Preferences</h2>
           <div className="space-y-4">
             <div className="flex items-center justify-between py-3 border-b border-gray-100">
-              <div>
-                <span className="text-gray-900 font-medium">🌙 Dark Mode</span>
-                <p className="text-sm text-gray-500">Switch to dark theme</p>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🌙</span>
+                <div>
+                  <span className="text-gray-900 font-medium">Dark Mode</span>
+                  <p className="text-sm text-gray-500">Switch to dark theme</p>
+                </div>
               </div>
-              <div className="relative">
-                <button
-                  className="w-12 h-7 bg-gray-200 rounded-full relative cursor-not-allowed opacity-50"
-                  title="Coming soon!"
-                >
-                  <div className="absolute left-1 top-1 w-5 h-5 bg-white rounded-full shadow" />
-                </button>
-              </div>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
+                Coming Soon
+              </span>
             </div>
             <div className="flex items-center justify-between py-3 border-b border-gray-100">
-              <div>
-                <span className="text-gray-900 font-medium">🔔 Notifications</span>
-                <p className="text-sm text-gray-500">Enable push notifications</p>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🔔</span>
+                <div>
+                  <span className="text-gray-900 font-medium">Notifications</span>
+                  <p className="text-sm text-gray-500">Enable push notifications</p>
+                </div>
               </div>
-              <div className="relative">
-                <button
-                  className="w-12 h-7 bg-gray-200 rounded-full relative cursor-not-allowed opacity-50"
-                  title="Coming soon!"
-                >
-                  <div className="absolute left-1 top-1 w-5 h-5 bg-white rounded-full shadow" />
-                </button>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
+                Coming Soon
+              </span>
+            </div>
+            <div className="flex items-center justify-between py-3">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">📤</span>
+                <div>
+                  <span className="text-gray-900 font-medium">Export Data</span>
+                  <p className="text-sm text-gray-500">Download your data as PDF</p>
+                </div>
               </div>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
+                Coming Soon
+              </span>
             </div>
           </div>
-          <p className="text-xs text-gray-400 mt-4">More preferences coming soon!</p>
         </div>
 
         {/* App Info */}

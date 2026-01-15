@@ -60,6 +60,9 @@ export default function DashboardContent({ user, babies, todayLogs }: DashboardC
             <Link href="/dashboard/ai-chat" className="text-sm text-gray-500 hover:text-[#425a51] hidden sm:block">
               🤖 Ask AI
             </Link>
+            <Link href="/dashboard/settings" className="text-sm text-gray-500 hover:text-[#425a51] hidden sm:block">
+              ⚙️ Settings
+            </Link>
             <span className="text-sm text-gray-500 hidden md:block">
               Hello, <strong className="text-gray-900">{userName}</strong>
             </span>
