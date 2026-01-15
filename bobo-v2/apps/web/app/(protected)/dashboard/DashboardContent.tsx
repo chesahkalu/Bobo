@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
+import OnboardingModal from "@/app/components/OnboardingModal";
 import type { User } from "@supabase/supabase-js";
 
 interface Baby {
@@ -38,9 +39,12 @@ export default function DashboardContent({ user, babies, todayLogs }: DashboardC
   const userName = user.user_metadata?.full_name || user.email?.split("@")[0] || "Parent";
 
   return (
-    <div className="min-h-screen bg-[#fafafa]">
+    <div className="min-h-screen bg-[#fafafa] dark:bg-gray-900 transition-colors">
+      {/* Onboarding Modal */}
+      <OnboardingModal userName={userName} />
+
       {/* Header */}
-      <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
+      <header className="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/dashboard" className="flex items-center gap-2">
             <span className="text-2xl">🍃</span>

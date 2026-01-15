@@ -11,5 +11,11 @@ export default async function SettingsPage() {
     redirect("/login");
   }
 
-  return <SettingsContent user={user} />;
+  // Fetch babies for PDF export
+  const { data: babies } = await supabase
+    .from("babies")
+    .select("*")
+    .order("created_at", { ascending: false });
+
+  return <SettingsContent user={user} babies={babies || []} />;
 }
