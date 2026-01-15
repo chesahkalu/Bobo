@@ -164,13 +164,29 @@ export default function DashboardContent({ user, babies }: DashboardContentProps
               <h3 className="font-bold text-gray-900 flex items-center gap-2">
                 <span>🎯</span> Milestones
               </h3>
-              <span className="text-xs px-2 py-1 bg-[#425a51] text-white rounded-full">New</span>
+              <span className="text-xs px-2 py-1 bg-[#425a51] text-white rounded-full">Track</span>
             </div>
             <p className="text-sm text-gray-500 mb-4">Track developmental milestones with WHO-backed guidance</p>
             <div className="flex gap-2">
               <span className="text-2xl">🚶</span>
               <span className="text-2xl">🗣️</span>
               <span className="text-2xl">🧠</span>
+            </div>
+          </Link>
+
+          {/* Activities */}
+          <Link href="/dashboard/activities" className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-6 border border-amber-100 hover:shadow-lg hover:-translate-y-1 transition-all block">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="font-bold text-gray-900 flex items-center gap-2">
+                <span>🎮</span> Activities
+              </h3>
+              <span className="text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded-full">Interactive</span>
+            </div>
+            <p className="text-sm text-gray-500 mb-4">Play activities with timer & progress tracking</p>
+            <div className="flex gap-2">
+              <span className="text-2xl">🧸</span>
+              <span className="text-2xl">⏱️</span>
+              <span className="text-2xl">🎲</span>
             </div>
           </Link>
 
